@@ -4,13 +4,40 @@
  <title>Codinfox Lanyon</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-01-14T22:51:43+09:00</updated>
+ <updated>2019-01-14T23:26:59+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>sonypark</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>TIL_190114</title>
+   <link href="http://localhost:4000/til/2019/01/14/TIL/"/>
+   <updated>2019-01-14T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/01/14/TIL</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt; 완강&lt;/li&gt;
+  &lt;li&gt;깃헙 블로그 재설치&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt;를 완강했다. 예전에 필요해서 공부한 경험이 있었지만 이번 기회에 기초 지식을 좀 더 단단히 할 수 있었다. 수업을 들으며 그 동안 가졌더 의문이 많이 해결 되었다.&lt;/li&gt;
+  &lt;li&gt;실수로 깃헙 블로그 데이터를 모두 날렸다. 블로그 수정을 하려다 git push를 잘 못 했고 그 걸 되돌리려다 완전히 다 날려버렸다. 그래서 처음부터 다시 깔았다.. 불행 중 다행인 건 그 동안 게시했던 포스팅(얼마 없지만..)은 따로 백업해두었다는 것이었다. 아직 git 명령어에 익숙지 않아 자칫 하면 데이터를 크게 날릴 위험이 있다. 앞으로는 git 공부도 열심히 해야겠다.&lt;/li&gt;
+  &lt;li&gt;블로그 시작 초반이고 포스팅이 몇 개 없어서 망정이지 그렇지 않았다면 엄청난 멘붕에 휩싸였을 것 같다. 오늘 일을 교훈 삼아 앞으로 더 주의하자.&lt;/li&gt;
+  &lt;li&gt;강제 푸시(git push –force)는 정말 위험하다..
+    &lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+  &lt;li&gt;파이썬 교재 1독(복습) - 점프투파이썬&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>TIL_190113</title>

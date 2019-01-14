@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2e81191-1abb-4ec8-aff6-ce179fc05a3d" name="Default Changelist" comment="" />
+    <list default="true" id="c2e81191-1abb-4ec8-aff6-ce179fc05a3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.sass-cache/56005796592ff72fc4e420aa38f5f6262bda9c04/_global.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/../.sass-cache/56005796592ff72fc4e420aa38f5f6262bda9c04/_global.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.sass-cache/6264fd62599d3ece5a2a0516b20572f16f98184e/_config.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/../.sass-cache/6264fd62599d3ece5a2a0516b20572f16f98184e/_config.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_scss/_config.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../_scss/_config.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../_scss/base/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/atom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/blog/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/blog/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/blog/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/blog/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/10/TIL-01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/10/TIL-01/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/10/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/10/TIL/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/11/TIL-02/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/11/TIL-02/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/12/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/12/TIL/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/13/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/13/TIL/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +28,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-14-TIL.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="374">
+                <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <replaceStrings>
@@ -33,6 +65,7 @@
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-11-TIL-02.md" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-12-TIL.md" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-13-TIL.md" />
+        <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-14-TIL.md" />
       </list>
     </option>
   </component>
@@ -56,7 +89,30 @@
           <expand>
             <path>
               <item name="_posts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_posts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_posts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="TIL(Today I Learned)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_posts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="TIL(Today I Learned)" type="462c0819:PsiDirectoryNode" />
+              <item name="1901" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_posts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -72,12 +128,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
       <recent name="$PROJECT_DIR$/TIL(Today I Learned)" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,15 +182,16 @@
       <workItem from="1547385582095" duration="983000" />
       <workItem from="1547390449397" duration="223000" />
       <workItem from="1547439137431" duration="579000" />
-      <workItem from="1547470886444" duration="575000" />
+      <workItem from="1547470886444" duration="2089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11172000" />
+    <option name="totallyTimeSpent" value="12686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28540772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -159,6 +216,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/TIL(Today I Learned)" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/2012-02-07-example-content.md" />
@@ -216,6 +278,28 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="425">
             <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_scss/base/_global.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-14-TIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="374">
+            <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
