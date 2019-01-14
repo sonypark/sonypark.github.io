@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Codinfox Lanyon</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2019-01-14T22:51:43+09:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>sonypark</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>TIL_190113</title>
+   <link href="http://localhost:4000/til/2019/01/13/TIL/"/>
+   <updated>2019-01-13T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/01/13/TIL</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt; 수강&lt;/li&gt;
+  &lt;li&gt;영어공부 : 생활영어 표현 5개 암기 및 영어 작문&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;파이썬을 제대로 공부한 적이 없어서 그런지 생활코딩, 패스트캠퍼스의 파이썬 강의를 통해 많이 배운다.&lt;/li&gt;
+  &lt;li&gt;이전에는 딥러닝을 공부하면서 Scrapy 크롤링이나 CNN 모델을 테스트 하기 위해 그 때 그 때 필요한 부분만 찾아서 공부했다. 그래서 파이썬 언어의 기본 문법이나 구조를 제대로 알지 못하고 사용했다. (&lt;code class=&quot;highlighter-rouge&quot;&gt;__init__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;yield&lt;/code&gt; 등)&lt;/li&gt;
+  &lt;li&gt;파이썬을 처음부터 다시 공부하면서 객체 지향 프로그래밍에 대해서도 다시 한 번 되짚어 볼 수 있어 좋다.&lt;/li&gt;
+  &lt;li&gt;오늘은 좀 게으름을 피웠다. 일요일이라 그런지 좀 쉬고 싶은 마음도 있었다. 내일부터는 다시 부지런히 공부해야겠다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt; 듣기&lt;/li&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+  &lt;li&gt;파이썬 교재 1독(복습) - 점프투파이썬&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TIL_190112</title>
+   <link href="http://localhost:4000/til/2019/01/12/TIL/"/>
+   <updated>2019-01-12T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/01/12/TIL</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;패스트캠퍼스 파이썬 중급 강의 첫 수업 수강&lt;/li&gt;
+  &lt;li&gt;수업 내용 복습 : &lt;a href=&quot;https://gist.github.com/sonypark/e11d1e247b7975c31a894b9981f8e506&quot;&gt;gist.github.com&lt;/a&gt;에 업로드&lt;/li&gt;
+  &lt;li&gt;영어공부 : 생활영어 표현 5개 암기 및 영어 작문&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;나는 그 동안 파이썬의 10%도 사용하지 못 하고 있었다.&lt;/li&gt;
+  &lt;li&gt;수업 듣길 잘 했다.&lt;/li&gt;
+  &lt;li&gt;markdown 문법에 조금씩 익숙해지고 있다. Github page 와 gist 를 시작하길 잘 한 것 같다.&lt;/li&gt;
+  &lt;li&gt;앞으로 파이썬 강의 내용을 복습한 후 gist에 올리고 그 중에서 특히 도움이 되는 내용은 Github page에 올리자&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt; 듣기&lt;/li&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+  &lt;li&gt;파이썬 교재 1독(복습) - 점프투파이썬&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TIL_190111</title>
+   <link href="http://localhost:4000/til/2019/01/11/TIL-02/"/>
+   <updated>2019-01-11T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/01/11/TIL-02</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt; 듣기&lt;/li&gt;
+  &lt;li&gt;영어공부 : 생활영어 표현 5개 암기 및 영어 작문&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;주석을 달 때 규칙&lt;/strong&gt;
+    &lt;blockquote&gt;
+      &lt;ol&gt;
+        &lt;li&gt;&lt;strong&gt;간결하면서 이해하기 쉽게 달 것&lt;/strong&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;주석을 달 필요 없는 코드를 작성할 것&lt;/strong&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - 코드만 보고도 이해 할 수 있게 작성하는 게 중요하다
+ - 최고의 주석은 '주석이 필요 없는 코드'이다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;패스트캠퍼스 파이썬 강의 첫 수업&lt;/li&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt; 듣기&lt;/li&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TIL_190110</title>
+   <link href="http://localhost:4000/til/2019/01/10/TIL/"/>
+   <updated>2019-01-10T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/01/10/TIL</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt; 테마로 깃헙 블로그 론칭. 이거 만드는 데만 이틀을 꼬박 보냈다. 여러 테마를 적용해보며 10번 넘게 설치와 삭제를 반복했다.(예쁘고 맘에 드는 테마일 수록 설정이 복잡하다.. 결국 처음에 고른 가장 간단한 테마로 결정)
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/codinfox/codinfox-lanyon&quot;&gt;codinfox&lt;/a&gt; 탬플릿을 사용했다.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;템플릿과 TIL(Today I Learned) 작성 형식&lt;/strong&gt;은 &lt;a href=&quot;https://wayhome25.github.io/&quot;&gt;초보몽키&lt;/a&gt;님의 블로그를 참고했다.&lt;/li&gt;
+      &lt;li&gt;TIL을 시작하기로 마음 먹은 것도 초보몽키님의 TIL을 보고 자극을 받았기 때문이다.&lt;/li&gt;
+      &lt;li&gt;아직 템플릿과 포스팅이 익숙지 않아서 초보몽키님의 블로그를 참고하며 앞으로도 많이 도움을 받을 것 같다.&lt;/li&gt;
+      &lt;li&gt;이곳도 언젠간 누군가에게 도움을 주는 블로그가 되었으면 좋겠다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt; 듣기&lt;/li&gt;
+  &lt;li&gt;영어공부 : 생활영어 표현 5개 암기 및 영어 작문&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;너무 조급해 하지 말자. 빨리 가려다 중요한 걸 놓친다.&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;공부할 게 많다 보니 조급해진다. 그러다 보니 기초적인 걸 건너뛰고 싶어질 때가 있다. 하지만 기초가 가장 중요하다. 구현에만 급급하지 말고 언어의 구성요소와 작동원리 등도 차근차근 공부하자.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;나무보다는 숲을 보자. 정말 중요한 것에 집중하자.&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;중심보다 주변적인 것에 시간을 너무 많이 썼다.
+        &lt;ol&gt;
+          &lt;li&gt;깃헙 블로그도 좀 더 멋진 테마를 사용 하고 싶어서 테마를 깔았다 지웠다만 10번을 넘게 했다. 지금 내게 중요한 건 디자인 보다는 내가 공부한 내용을 꾸준히 올리는 것이다.&lt;/li&gt;
+          &lt;li&gt;파이썬과 루비를 Atom 에디터를 쓰면 한 번에 실습 가능한데 굳이 jetbrains IDE를 따로따로 설치했다. 앞으로 계속 쓸 IDE 이기 때문에 큰 잘못은 아니지만 지금 내게 필요한 작업을 하는데는 Atom으로 충분했다. 지금 중요한 게 무엇인지 먼저 생각하고 거기에 집중하도록 하자.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;개발자에게 영어란 가장 강력한 무기이다.&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;영어를 몰라도 개발을 할 수는 있지만 개발을 통해 더 빨리 더 많은 것을 하기 위해선 영어가 필수이다.&lt;/li&gt;
+      &lt;li&gt;특히 공부를 하다 문제가 생겼을 때 해결해줄 수 있는 대부분의 컨텐츠는 영어로 되어있다. 실제로 개발 도중 오류가 나거나 궁금한 게 있을 때 한국어보다 영어 컨텐츠를 통해 해결한 경우가 많다.&lt;/li&gt;
+      &lt;li&gt;영어 공부도 개발 공부 못지 않게 매일 꾸준히 해야한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생활코딩 &lt;a href=&quot;https://opentutorials.org/course/1750&quot;&gt;Python&amp;amp;Ruby 강의&lt;/a&gt; 듣기&lt;/li&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TIL (Today I learned) 시작</title>
+   <link href="http://localhost:4000/til/2019/01/10/TIL-01/"/>
+   <updated>2019-01-10T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/01/10/TIL-01</id>
+   <content type="html">&lt;p&gt;오늘 하루 공부한 내용과 느낀점을 남기는 공간&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+
+</feed>

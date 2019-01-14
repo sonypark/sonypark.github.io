@@ -5,7 +5,7 @@ title: About
 
 <p class="message">
 
-노트북을 붓 삼아 아름다운 그림을 그리는 개발자. <br><br>
+노트북을 붓 삼아 그림 그리는 개발자. <br><br>
 
 "Connnecting the dots" <br>
 점이 모여 선이 되고 선이 모여 그림이 되듯이 <br>
