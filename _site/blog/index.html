@@ -11,7 +11,7 @@
 
   <title>
     
-      Blog &middot; Codinfox Lanyon
+      Blog &middot; SONY_DEV
     
   </title>
 
@@ -52,7 +52,7 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
         </a>
       </div>
       <div class="sidebar-personal-info-section">
-        <p>A passionate <strong>developer and researcher</strong>, learning to be a giant.</p>
+        <p>A passionate <strong>developer</strong>, learning to be a giant.</p>
       </div>
       
       
@@ -155,21 +155,6 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       </span>
 
     
-      
-      
-      
-
-      
-
-      <span class="">
-        <a class="sidebar-nav-item " href="http://codinfox.github.io/">
-          Github Project
-        </a>
-
-        
-      </span>
-
-    
 
     <span class="sidebar-nav-item">Currently v1.0.0</span>
   </nav>
@@ -194,16 +179,632 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home" title="Codinfox Lanyon">
+            <a href="/" title="Home" title="SONY_DEV">
               <img class="masthead-logo" src="/public/logo.png"/>
             </a>
-            <small>A Jekyll theme based on Lanyon</small>
+            <small>Connecting the dots</small>
           </h3>
         </div>
       </div>
 
       <div class="container content">
         <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/til/2019/01/15/py-fastcampus01/">
+        패스트캠퍼스_파이썬중급_01
+      </a>
+    </h1>
+
+    <span class="post-date">15 Jan 2019</span>
+     | 
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
+    
+    <a href="/blog/tags/#패스트캠퍼스" class="post-tag">패스트캠퍼스</a>
+    
+    
+
+    <article>
+      <noscript><pre>## break
+- loop문 안을 빠져 나올 때 쓴다
+- break는 loop문 안에서만 사용 가능하다
+```python
+while True:
+    print(&quot;while&quot;)
+    break
+```
+~~~
+=&gt; while   # while 한 번만 출력되고 loop문 끝남
+~~~
+```python
+for i in range(100):
+    print(&#39;for&#39;)
+    break
+```
+~~~
+=&gt; for     # for 한 번만 출력되고 loop문 끝남
+~~~
+
+## continue
+- loop문 안에서 continue를 만나면 다시 loop문 처음으로 돌아간다.
+- continue 밑에 코드는 실행되지 않는다.
+```python
+for i in range(2):
+    print(&#39;top&#39;)
+    continue
+    # 이하 건너 뜀
+    print(&quot;bottom&quot;)
+```
+~~~
+# top 두 번 출력
+=&gt; top
+=&gt; top
+~~~
+
+## else (if, while, for)
+- 조건문에서 쓰인다.
+- if문 뿐 아니라 while, for문에서도 쓰인다.
+```python
+# random.randint(a,b)
+# =&gt; Return a random integer N such that a &lt;= N &lt;= b.
+while random.randint(0,1): # 0(False) 또는 1(True) 리턴
+    print(&#39;while&#39;)
+    # break # =&gt; break가 있다면 여기서 loop문 종료된다.
+else:
+    print(&#39;else&#39;)
+```
+
+- **for문에서 else문은 iterator객체가 모두 소모된 이후에 실행된다**
+```python
+for i in range(3):
+    print(&#39;for&#39;)
+else:
+    print(&#39;else&#39;)
+```
+~~~
+=&gt; for # iterator 객체 3 소모
+=&gt; for
+=&gt; for
+=&gt; else # iterator 객체 소모 된 이후 실행
+~~~
+
+## else with try
+- try문에서 else는 에러가 발생하지 않은 경우에만 실행된다.
+```python
+try:
+    assert random.randint(0, 1)
+    print(&#39;try&#39;)
+except:
+    # 만약 에러가 발생해서 예외처리되면, else구문으로 넘어가지 않고 
+    # except구문에서 종료
+    print(&#39;except&#39;)
+else:
+    print(&#39;else&#39;)
+```
+## finally
+- 무조건 실행된다.
+- 중간에 return이 있어도 finally는 실행된다.
+
+```python
+def a():
+    try:
+        assert random.randint(0, 1)
+        print(&#39;try&#39;)
+        return True
+    except:
+        print(&#39;except&#39;)
+        return False
+    else:
+        print(&#39;else&#39;)
+    finally:
+        print(&#39;finally&#39;)
+        # 에러가 발생했든, 하지 않았든 상관치 않고 실행된다.
+        # 이전에 return으로 함수가 종료되어도 finally는 실행된다.
+```
+
+# 스페셜 메소드
+- 파이썬 내에서 사용되는 프로토콜
+- 객체에 특정 기능을 호출할 때 사용된다.
+
+## 인스턴스 객체 생성
+### instance = Class(1,2)
+
+&gt; **스페셜 메소드 호출 순서**
+&gt;1. `__call__`
+&gt;2. `__new__`
+&gt;3. `__init__`
+
+## `__init__`
+```python
+class A:
+    def __init__(self, a, b):
+        # 인스턴스 생성 후 가장 먼저 실행되는 스페셜 메소드, 인스턴스 초기 설정
+        print(&quot;인스턴스 초기화&quot;)
+        self.a = a
+        self.b = b
+
+=&gt; a = A(1, 2)
+```
+## `__new__`
+- instance를 생성하는 생성자 역할
+- class를 인자값으로 받아 instance를 만든다
+- 오버라이딩 하는 경우 `object에 구현된 __new__`를 이용해서 instance를 만든다.
+
+
+```python
+class B:
+    def __new__(cls): #self가 아닌 cls를 사용한다. 아직 인스턴스가 생성되지 않은 상태이기 때문에. class를 인자로 받는다.
+        print(&quot;인스턴스를 만듭니다.&quot;)
+        print(cls)
+        # return 1 # 이라고 작성하면 B클래스를 호출하면 항상 1을 리턴한다.
+        return super().__new__(cls)
+```
+```python
+b = B()
+```
+```python
+=&gt; 인스턴스를 만듭니다.
+=&gt; &lt;class &#39;__main__.B&#39;&gt;
+```
+
+## `__call__`
+```python
+class C:
+    def __call__(self, *args):
+        print(&quot;호출&quot;)
+```
+```python
+# 인스턴스를 호출할때 -&gt; 즉 괄호`()`를 열고 닫을때 실행되는 메소드
+c = C()
+c()
+```
+```python
+=&gt; 호출
+```
+
+## 질문1
+&gt; - 위 `__new__`, `__call__` 예시에서
+&gt; - b = B()를 선언하면 `def __new__(cls)` 이 실행되는데
+&gt; - c = C()를 선언한 이후에 c()를 입력해야 `def __call__(self, *args)` 이 실행됩니다.
+&gt; - 그 이유가 무엇인가요?
+
+
+~~~
+클래스를 호출할때 실행되는 `__call__` 스페셜 메소드는 어디에 있을까?
+=&gt; 클래스를 만드는 메타클래스인 `type`클래스에 있는 `__call__`을 호출함
+~~~
+```python
+type(C) # 클래스의 type 확인 / 즉 C class 객체를 생성한 클래스를 확인
+```
+
+```python
+=&gt;type
+```
+
+## 커스텀 메타 클레스 만들기
+```python
+class TypeClass(type):
+    def __call__(cls, *args):
+        print(&#39;call&#39;)
+        instance = cls.__new__(cls)
+        instance.__init__(*args)
+        return instance
+```
+
+
+
+## 질문2
+&gt; - instance = `cls.__new__(cls)`
+&gt; - 이 부분의 의미를 잘 모르겠습니다.
+&gt; - TypeClass(type) 안에는 `__new__(cls)`라는 함수가 존재하지 않는데 어떻게 이렇게 선언할 수 있나요?
+&gt; - instance = `cls.__new__(cls)`
+&gt; - instance.`__init__(*args)`
+&gt; - 이 두 부분에 대해 설명 부탁드립니다.
+
+
+
+## 커스텀 메타클래스 적용시키는 방법
+- class A(metaclass=TypeClass): in v3
+
+```python
+class A(metaclass=TypeClass):
+    def __new__(cls):
+        print(&#39;new&#39;)
+        return super().__new__(cls)
+    
+    def __init__(self, x, y, z):
+        print(&#39;init&#39;)
+        self.x = x
+        self.y = y
+        self.z = z
+```
+
+
+## 질문3
+&gt; - `return super().__new__(cls)`
+&gt; - 이 부분이 의미하는 바를 정확히 모르겠습니다.
+&gt; - 저 부분을 return함으로서 생기는 결과가 무엇인가요?
+
+
+```python
+instance = A(1, 2, 3)
+```
+```python
+# 순서대로 호출
+=&gt; call
+=&gt; new
+=&gt; init
+```
+
+
+
+## 싱글턴
+- 최초에 생성한 인스턴스만 리턴해주는 클래스
+```python
+class St:
+    def __new__(cls):
+        if not hasattr(cls, &#39;instance&#39;):
+            cls.instance = super().__new__(cls)
+        return cls.instance
+```
+```python
+St() is St()
+```
+```python
+=&gt; True
+```
+
+
+## 질문4
+&gt; - 싱글턴
+&gt; - 싱글턴을 설명하는 위의 코드가 잘 이해되지 않습니다.
+&gt; - return에 `super().__new__(cls)` 로 쓸 때와의 차이점은 무엇인가요?
+&gt; - 싱글턴을 사용하는 상황과 예시는 어떤 게 있나요?
+
+
+## with(context 관리)
+~~~
+with -&gt; &#39;__enter__&#39;, &#39;__exit__&#39; 순으로 진행된다.
+시작할 때 enter, 끝날 때 exit 가 실행된다. 
+
+__enter__ : with구문 시작할때,
+__exit__: with구문 (들여쓰기가) 끝날때
+
+파일을 열 때 with을 쓰는 이유는 __exit__ 부분에서 f.close를 자동으로 해주기 때문이다.
+~~~
+
+```python
+class Context:
+    def __enter__(self):
+        print(&quot;__enter__&quot;)
+        return self
+    
+    def __exit__(self, *args):
+        print(&#39;exit&#39;)
+```
+```python
+c = Context()
+```
+```python
+with c: # __enter__
+    with c: # __enter__
+        with c: # __enter__
+            pass # __exit__
+        pass # __exit__
+    pass # __exit__
+
+```
+```python
+=&gt; __enter__
+=&gt; __enter__
+=&gt; __enter__
+=&gt; exit
+=&gt; exit
+=&gt; exit
+```
+
+```python
+f = open(&quot;./test.txt&quot;, &#39;w&#39;)
+hasattr(f, &#39;__enter__&#39;), hasattr(f, &#39;__exit__&#39;)
+```
+```python
+=&gt; (True, True)
+```
+```python
+f.close()
+f.closed 
+```
+```python
+=&gt; True
+```
+```python
+c = Context()
+with c:
+    pass
+--------------------
+with Context() as c:
+    pass
+    
+는 동일한 실행 방법이다
+```
+
+##### 파일래퍼객체에는 with구문안에서 사용될 수 있도록 스페셜 메소드가 구현되어 있다.
+```python
+f = open(&quot;./test.txt&quot;, &#39;w&#39;)
+hasattr(f, &#39;__enter__&#39;), hasattr(f, &#39;__exit__&#39;)
+```
+```python
+=&gt; (True, True)
+# __exit__메소드가 실행될 때, .close()메소드가 실행되서 파일io를 종료한다.
+```
+
+----
+
+## `__exit__` 스페셜 메소드에 들어오는 인자는??
+
+### `def __exit__(self, error_type, error, traceback):`
+
+`error_type` : with구문 안에서 발생한 에러의 클래스
+
+`error`: with구문 안에서 발생한 에러의 인스턴스
+
+`traceback`: with구문 안에서 발생한 에러의 traceback
+
+&gt; traceback은 추후에 수업 예정
+
+
+
+이러한 인자를 받기 때문에,     
+with구문 안에서 에러가 발생한 경우에 대처할 수 있게 된다.
+
+
+만약 에러가 발생하지 않으면 `None, None, None`이 들어온다
+
+
+```python
+class Context:
+    def __enter__(self):
+        print(&quot;__enter__&quot;)
+        return self
+    
+    def __exit__(self, error_cls, error_instance, traceback):
+        print(&#39;exit&#39;)
+```
+
+```python
+c = Context()
+```
+
+```python
+with c:
+    raise IndexError(&quot;인스턴스입니다.&quot;)
+```
+```python
+__enter__
+exit
+(&lt;class &#39;IndexError&#39;&gt;, IndexError(&#39;인스턴스입니다.&#39;), &lt;traceback object at 0x1083c5dc8&gt;)
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+&lt;ipython-input-150-68d46299f410&gt; in &lt;module&gt;
+      1 with c:
+----&gt; 2     raise IndexError(&quot;인스턴스입니다.&quot;)
+
+IndexError: 인스턴스입니다.
+```
+
+## with 활용 2
+
+`python trick` 책에서 나온 예제.
+
+참고주소 : https://realpython.com/
+&gt; 메일링 서비스 신청하면 좋습니다. 좋은 주제 많이 이야기하는 파이썬 블로그입니다. (현솔 강사님 추천)
+
+```python
+class Indenter:
+    def __init__(self):
+        self.level = 0
+        
+    def __enter__(self):
+        self.level += 1
+        return self
+    
+    def __exit__(self, *args):
+        self.level -= 1
+        
+    def print(self, text):
+        print(&quot;    &quot; * self.level + text)
+```
+```python
+with Indenter() as indent:
+    indent.print(&quot;hi&quot;)
+    with indent:
+        indent.print(&quot;hello&quot;)
+        with indent:
+            indent.print(&#39;안녕하세요&#39;)
+        indent.print(&#39;bye&#39;)
+    indent.print(&quot;quit&quot;)
+```
+~~~
+    hi
+        hello
+            안녕하세요
+        bye
+    quit
+~~~
+
+# 자료구조(tuple, list, dict, set, str)
+- 2 종류의 추상클래스로 묶어서 이해하기
+- Container 와 Sequence(Container + 순서 정보)
+
+## Container
+- __contains__ 가 구현되어 있는 객체
+- __contains__를 함수가 아닌 상수로 선언해도 Container로 인지한다.
+~~~
+class MC:
+    def __contains__(self, value):
+        return True
+    
+    # __contains__ = 1  # 메소드가 아닌 경우에도 Container객체라고 판단함.
+~~~
+```python
+issubclass(MC, Container)
+```
+```python
+=&gt; True
+```
+## Container의 특징
+#### in ( not in ) : 포함 여부
+#### len : 길이
+#### max,min : 최대값, 최소값
+
+## Sequence
+- container + 순서
+
+## Sequence 특징
+#### 더하기 연산 +
+
+```
+[1, 2, 3] + [4, 5, 6]
+=&gt; [1, 2, 3, 4, 5, 6]
+```
+#### 곱하기 연산 (* n)
+
+```
+[1, 2] * 10
+=&gt; [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+```
+#### indexing 색인
+
+```
+[1, 2, 3][0]
+=&gt; 1
+```
+#### slice
+
+```
+a = [1, 2, 3, 4]
+a[1:3] #  == a[slice(1, 3)] 슬라이스객체로 인덱싱하는것이랑 동일
+```
+
+## super 클래스
+
+```python
+class Z:
+    def a(self):
+        print(&quot;a in Z&quot;, self)
+        
+class A(Z):
+    def a(self):
+        print(&quot;a in A&quot;, self)
+        
+        
+class C:
+    def a(self):
+        print(&quot;a in C&quot;, self)
+        
+        
+class B(A, C):
+    def a(self):
+        print(&quot;a in B&quot;, self)  
+
+```
+
+```python
+B.mro()
+```
+```python
+[__main__.B, __main__.A, __main__.Z, __main__.C, object]
+```
+```python
+b = B()
+b.a() # B.mro() 순서대로 메소드를 탐색해서 실행시킴
+```
+
+```python
+=&gt; a in B &lt;__main__.B object at 0x108445c18&gt;
+```
+
+## super(기준 클래스, 인스턴스)
+- 기준 클래스는 무시 -&gt; mro 기준 다음 클래스부터 탐색
+
+```python
+super(B, b).a()
+```
+```python
+=&gt; a in A &lt;__main__.B object at 0x108420dd8&gt;
+```
+```python
+B.mro()
+```
+```python
+==&gt; [__main__.B, __main__.A, __main__.Z, __main__.C, object]
+```
+```python
+super(B, b).a()
+```
+```python
+==&gt; a in A &lt;__main__.B object at 0x108420dd8&gt;
+```
+```python
+super(A, b).a()
+```
+```python
+==&gt; a in Z &lt;__main__.B object at 0x108420dd8&gt;
+```
+```python
+super(C, b).a()
+```
+```python
+==&gt; Error   #(C 뒤에는 Object 이기 때문)
+```
+
+```python
+class B:
+    def bm(self):
+        print(&#39;b in B&#39;)
+        
+class A(B):
+    def bm(self):
+        print(&#39;b in A&#39;)
+        
+    def am(self):
+        super().bm() # == super(A, self).bm() 작성한 것과 동일
+        # 클래스 안에서 사용하면 자동으로, 속한 클래스와 인스턴스를 인자로 보냄
+```
+
+```python
+instance = A()
+instance.am()
+```
+```python
+=&gt; b in B
+```
+```python
+A.am()
+```
+```python
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-291-bb4ec2b72093&gt; in &lt;module&gt;
+----&gt; 1 A.am()
+
+TypeError: am() missing 1 required positional argument: &#39;self&#39;
+```</pre></noscript>
+<script src="https://gist.github.com/sonypark/e11d1e247b7975c31a894b9981f8e506.js"> </script>
+
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/til/2019/01/15/py-fastcampus01/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/til/2019/01/15/py-fastcampus01/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
   
   <div class="post">
     <h1 class="post-title">
@@ -402,80 +1003,6 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
     </div>
   </div>
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/til/2019/01/10/TIL/">
-        TIL_190110
-      </a>
-    </h1>
-
-    <span class="post-date">10 Jan 2019</span>
-     | 
-    
-    <a href="/blog/tags/#til" class="post-tag">TIL</a>
-    
-    
-
-    <article>
-      <h1 id="오늘-한-일">오늘 한 일</h1>
-
-<ul>
-  <li><a href="https://jekyllrb.com/">jekyll</a> 테마로 깃헙 블로그 론칭. 이거 만드는 데만 이틀을 꼬박 보냈다. 여러 테마를 적용해보며 10번 넘게 설치와 삭제를 반복했다.(예쁘고 맘에 드는 테마일 수록 설정이 복잡하다.. 결국 처음에 고른 가장 간단한 테마로 결정)
-    <ul>
-      <li><a href="https://github.com/codinfox/codinfox-lanyon">codinfox</a> 탬플릿을 사용했다.</li>
-      <li><strong>템플릿과 TIL(Today I Learned) 작성 형식</strong>은 <a href="https://wayhome25.github.io/">초보몽키</a>님의 블로그를 참고했다.</li>
-      <li>TIL을 시작하기로 마음 먹은 것도 초보몽키님의 TIL을 보고 자극을 받았기 때문이다.</li>
-      <li>아직 템플릿과 포스팅이 익숙지 않아서 초보몽키님의 블로그를 참고하며 앞으로도 많이 도움을 받을 것 같다.</li>
-      <li>이곳도 언젠간 누군가에게 도움을 주는 블로그가 되었으면 좋겠다.</li>
-    </ul>
-  </li>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a> 듣기</li>
-  <li>영어공부 : 생활영어 표현 5개 암기 및 영어 작문</li>
-</ul>
-
-<h1 id="느낀점">느낀점</h1>
-
-<ul>
-  <li><strong>너무 조급해 하지 말자. 빨리 가려다 중요한 걸 놓친다.</strong>
-    <ul>
-      <li>공부할 게 많다 보니 조급해진다. 그러다 보니 기초적인 걸 건너뛰고 싶어질 때가 있다. 하지만 기초가 가장 중요하다. 구현에만 급급하지 말고 언어의 구성요소와 작동원리 등도 차근차근 공부하자.</li>
-    </ul>
-  </li>
-  <li><strong>나무보다는 숲을 보자. 정말 중요한 것에 집중하자.</strong>
-    <ul>
-      <li>중심보다 주변적인 것에 시간을 너무 많이 썼다.
-        <ol>
-          <li>깃헙 블로그도 좀 더 멋진 테마를 사용 하고 싶어서 테마를 깔았다 지웠다만 10번을 넘게 했다. 지금 내게 중요한 건 디자인 보다는 내가 공부한 내용을 꾸준히 올리는 것이다.</li>
-          <li>파이썬과 루비를 Atom 에디터를 쓰면 한 번에 실습 가능한데 굳이 jetbrains IDE를 따로따로 설치했다. 앞으로 계속 쓸 IDE 이기 때문에 큰 잘못은 아니지만 지금 내게 필요한 작업을 하는데는 Atom으로 충분했다. 지금 중요한 게 무엇인지 먼저 생각하고 거기에 집중하도록 하자.</li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-  <li><strong>개발자에게 영어란 가장 강력한 무기이다.</strong>
-    <ul>
-      <li>영어를 몰라도 개발을 할 수는 있지만 개발을 통해 더 빨리 더 많은 것을 하기 위해선 영어가 필수이다.</li>
-      <li>특히 공부를 하다 문제가 생겼을 때 해결해줄 수 있는 대부분의 컨텐츠는 영어로 되어있다. 실제로 개발 도중 오류가 나거나 궁금한 게 있을 때 한국어보다 영어 컨텐츠를 통해 해결한 경우가 많다.</li>
-      <li>영어 공부도 개발 공부 못지 않게 매일 꾸준히 해야한다.</li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="내일-할-일">내일 할 일</h1>
-
-<ul>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a> 듣기</li>
-  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
-</ul>
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/til/2019/01/10/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/til/2019/01/10/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
 </div>
 
 <div class="pagination">
@@ -522,6 +1049,6 @@ ga('send', 'pageview');
     
   </body>
   
-  <script id="dsq-count-scr" src="//your_short_name.disqus.com/count.js" async></script>
+  <script id="dsq-count-scr" src="//sonypark-github-io.disqus.com/count.js" async></script>
   
 </html>
