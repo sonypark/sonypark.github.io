@@ -2,9 +2,8 @@
 layout: post
 title: Lv1 - 완주하지 못한 선수 (Python)
 category: Algorithm Test
-permalink: /algorithm/:year/:month/:day/:title/
 
-tags: [알고리즘, python, 파이썬]
+tags: [알고리즘, algorithm, python, 파이썬]
 comments: true
 ---
 > 출처: https://programmers.co.kr/learn/courses/30/lessons/42576
