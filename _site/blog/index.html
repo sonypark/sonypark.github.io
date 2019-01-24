@@ -137,6 +137,15 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
               </a>
           
         
+          
+            
+            
+            
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/categories/#algorithm">
+                Algorithm Test
+              </a>
+          
+        
       </span>
 
     
@@ -192,814 +201,328 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/til/2019/01/15/py-fastcampus01/">
-        패스트캠퍼스_파이썬중급_01
+      <a href="/til/2019/01/24/TIL/">
+        TIL_190124
       </a>
     </h1>
 
-    <span class="post-date">15 Jan 2019</span>
+    <span class="post-date">24 Jan 2019</span>
      | 
+    
+    <a href="/blog/tags/#til" class="post-tag">TIL</a>
+    
+    
+
+    <article>
+      <h1 id="오늘-한-일">오늘 한 일</h1>
+
+<ul>
+  <li><a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 2 공부
+    <ul>
+      <li>람다 함수</li>
+      <li>클로저</li>
+    </ul>
+  </li>
+  <li>알고리즘 문제풀이: <a href="https://programmers.co.kr/learn/courses/30/lessons/42576">Lv1_완주하지못한선수</a></li>
+  <li>패스트캠퍼스 파이썬 4회차 수업</li>
+  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
+</ul>
+
+<h1 id="느낀점">느낀점</h1>
+<ul>
+  <li><a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 2를 완료했다. 책이 꽤 두꺼워서 완독하는데 시간이 좀 걸리지만 그래도 배우는 게 많다.</li>
+  <li>처음으로 알고리즘 문제를 풀어봤다. 가장 쉬운 문제를 푸는데도 시간이 오래 걸렸다.(대략 1시간 반 정도). 다른 사람의 풀이를 보면서 정말 많이 배운다. 내가 전혀 생각하지 못 한 방식으로 더 간결하게 풀이한 코드를 보면서 더 겸손해지고 자극을 받는다.</li>
+  <li>앞으로 꾸준히 알고리즘 문제를 풀 생각이다. 아직 알고리즘 문제풀이에 익숙지 않지만 많이 풀다 보면 익숙해질 날이 올 것이라 생각한다.</li>
+</ul>
+
+<h1 id="내일-할-일">내일 할 일</h1>
+
+<ul>
+  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
+  <li>패스트캠퍼스 수업</li>
+  <li><a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 3 공부</li>
+</ul>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/til/2019/01/24/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/til/2019/01/24/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/algorithm/2019/01/24/AT-list-comparison/">
+        Lv1 - 완주하지 못한 선수 (Python)
+      </a>
+    </h1>
+
+    <span class="post-date">24 Jan 2019</span>
+     | 
+    
+    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
     
     <a href="/blog/tags/#python" class="post-tag">python</a>
     
     <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
     
-    <a href="/blog/tags/#패스트캠퍼스" class="post-tag">패스트캠퍼스</a>
-    
     
 
     <article>
-      <noscript><pre>## break
-- loop문 안을 빠져 나올 때 쓴다
-- break는 loop문 안에서만 사용 가능하다
-```python
-while True:
-    print(&quot;while&quot;)
-    break
-```
-~~~
-=&gt; while   # while 한 번만 출력되고 loop문 끝남
-~~~
-```python
-for i in range(100):
-    print(&#39;for&#39;)
-    break
-```
-~~~
-=&gt; for     # for 한 번만 출력되고 loop문 끝남
-~~~
-
-## continue
-- loop문 안에서 continue를 만나면 다시 loop문 처음으로 돌아간다.
-- continue 밑에 코드는 실행되지 않는다.
-```python
-for i in range(2):
-    print(&#39;top&#39;)
-    continue
-    # 이하 건너 뜀
-    print(&quot;bottom&quot;)
-```
-~~~
-# top 두 번 출력
-=&gt; top
-=&gt; top
-~~~
-
-## else (if, while, for)
-- 조건문에서 쓰인다.
-- if문 뿐 아니라 while, for문에서도 쓰인다.
-```python
-# random.randint(a,b)
-# =&gt; Return a random integer N such that a &lt;= N &lt;= b.
-while random.randint(0,1): # 0(False) 또는 1(True) 리턴
-    print(&#39;while&#39;)
-    # break # =&gt; break가 있다면 여기서 loop문 종료된다.
-else:
-    print(&#39;else&#39;)
-```
-
-- **for문에서 else문은 iterator객체가 모두 소모된 이후에 실행된다**
-```python
-for i in range(3):
-    print(&#39;for&#39;)
-else:
-    print(&#39;else&#39;)
-```
-~~~
-=&gt; for # iterator 객체 3 소모
-=&gt; for
-=&gt; for
-=&gt; else # iterator 객체 소모 된 이후 실행
-~~~
-
-## else with try
-- try문에서 else는 에러가 발생하지 않은 경우에만 실행된다.
-```python
-try:
-    assert random.randint(0, 1)
-    print(&#39;try&#39;)
-except:
-    # 만약 에러가 발생해서 예외처리되면, else구문으로 넘어가지 않고 
-    # except구문에서 종료
-    print(&#39;except&#39;)
-else:
-    print(&#39;else&#39;)
-```
-## finally
-- 무조건 실행된다.
-- 중간에 return이 있어도 finally는 실행된다.
-
-```python
-def a():
-    try:
-        assert random.randint(0, 1)
-        print(&#39;try&#39;)
-        return True
-    except:
-        print(&#39;except&#39;)
-        return False
-    else:
-        print(&#39;else&#39;)
-    finally:
-        print(&#39;finally&#39;)
-        # 에러가 발생했든, 하지 않았든 상관치 않고 실행된다.
-        # 이전에 return으로 함수가 종료되어도 finally는 실행된다.
-```
-
-# 스페셜 메소드
-- 파이썬 내에서 사용되는 프로토콜
-- 객체에 특정 기능을 호출할 때 사용된다.
-
-## 인스턴스 객체 생성
-### instance = Class(1,2)
-
-&gt; **스페셜 메소드 호출 순서**
-&gt;1. `__call__`
-&gt;2. `__new__`
-&gt;3. `__init__`
-
-## `__init__`
-```python
-class A:
-    def __init__(self, a, b):
-        # 인스턴스 생성 후 가장 먼저 실행되는 스페셜 메소드, 인스턴스 초기 설정
-        print(&quot;인스턴스 초기화&quot;)
-        self.a = a
-        self.b = b
-
-=&gt; a = A(1, 2)
-```
-## `__new__`
-- instance를 생성하는 생성자 역할
-- class를 인자값으로 받아 instance를 만든다
-- 오버라이딩 하는 경우 `object에 구현된 __new__`를 이용해서 instance를 만든다.
-
-
-```python
-class B:
-    def __new__(cls): #self가 아닌 cls를 사용한다. 아직 인스턴스가 생성되지 않은 상태이기 때문에. class를 인자로 받는다.
-        print(&quot;인스턴스를 만듭니다.&quot;)
-        print(cls)
-        # return 1 # 이라고 작성하면 B클래스를 호출하면 항상 1을 리턴한다.
-        return super().__new__(cls)
-```
-```python
-b = B()
-```
-```python
-=&gt; 인스턴스를 만듭니다.
-=&gt; &lt;class &#39;__main__.B&#39;&gt;
-```
-
-## `__call__`
-```python
-class C:
-    def __call__(self, *args):
-        print(&quot;호출&quot;)
-```
-```python
-# 인스턴스를 호출할때 -&gt; 즉 괄호`()`를 열고 닫을때 실행되는 메소드
-c = C()
-c()
-```
-```python
-=&gt; 호출
-```
-
-## 질문1
-&gt; - 위 `__new__`, `__call__` 예시에서
-&gt; - b = B()를 선언하면 `def __new__(cls)` 이 실행되는데
-&gt; - c = C()를 선언한 이후에 c()를 입력해야 `def __call__(self, *args)` 이 실행됩니다.
-&gt; - 그 이유가 무엇인가요?
-
-
-~~~
-클래스를 호출할때 실행되는 `__call__` 스페셜 메소드는 어디에 있을까?
-=&gt; 클래스를 만드는 메타클래스인 `type`클래스에 있는 `__call__`을 호출함
-~~~
-```python
-type(C) # 클래스의 type 확인 / 즉 C class 객체를 생성한 클래스를 확인
-```
-
-```python
-=&gt;type
-```
-
-## 커스텀 메타 클레스 만들기
-```python
-class TypeClass(type):
-    def __call__(cls, *args):
-        print(&#39;call&#39;)
-        instance = cls.__new__(cls)
-        instance.__init__(*args)
-        return instance
-```
-
-
-
-## 질문2
-&gt; - instance = `cls.__new__(cls)`
-&gt; - 이 부분의 의미를 잘 모르겠습니다.
-&gt; - TypeClass(type) 안에는 `__new__(cls)`라는 함수가 존재하지 않는데 어떻게 이렇게 선언할 수 있나요?
-&gt; - instance = `cls.__new__(cls)`
-&gt; - instance.`__init__(*args)`
-&gt; - 이 두 부분에 대해 설명 부탁드립니다.
-
-
-
-## 커스텀 메타클래스 적용시키는 방법
-- class A(metaclass=TypeClass): in v3
-
-```python
-class A(metaclass=TypeClass):
-    def __new__(cls):
-        print(&#39;new&#39;)
-        return super().__new__(cls)
-    
-    def __init__(self, x, y, z):
-        print(&#39;init&#39;)
-        self.x = x
-        self.y = y
-        self.z = z
-```
-
-
-## 질문3
-&gt; - `return super().__new__(cls)`
-&gt; - 이 부분이 의미하는 바를 정확히 모르겠습니다.
-&gt; - 저 부분을 return함으로서 생기는 결과가 무엇인가요?
-
-
-```python
-instance = A(1, 2, 3)
-```
-```python
-# 순서대로 호출
-=&gt; call
-=&gt; new
-=&gt; init
-```
-
-
-
-## 싱글턴
-- 최초에 생성한 인스턴스만 리턴해주는 클래스
-```python
-class St:
-    def __new__(cls):
-        if not hasattr(cls, &#39;instance&#39;):
-            cls.instance = super().__new__(cls)
-        return cls.instance
-```
-```python
-St() is St()
-```
-```python
-=&gt; True
-```
-
-
-## 질문4
-&gt; - 싱글턴
-&gt; - 싱글턴을 설명하는 위의 코드가 잘 이해되지 않습니다.
-&gt; - return에 `super().__new__(cls)` 로 쓸 때와의 차이점은 무엇인가요?
-&gt; - 싱글턴을 사용하는 상황과 예시는 어떤 게 있나요?
-
-
-## with(context 관리)
-~~~
-with -&gt; &#39;__enter__&#39;, &#39;__exit__&#39; 순으로 진행된다.
-시작할 때 enter, 끝날 때 exit 가 실행된다. 
-
-__enter__ : with구문 시작할때,
-__exit__: with구문 (들여쓰기가) 끝날때
-
-파일을 열 때 with을 쓰는 이유는 __exit__ 부분에서 f.close를 자동으로 해주기 때문이다.
-~~~
-
-```python
-class Context:
-    def __enter__(self):
-        print(&quot;__enter__&quot;)
-        return self
-    
-    def __exit__(self, *args):
-        print(&#39;exit&#39;)
-```
-```python
-c = Context()
-```
-```python
-with c: # __enter__
-    with c: # __enter__
-        with c: # __enter__
-            pass # __exit__
-        pass # __exit__
-    pass # __exit__
-
-```
-```python
-=&gt; __enter__
-=&gt; __enter__
-=&gt; __enter__
-=&gt; exit
-=&gt; exit
-=&gt; exit
-```
-
-```python
-f = open(&quot;./test.txt&quot;, &#39;w&#39;)
-hasattr(f, &#39;__enter__&#39;), hasattr(f, &#39;__exit__&#39;)
-```
-```python
-=&gt; (True, True)
-```
-```python
-f.close()
-f.closed 
-```
-```python
-=&gt; True
-```
-```python
-c = Context()
-with c:
-    pass
---------------------
-with Context() as c:
-    pass
-    
-는 동일한 실행 방법이다
-```
-
-##### 파일래퍼객체에는 with구문안에서 사용될 수 있도록 스페셜 메소드가 구현되어 있다.
-```python
-f = open(&quot;./test.txt&quot;, &#39;w&#39;)
-hasattr(f, &#39;__enter__&#39;), hasattr(f, &#39;__exit__&#39;)
-```
-```python
-=&gt; (True, True)
-# __exit__메소드가 실행될 때, .close()메소드가 실행되서 파일io를 종료한다.
-```
-
-----
-
-## `__exit__` 스페셜 메소드에 들어오는 인자는??
-
-### `def __exit__(self, error_type, error, traceback):`
-
-`error_type` : with구문 안에서 발생한 에러의 클래스
-
-`error`: with구문 안에서 발생한 에러의 인스턴스
-
-`traceback`: with구문 안에서 발생한 에러의 traceback
-
-&gt; traceback은 추후에 수업 예정
-
-
-
-이러한 인자를 받기 때문에,     
-with구문 안에서 에러가 발생한 경우에 대처할 수 있게 된다.
-
-
-만약 에러가 발생하지 않으면 `None, None, None`이 들어온다
-
-
-```python
-class Context:
-    def __enter__(self):
-        print(&quot;__enter__&quot;)
-        return self
-    
-    def __exit__(self, error_cls, error_instance, traceback):
-        print(&#39;exit&#39;)
-```
-
-```python
-c = Context()
-```
-
-```python
-with c:
-    raise IndexError(&quot;인스턴스입니다.&quot;)
-```
-```python
-__enter__
-exit
-(&lt;class &#39;IndexError&#39;&gt;, IndexError(&#39;인스턴스입니다.&#39;), &lt;traceback object at 0x1083c5dc8&gt;)
----------------------------------------------------------------------------
-IndexError                                Traceback (most recent call last)
-&lt;ipython-input-150-68d46299f410&gt; in &lt;module&gt;
-      1 with c:
-----&gt; 2     raise IndexError(&quot;인스턴스입니다.&quot;)
-
-IndexError: 인스턴스입니다.
-```
-
-## with 활용 2
-
-`python trick` 책에서 나온 예제.
-
-참고주소 : https://realpython.com/
-&gt; 메일링 서비스 신청하면 좋습니다. 좋은 주제 많이 이야기하는 파이썬 블로그입니다. (현솔 강사님 추천)
-
-```python
-class Indenter:
-    def __init__(self):
-        self.level = 0
-        
-    def __enter__(self):
-        self.level += 1
-        return self
-    
-    def __exit__(self, *args):
-        self.level -= 1
-        
-    def print(self, text):
-        print(&quot;    &quot; * self.level + text)
-```
-```python
-with Indenter() as indent:
-    indent.print(&quot;hi&quot;)
-    with indent:
-        indent.print(&quot;hello&quot;)
-        with indent:
-            indent.print(&#39;안녕하세요&#39;)
-        indent.print(&#39;bye&#39;)
-    indent.print(&quot;quit&quot;)
-```
-~~~
-    hi
-        hello
-            안녕하세요
-        bye
-    quit
-~~~
-
-# 자료구조(tuple, list, dict, set, str)
-- 2 종류의 추상클래스로 묶어서 이해하기
-- Container 와 Sequence(Container + 순서 정보)
-
-## Container
-- __contains__ 가 구현되어 있는 객체
-- __contains__를 함수가 아닌 상수로 선언해도 Container로 인지한다.
-~~~
-class MC:
-    def __contains__(self, value):
-        return True
-    
-    # __contains__ = 1  # 메소드가 아닌 경우에도 Container객체라고 판단함.
-~~~
-```python
-issubclass(MC, Container)
-```
-```python
-=&gt; True
-```
-## Container의 특징
-#### in ( not in ) : 포함 여부
-#### len : 길이
-#### max,min : 최대값, 최소값
-
-## Sequence
-- container + 순서
-
-## Sequence 특징
-#### 더하기 연산 +
-
-```
-[1, 2, 3] + [4, 5, 6]
-=&gt; [1, 2, 3, 4, 5, 6]
-```
-#### 곱하기 연산 (* n)
-
-```
-[1, 2] * 10
-=&gt; [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
-```
-#### indexing 색인
-
-```
-[1, 2, 3][0]
-=&gt; 1
-```
-#### slice
-
-```
-a = [1, 2, 3, 4]
-a[1:3] #  == a[slice(1, 3)] 슬라이스객체로 인덱싱하는것이랑 동일
-```
-
-## super 클래스
-
-```python
-class Z:
-    def a(self):
-        print(&quot;a in Z&quot;, self)
-        
-class A(Z):
-    def a(self):
-        print(&quot;a in A&quot;, self)
-        
-        
-class C:
-    def a(self):
-        print(&quot;a in C&quot;, self)
-        
-        
-class B(A, C):
-    def a(self):
-        print(&quot;a in B&quot;, self)  
-
-```
-
-```python
-B.mro()
-```
-```python
-[__main__.B, __main__.A, __main__.Z, __main__.C, object]
-```
-```python
-b = B()
-b.a() # B.mro() 순서대로 메소드를 탐색해서 실행시킴
-```
-
-```python
-=&gt; a in B &lt;__main__.B object at 0x108445c18&gt;
-```
-
-## super(기준 클래스, 인스턴스)
-- 기준 클래스는 무시 -&gt; mro 기준 다음 클래스부터 탐색
-
-```python
-super(B, b).a()
-```
-```python
-=&gt; a in A &lt;__main__.B object at 0x108420dd8&gt;
-```
-```python
-B.mro()
-```
-```python
-==&gt; [__main__.B, __main__.A, __main__.Z, __main__.C, object]
-```
-```python
-super(B, b).a()
-```
-```python
-==&gt; a in A &lt;__main__.B object at 0x108420dd8&gt;
-```
-```python
-super(A, b).a()
-```
-```python
-==&gt; a in Z &lt;__main__.B object at 0x108420dd8&gt;
-```
-```python
-super(C, b).a()
-```
-```python
-==&gt; Error   #(C 뒤에는 Object 이기 때문)
-```
-
-```python
-class B:
-    def bm(self):
-        print(&#39;b in B&#39;)
-        
-class A(B):
-    def bm(self):
-        print(&#39;b in A&#39;)
-        
-    def am(self):
-        super().bm() # == super(A, self).bm() 작성한 것과 동일
-        # 클래스 안에서 사용하면 자동으로, 속한 클래스와 인스턴스를 인자로 보냄
-```
-
-```python
-instance = A()
-instance.am()
-```
-```python
-=&gt; b in B
-```
-```python
-A.am()
-```
-```python
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-&lt;ipython-input-291-bb4ec2b72093&gt; in &lt;module&gt;
-----&gt; 1 A.am()
-
-TypeError: am() missing 1 required positional argument: &#39;self&#39;
-```</pre></noscript>
-<script src="https://gist.github.com/sonypark/e11d1e247b7975c31a894b9981f8e506.js"> </script>
-
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/til/2019/01/15/py-fastcampus01/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/til/2019/01/15/py-fastcampus01/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/til/2019/01/14/TIL/">
-        TIL_190114
-      </a>
-    </h1>
-
-    <span class="post-date">14 Jan 2019</span>
-     | 
-    
-    <a href="/blog/tags/#til" class="post-tag">TIL</a>
-    
-    
-
-    <article>
-      <h1 id="오늘-한-일">오늘 한 일</h1>
-
+      <blockquote>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/42576</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>수 많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.
+마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.</p>
+
+<h4 id="제한사항">제한사항</h4>
 <ul>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a> 완강</li>
-  <li>깃헙 블로그 재설치</li>
+  <li>마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.</li>
+  <li>completion의 길이는 participant의 길이보다 1 작습니다.</li>
+  <li>참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다.</li>
+  <li>참가자 중에는 동명이인이 있을 수 있습니다.</li>
 </ul>
 
-<h1 id="느낀점">느낀점</h1>
+<h4 id="예시">예시</h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">participant</span> <span class="o">=</span> <span class="p">[</span><span class="n">mislav</span><span class="p">,</span> <span class="n">stanko</span><span class="p">,</span> <span class="n">mislav</span><span class="p">,</span> <span class="n">ana</span><span class="p">]</span>
+<span class="n">completion</span>	<span class="o">=</span> <span class="p">[</span><span class="n">stanko</span><span class="p">,</span> <span class="n">ana</span><span class="p">,</span> <span class="n">mislav</span><span class="p">]</span>
 
-<ul>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a>를 완강했다. 예전에 필요해서 공부한 경험이 있었지만 이번 기회에 기초 지식을 좀 더 단단히 할 수 있었다. 수업을 들으며 그 동안 가졌더 의문이 많이 해결 되었다.</li>
-  <li>실수로 깃헙 블로그 데이터를 모두 날렸다. 블로그 수정을 하려다 git push를 잘 못 했고 그 걸 되돌리려다 완전히 다 날려버렸다. 그래서 처음부터 다시 깔았다.. 불행 중 다행인 건 그 동안 게시했던 포스팅(얼마 없지만..)은 따로 백업해두었다는 것이었다. 아직 git 명령어에 익숙지 않아 자칫 하면 데이터를 크게 날릴 위험이 있다. 앞으로는 git 공부도 열심히 해야겠다.</li>
-  <li>블로그 시작 초반이고 포스팅이 몇 개 없어서 망정이지 그렇지 않았다면 엄청난 멘붕에 휩싸였을 것 같다. 오늘 일을 교훈 삼아 앞으로 더 주의하자.</li>
-  <li>강제 푸시(git push –force)는 정말 위험하다..
-    <h1 id="내일-할-일">내일 할 일</h1>
-  </li>
-  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
-  <li>파이썬 교재 1독(복습) - 점프투파이썬</li>
-</ul>
+<span class="o">=&gt;</span> <span class="n">mislav</span>   <span class="c1"># mislav는 동명이인, 완주자 명단에는 한 명밖에 없기 때문에 한 명은 완주하지 못함.
+</span></code></pre></div></div>
 
-    <article>
-    <div class="post-more">
-      
-      <a href="/til/2019/01/14/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/til/2019/01/14/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/til/2019/01/13/TIL/">
-        TIL_190113
-      </a>
-    </h1>
+<h2 id="풀이">풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span> <span class="n">completion</span><span class="p">):</span>
+    <span class="c1"># 이름을 오름차순으로 정렬
+</span>    <span class="n">participant</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">completion</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 
-    <span class="post-date">13 Jan 2019</span>
-     | 
-    
-    <a href="/blog/tags/#til" class="post-tag">TIL</a>
-    
-    
+    <span class="c1"># 동명이인 중에 완주 못한 사람 체크
+</span>    <span class="k">for</span> <span class="n">p</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span> <span class="n">completion</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">p</span> <span class="o">!=</span> <span class="n">c</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">p</span>
 
-    <article>
-      <h1 id="오늘-한-일">오늘 한 일</h1>
-
-<ul>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a> 수강</li>
-  <li>영어공부 : 생활영어 표현 5개 암기 및 영어 작문</li>
-</ul>
-
-<h1 id="느낀점">느낀점</h1>
-
-<ul>
-  <li>파이썬을 제대로 공부한 적이 없어서 그런지 생활코딩, 패스트캠퍼스의 파이썬 강의를 통해 많이 배운다.</li>
-  <li>이전에는 딥러닝을 공부하면서 Scrapy 크롤링이나 CNN 모델을 테스트 하기 위해 그 때 그 때 필요한 부분만 찾아서 공부했다. 그래서 파이썬 언어의 기본 문법이나 구조를 제대로 알지 못하고 사용했다. (<code class="highlighter-rouge">__init__</code>, <code class="highlighter-rouge">self</code>, <code class="highlighter-rouge">yield</code> 등)</li>
-  <li>파이썬을 처음부터 다시 공부하면서 객체 지향 프로그래밍에 대해서도 다시 한 번 되짚어 볼 수 있어 좋다.</li>
-  <li>오늘은 좀 게으름을 피웠다. 일요일이라 그런지 좀 쉬고 싶은 마음도 있었다. 내일부터는 다시 부지런히 공부해야겠다.</li>
-</ul>
-
-<h1 id="내일-할-일">내일 할 일</h1>
-
-<ul>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a> 듣기</li>
-  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
-  <li>파이썬 교재 1독(복습) - 점프투파이썬</li>
-</ul>
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/til/2019/01/13/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/til/2019/01/13/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/til/2019/01/12/TIL/">
-        TIL_190112
-      </a>
-    </h1>
-
-    <span class="post-date">12 Jan 2019</span>
-     | 
-    
-    <a href="/blog/tags/#til" class="post-tag">TIL</a>
-    
-    
-
-    <article>
-      <h1 id="오늘-한-일">오늘 한 일</h1>
-
-<ul>
-  <li>패스트캠퍼스 파이썬 중급 강의 첫 수업 수강</li>
-  <li>수업 내용 복습 : <a href="https://gist.github.com/sonypark/e11d1e247b7975c31a894b9981f8e506">gist.github.com</a>에 업로드</li>
-  <li>영어공부 : 생활영어 표현 5개 암기 및 영어 작문</li>
-</ul>
-
-<h1 id="느낀점">느낀점</h1>
-
-<ul>
-  <li>나는 그 동안 파이썬의 10%도 사용하지 못 하고 있었다.</li>
-  <li>수업 듣길 잘 했다.</li>
-  <li>markdown 문법에 조금씩 익숙해지고 있다. Github page 와 gist 를 시작하길 잘 한 것 같다.</li>
-  <li>앞으로 파이썬 강의 내용을 복습한 후 gist에 올리고 그 중에서 특히 도움이 되는 내용은 Github page에 올리자</li>
-</ul>
-
-<h1 id="내일-할-일">내일 할 일</h1>
-
-<ul>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a> 듣기</li>
-  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
-  <li>파이썬 교재 1독(복습) - 점프투파이썬</li>
-</ul>
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/til/2019/01/12/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/til/2019/01/12/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/til/2019/01/11/TIL-02/">
-        TIL_190111
-      </a>
-    </h1>
-
-    <span class="post-date">11 Jan 2019</span>
-     | 
-    
-    <a href="/blog/tags/#til" class="post-tag">TIL</a>
-    
-    
-
-    <article>
-      <h1 id="오늘-한-일">오늘 한 일</h1>
-
-<ul>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a> 듣기</li>
-  <li>영어공부 : 생활영어 표현 5개 암기 및 영어 작문</li>
-</ul>
-
-<h1 id="느낀점">느낀점</h1>
-
-<ul>
-  <li><strong>주석을 달 때 규칙</strong>
-    <blockquote>
-      <ol>
-        <li><strong>간결하면서 이해하기 쉽게 달 것</strong></li>
-        <li><strong>주석을 달 필요 없는 코드를 작성할 것</strong></li>
-      </ol>
-    </blockquote>
-  </li>
-</ul>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> - 코드만 보고도 이해 할 수 있게 작성하는 게 중요하다
- - 최고의 주석은 '주석이 필요 없는 코드'이다.
+    <span class="c1"># 동명이인이고 완주를 하지 못했으나 이름 상 제일 뒤에 있는 사람인 경우 체크
+</span>    <span class="c1"># 예시) 정렬된 후의 변수가 
+</span>    <span class="c1"># participant['a', 'b', 'b', 'z', 'z'], completion['a', 'b', 'b', 'z'] 인 경우
+</span>    <span class="k">return</span> <span class="n">participant</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div></div>
 
+<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">collections</span>
+
+<span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span> <span class="n">completion</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">participant</span><span class="p">)</span> <span class="o">-</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">completion</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">answer</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h2 id="배운점">배운점</h2>
+<ul>
+  <li>다른 사람의 풀이를 보고 Counter 함수에 대해 알게 되었다.</li>
+  <li>Counter 함수는 리스트 안의 객체를 key값으로 객체의 갯수를 value값으로 해서 컨테이너로 만들어준다.</li>
+  <li>Counter 객체는 서로 더하기 빼기가 가능하다.</li>
+</ul>
+
+<h2 id="느낀점">느낀점</h2>
+<ul>
+  <li>처음으로 알고리즘 문제를 풀어봤다.</li>
+  <li>가장 쉬운 단계임에도 푸는데 시간이 꽤 걸렸다.</li>
+  <li>다른 사람의 문제풀이를 보며 많이 배웠다.</li>
+  <li>파이썬의 간결함에 놀랐다. (아는 만큼 보인다.)</li>
+</ul>
+
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/algorithm/2019/01/24/AT-list-comparison/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/algorithm/2019/01/24/AT-list-comparison/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/til/2019/01/23/TIL/">
+        TIL_190123
+      </a>
+    </h1>
+
+    <span class="post-date">23 Jan 2019</span>
+     | 
+    
+    <a href="/blog/tags/#til" class="post-tag">TIL</a>
+    
+    
+
+    <article>
+      <h1 id="오늘-한-일">오늘 한 일</h1>
+
+<ul>
+  <li><a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 2 공부
+    <ul>
+      <li>세트(set) 사용하기</li>
+      <li>파일 사용하기</li>
+      <li>회문 판별과 N-gram 만들기</li>
+      <li>함수 사용하기</li>
+      <li>함수에서 위치 인수와 키워드 인수 사용하기</li>
+      <li>재귀함수</li>
+    </ul>
+  </li>
+  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
+</ul>
+
+<h1 id="느낀점">느낀점</h1>
+<ul>
+  <li>내일이면 - <a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 2가 끝나고 part 3로 들어갈 거 같다. 이번 주 안으로 완독하는 것을 목표로 하자.</li>
+</ul>
+
 <h1 id="내일-할-일">내일 할 일</h1>
 
 <ul>
-  <li>패스트캠퍼스 파이썬 강의 첫 수업</li>
-  <li>생활코딩 <a href="https://opentutorials.org/course/1750">Python&amp;Ruby 강의</a> 듣기</li>
   <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
+  <li>패스트캠퍼스 수업</li>
+  <li><a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 2 공부</li>
 </ul>
 
     <article>
     <div class="post-more">
       
-      <a href="/til/2019/01/11/TIL-02/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      <a href="/til/2019/01/23/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
       
-      <a href="/til/2019/01/11/TIL-02/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+      <a href="/til/2019/01/23/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/til/2019/01/22/TIL/">
+        TIL_190122
+      </a>
+    </h1>
+
+    <span class="post-date">22 Jan 2019</span>
+     | 
+    
+    <a href="/blog/tags/#til" class="post-tag">TIL</a>
+    
+    
+
+    <article>
+      <h1 id="오늘-한-일">오늘 한 일</h1>
+
+<ul>
+  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
+</ul>
+
+<h1 id="느낀점">느낀점</h1>
+<ul>
+  <li>오늘은 집안일을 도울 게 있어서 개발 공부에 시간을 많이 쏟지 못했다. 그래도 필요할 때 도움이 될 수 있어 뿌듯했다.</li>
+  <li>내일부터 다시 공부 시작이다 :)</li>
+</ul>
+
+<h1 id="내일-할-일">내일 할 일</h1>
+
+<ul>
+  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
+  <li><a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 2 공부</li>
+</ul>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/til/2019/01/22/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/til/2019/01/22/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/til/2019/01/21/TIL/">
+        TIL_190121
+      </a>
+    </h1>
+
+    <span class="post-date">21 Jan 2019</span>
+     | 
+    
+    <a href="/blog/tags/#til" class="post-tag">TIL</a>
+    
+    
+
+    <article>
+      <h1 id="오늘-한-일">오늘 한 일</h1>
+
+<ul>
+  <li>패스트캠퍼스 파이썬 중급 강의 세 번째 수업 정리 및 복습</li>
+  <li><a href="https://gist.github.com/sonypark/25b5be822b6c0772d7ac0470eedee4ef">gist.github.com</a>에 업로드
+    <ul>
+      <li>1급객체 함수</li>
+      <li>재귀호출</li>
+      <li>멀티플 디스패치 처리</li>
+      <li>함수형 처리 함수</li>
+    </ul>
+  </li>
+  <li><a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 2 공부
+    <ul>
+      <li>문자열 응용하기</li>
+      <li>딕셔너리 응용하기</li>
+    </ul>
+  </li>
+  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
+</ul>
+
+<h1 id="느낀점">느낀점</h1>
+<ul>
+  <li>하용호님이 공유해주신 <a href="https://drive.google.com/file/d/1uQ5VOXBNk_Nf6V5JUXhKl2pHZY5N1wA4/view?usp=drive_open">발표의 정석</a>을 보고 큰 감명을 받았다.</li>
+  <li>평소에 <a href="https://www.slideshare.net/yongho?utm_campaign=profiletracking&amp;utm_medium=sssite&amp;utm_source=ssslideview">하용호님의 SlideShare</a>에서 ppt를 보고 이 분 설명 참 잘 하신다라고 느꼈다. 하용호님의 ppt를 보고 있으면 눈 앞에서 발표를 듣고 있는 느낌이다. 글자가 아닌 음성이 들린다. ppt만 봐도 이 정도인데 실제로 발표를 들으면 얼마나 재미있을까라는 생각이 든다.</li>
+  <li><a href="https://drive.google.com/file/d/1uQ5VOXBNk_Nf6V5JUXhKl2pHZY5N1wA4/view?usp=drive_open">발표의 정석</a>에는 발표를 잘하면 무엇이 좋은지, 어떻게 하면 발표를 잘 할 수 있는지에 대한 하용호님의 경험과 노하우가 고스란히 들어있다.</li>
+</ul>
+
+<hr />
+
+<h3 id="-발표의-정석-내용-중-">– <a href="https://drive.google.com/file/d/1uQ5VOXBNk_Nf6V5JUXhKl2pHZY5N1wA4/view?usp=drive_open">발표의 정석</a> 내용 중 –</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>나비가 아니라면 꽃이 되면 된다.
+
+발표는 꽃이 되는 방법. 그러면 기회가 내게로 온다.
+</code></pre></div></div>
+
+<h2 id="발표는-성장과-기회를-가져다-준다">발표는 <code class="highlighter-rouge">성장</code>과 <code class="highlighter-rouge">기회</code>를 가져다 준다.</h2>
+
+<blockquote>
+  <p><strong>성장</strong>: <code class="highlighter-rouge">머릿속에 파편화 되어있던 지식을 정말 나의 지식으로 만드는 시간</code></p>
+  <ul>
+    <li>내 발표를 듣는 첫번째 청중은 나 자신이다. 내가 가장 많이 배운다.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <p><strong>기회</strong>: <code class="highlighter-rouge">내가 무엇을 알고 있고, 내가 무엇을 하고 있는지 알리는 시간</code></p>
+  <ul>
+    <li>오늘 이 강의장에서의 누군가가 나중에 나에게 큰 기회를 가져다 준다.</li>
+  </ul>
+</blockquote>
+
+<hr />
+
+<h1 id="내일-할-일">내일 할 일</h1>
+
+<ul>
+  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
+  <li><a href="https://dojang.io/course/view.php?id=7">파이썬코딩도장</a> part 2 공부</li>
+</ul>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/til/2019/01/21/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/til/2019/01/21/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div>
   </div>
   
