@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lv1 - 완주하지 못한 선수
+title: Lv1 - 완주하지 못한 선수 (Python)
 category: Algorithm Test
 permalink: /algorithm/:year/:month/:day/:title/
 
