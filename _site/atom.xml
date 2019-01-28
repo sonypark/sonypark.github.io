@@ -4,7 +4,7 @@
  <title>SONY_DEV</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-01-24T17:45:37+09:00</updated>
+ <updated>2019-01-24T18:21:30+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>sonypark</name>
@@ -50,9 +50,9 @@
  
  <entry>
    <title>Lv1 - 완주하지 못한 선수 (Python)</title>
-   <link href="http://localhost:4000/algorithm/2019/01/24/AT-list-comparison/"/>
+   <link href="http://localhost:4000/algorithm%20test/2019/01/24/AT-list-comparison/"/>
    <updated>2019-01-24T00:00:00+09:00</updated>
-   <id>http://localhost:4000/algorithm/2019/01/24/AT-list comparison</id>
+   <id>http://localhost:4000/algorithm%20test/2019/01/24/AT-list comparison</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;출처: https://programmers.co.kr/learn/courses/30/lessons/42576&lt;/p&gt;
 &lt;/blockquote&gt;
