@@ -20,8 +20,8 @@ comments: true
 
 #### 예시
 ```python
-participant = [mislav, stanko, mislav, ana]
-completion	= [stanko, ana, mislav]
+participant= [mislav, stanko, mislav, ana]
+completion= [stanko, ana, mislav]
 
 => mislav   # mislav는 동명이인, 완주자 명단에는 한 명밖에 없기 때문에 한 명은 완주하지 못함.
 ```
