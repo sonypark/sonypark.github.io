@@ -41,7 +41,7 @@ nav:
     - '/blog/'
     - { TIL (Today I Learned): '/blog/categories/#til' }  
     - { python: '/blog/categories/#python' }
-    - { Algorithm Test: '/blog/categories/#algorithm' }
+    - { Algorithm Test: '/blog/categories/#Algorithm-Test' }
 
       # - { Tags: '/blog/tags/' }
   About:          
