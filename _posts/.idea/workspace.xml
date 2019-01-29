@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2e81191-1abb-4ec8-aff6-ce179fc05a3d" name="Default Changelist" comment="" />
+    <list default="true" id="c2e81191-1abb-4ec8-aff6-ce179fc05a3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,18 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-01-24-AT-list comparison.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="459">
-                <caret line="27" selection-start-line="27" selection-end-line="27" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-24-TIL.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -70,12 +60,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-28-TIL.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="272">
-                <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <first_editor relative-caret-position="578">
+                <caret line="34" selection-start-line="34" selection-end-line="34" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-29-TIL.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="408">
+                <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
               </first_editor>
               <second_editor />
             </state>
@@ -173,6 +175,7 @@
         <option value="$PROJECT_DIR$/Algorithm_Test/2019-01-24-AT-list comparison.md" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-27-TIL.md" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-28-TIL.md" />
+        <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-29-TIL.md" />
       </list>
     </option>
   </component>
@@ -242,14 +245,14 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
-      <recent name="$PROJECT_DIR$/TIL(Today I Learned)" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
       <recent name="$PROJECT_DIR$/Algorithm_Test" />
       <recent name="$PROJECT_DIR$/python" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
+      <recent name="$PROJECT_DIR$/TIL(Today I Learned)" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -312,16 +315,19 @@
       <workItem from="1548319779350" duration="1007000" />
       <workItem from="1548493094480" duration="319000" />
       <workItem from="1548645558427" duration="1307000" />
+      <workItem from="1548667345512" duration="95000" />
+      <workItem from="1548770215113" duration="809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28282000" />
+    <option name="totallyTimeSpent" value="29186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34120172" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20314735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -549,6 +555,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-01-24-AT-list comparison.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="459">
+            <caret line="27" selection-start-line="27" selection-end-line="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-24-TIL.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -564,6 +580,26 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="255">
             <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-26-TIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="459">
+            <caret line="27" selection-start-line="27" selection-end-line="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-27-TIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           </first_editor>
           <second_editor />
         </state>
@@ -606,41 +642,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-01-24-AT-list comparison.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="27" selection-start-line="27" selection-end-line="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-26-TIL.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="27" selection-start-line="27" selection-end-line="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-27-TIL.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-28-TIL.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <first_editor relative-caret-position="578">
+            <caret line="34" selection-start-line="34" selection-end-line="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-29-TIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="408">
+            <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
           </first_editor>
           <second_editor />
         </state>
