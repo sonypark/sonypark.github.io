@@ -4,13 +4,46 @@
  <title>SONY_DEV</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-01-31T18:19:07+09:00</updated>
+ <updated>2019-02-02T11:39:49+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>sonypark</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>TIL_190201</title>
+   <link href="http://localhost:4000/til/2019/02/01/TIL/"/>
+   <updated>2019-02-01T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/02/01/TIL</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;알고리즘 문제풀이: &lt;a href=&quot;http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;amp;ejkGb=KOR&amp;amp;barcode=9788966263080&amp;amp;orderClick=JAj&quot;&gt;코딩인터뷰완전분석&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;배열과 문자열&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;1.5 하나 빼기&lt;/li&gt;
+      &lt;li&gt;1.6 문자열 압축&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;혼자 공부하는 것보다 함께하는 게 더 좋다. 혼자하면 안 보이던 부분이 함께 공부하는 친구의 눈으로 보면 보인다. 어느 정도의 고민은 필요하지만 그 이상의 고민은 불필요할 때가 많다. 함께 공부하면 그런 불필요한 고민에서 빨리 빠져나올 수 있다.&lt;/li&gt;
+  &lt;li&gt;결론, 알고리즘 스터디를 하기 잘 한 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+  &lt;li&gt;알고리즘 공부&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>TIL_190131</title>
@@ -34,10 +67,8 @@
 
 &lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;어제 밤부터 컨디션이 너무 안 좋았다. 뒷목과 어깨가 뻐근하고 어지럼증이 심했다. 속도 안 좋아 밤잠을 설쳤다. 새벽에도 몇 번씩 깼다.&lt;/li&gt;
-  &lt;li&gt;아침에 일어나니 많이 나아졌지만 목과 어깨가 여전히 굳어있었다. 한의원에 가서 침을 맞고 왔다.&lt;/li&gt;
-  &lt;li&gt;아무래도 매일 앉아서 노트북을 하는 시간이 많다보니 목에 무리가 온 것 같다. 노트북 화면의 위치가 낮다보니 거북목이 되는 등 자세 흐트러짐이 심하다&lt;/li&gt;
-  &lt;li&gt;고민끝에 노트북 거치대를 주문했다. 하루 중 대부분의 시간을 컴퓨터 앞에 앉아 보내는데 이제는 자세도 신경을 써야겠다.&lt;/li&gt;
+  &lt;li&gt;어제 밤부터 컨디션이 너무 안 좋았다. 뒷목과 어깨가 뻐근하고 어지럼증이 심했다. 속도 안 좋아 밤잠을 설쳤다. 새벽에도 몇 번씩 깼다. 아침에 일어나니 많이 나아졌지만 목과 어깨가 여전히 굳어있었다. 한의원에 가서 침을 맞고 왔다.&lt;/li&gt;
+  &lt;li&gt;아무래도 매일 앉아서 노트북을 하는 시간이 많다보니 목에 무리가 온 것 같다. 노트북 화면의 위치가 낮다보니 거북목이 되는 등 자세 흐트러짐이 심하다. 고민끝에 노트북 거치대를 주문했다. 하루 중 대부분의 시간을 컴퓨터 앞에 앉아 보내는데 이제는 자세도 신경을 써야겠다.&lt;/li&gt;
   &lt;li&gt;몸이 아프면 정말 아무것도 못한다. 건강 관리도 실력이다. 스트레칭과 자세 교정도 틈틈이 하자.&lt;/li&gt;
   &lt;li&gt;알고리즘 책을 보며 공부하고 있는데 재미있다. 특히 예전에 풀었던 문제풀이 방식을 응용하여 풀었을 때 기분이 좋다.&lt;/li&gt;
 &lt;/ul&gt;
