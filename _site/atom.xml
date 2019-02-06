@@ -4,13 +4,443 @@
  <title>SONY_DEV</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-02-02T11:39:49+09:00</updated>
+ <updated>2019-02-06T21:52:38+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>sonypark</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>박종천님 청춘특강</title>
+   <link href="http://localhost:4000/etc/2019/02/06/etc-lecture01_JCP/"/>
+   <updated>2019-02-06T00:00:00+09:00</updated>
+   <id>http://localhost:4000/etc/2019/02/06/etc-lecture01_JCP</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;출처: &lt;a href=&quot;https://www.youtube.com/watch?v=Ve-yWkrV29c&quot;&gt;[YCM] 제 1회 “끌리면 오라: 청춘특강” - 박종천 강사님&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;아래 내용은 위의 강의를 요약 정리한 내용입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;사람들은-나에게-왜-블리자드를-나왔냐고-묻는다&quot;&gt;사람들은 나에게 왜 블리자드를 나왔냐고 묻는다&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;사실 블리자드는 좋다&lt;/li&gt;
+  &lt;li&gt;연봉도 높고, 편하고, 안정적이다.&lt;/li&gt;
+  &lt;li&gt;그러나 그게 문제다&lt;/li&gt;
+  &lt;li&gt;다 편하고 좋으니까 사람이 녹이 슨다.&lt;/li&gt;
+  &lt;li&gt;배부른 돼지가 되는 거다&lt;/li&gt;
+  &lt;li&gt;무엇이 중요한가?&lt;/li&gt;
+  &lt;li&gt;우리의 삶의 목적은 무엇인가?&lt;/li&gt;
+  &lt;li&gt;사람마다 다를 수 있다.&lt;/li&gt;
+  &lt;li&gt;오늘은 내가 살아온 방식에 대해서 공유하고자 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;강의를-듣는-사람의-세-가지-유형&quot;&gt;강의를 듣는 사람의 세 가지 유형&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;듣고 잊어버림&lt;/li&gt;
+  &lt;li&gt;듣고 기억함&lt;/li&gt;
+  &lt;li&gt;듣고 기억하고 삶이 변함&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이 강의를 듣고 삶이 조금이라도 변했으면 좋겠다.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-편한-곳-보단-힘든-곳으로-가라&quot;&gt;&lt;strong&gt;1. 편한 곳 보단 힘든 곳으로 가라&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;삶에서 중요한 건?&lt;/li&gt;
+  &lt;li&gt;편한게 꼭 좋은 건 아니다&lt;/li&gt;
+  &lt;li&gt;편하면 노력을 덜하게 되고 성장을 할 수 없다.
+    &lt;ul&gt;
+      &lt;li&gt;나의 경험&lt;/li&gt;
+      &lt;li&gt;토목 회사 vs 한글과컴퓨터&lt;/li&gt;
+      &lt;li&gt;토목 회사
+        &lt;ul&gt;
+          &lt;li&gt;개발 실장&lt;/li&gt;
+          &lt;li&gt;높은 연봉&lt;/li&gt;
+          &lt;li&gt;편하다&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;한글과컴퓨터
+        &lt;ul&gt;
+          &lt;li&gt;말단 직원&lt;/li&gt;
+          &lt;li&gt;낮은 연봉&lt;/li&gt;
+          &lt;li&gt;일이 어려움&lt;/li&gt;
+          &lt;li&gt;But, 뛰어난 개발자들이 많음&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;사람이 한 번 쉬운걸 선택하면 계속 쉬운 것만 선택한다.&lt;/li&gt;
+      &lt;li&gt;그 다음에도 쉽고 할 수 있는 것만 선택하게 된다.
+        &lt;ul&gt;
+          &lt;li&gt;우리는 언제 성장할까?&lt;/li&gt;
+          &lt;li&gt;실패할 때? 성공할 때?
+            &lt;ul&gt;
+              &lt;li&gt;근육이 찢어져야 성장한다.&lt;/li&gt;
+              &lt;li&gt;자신이 10kg을 들 수 있는데 1년 내내 5kg만 들어봤자 운동은 하나도 안 된다.&lt;/li&gt;
+              &lt;li&gt;편하지만 성장하지 않는다.&lt;/li&gt;
+              &lt;li&gt;11kg 이상 들어야 한다.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;자신의 능력보다 조금 더 힘든 걸 해야 배우고 성장한다.&lt;/li&gt;
+          &lt;li&gt;나는 회사에서 일을 시킬 때 반은 실패하도록 한다.&lt;/li&gt;
+          &lt;li&gt;실패가 있어야 성장이 있다.&lt;/li&gt;
+          &lt;li&gt;한 번도 실패하지 않는 사람은 한 번도 도전하지 않은 사람이다.&lt;/li&gt;
+          &lt;li&gt;도전 없이 성장은 없다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;결국 한글과컴퓨터를 선택했다.
+        &lt;ul&gt;
+          &lt;li&gt;그곳에서는 힘들었지만 나오고 나니 다른 데서 일할 때는 너무 쉬웠다.&lt;/li&gt;
+          &lt;li&gt;블리자드에서 오래 일하니 익숙해지고 편해졌다.&lt;/li&gt;
+          &lt;li&gt;더이상 성장하지 않는다고 느꼈다.&lt;/li&gt;
+          &lt;li&gt;좀 더 어려운 일을 하며 성장하기 위해 넥슨에 오기로 했다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;자신의 능력을 쌓아야 한다.&lt;/li&gt;
+      &lt;li&gt;능력은 어려운 것에 도전하고 성장하는 과정에서 쌓인다
+        &lt;ul&gt;
+          &lt;li&gt;남들은 나에게 어떻게 했길래 그렇게 성공적인 길만 갈 수 있었느냐고 물은다&lt;/li&gt;
+          &lt;li&gt;교만해 보일 수 있지만 나는 이렇게 말한다.&lt;/li&gt;
+          &lt;li&gt;“어느 누구나 나만큼 노력하고 도전했다면 지금 이 자리에 왔을 거라고 믿는다.”&lt;/li&gt;
+          &lt;li&gt;남들이 보기엔 편하게 편하게 산 것 같지만 그렇지 않다.&lt;/li&gt;
+          &lt;li&gt;남들이 3번 도전해서 1번 성공할 때 나는 30번 도전해서 3번 성공했다.&lt;/li&gt;
+          &lt;li&gt;이러한 강연 자체도 그렇다.&lt;/li&gt;
+          &lt;li&gt;망한 강연도 굉장히 많다. 혼자서 속상해한 적도 많다.&lt;/li&gt;
+          &lt;li&gt;실패한 강연이 지금의 나를 만들었다.&lt;/li&gt;
+          &lt;li&gt;실패가 나를 만든 거지 성공이 나를 만든게 아니다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-나-스스로에-대한-믿음이-있어야-한다---자존감&quot;&gt;&lt;strong&gt;2. 나 스스로에 대한 믿음이 있어야 한다. - 자존감&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;마음속 깊이 나는 할 수 있다는 느낌이 있어야 한다.&lt;/li&gt;
+  &lt;li&gt;사람은 실패했을 때 본성이 나온다.&lt;/li&gt;
+  &lt;li&gt;성공을 했을 때는 그냥 가지만 실패했을 때 무너진다.&lt;/li&gt;
+  &lt;li&gt;실패했을 때 다시 올라갈 수 있는 힘이 바로 자존감이다.&lt;/li&gt;
+  &lt;li&gt;결과가 아닌 과정을 칭찬하라
+    &lt;ul&gt;
+      &lt;li&gt;남과의 경쟁은 중요한 게 아니다&lt;/li&gt;
+      &lt;li&gt;모든 것의 중심은 나여야 한다.&lt;/li&gt;
+      &lt;li&gt;밖을 보는 만큼 안도 봐야한다.&lt;/li&gt;
+      &lt;li&gt;나 스스로를 믿고 중심을 잡을 때 굳건히 성장할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;나뭇가지에 앉은 새는 나뭇가지가 부러지는 것에 대해 걱정하지 않는다.
+    &lt;ul&gt;
+      &lt;li&gt;그것은 나뭇가지가 부러지지 않을 거라는 믿음이 있어서가 아니라 자신에게 날개가 있기 때문이다.&lt;/li&gt;
+      &lt;li&gt;사람들은 보통 환경에 대해 불안해한다.&lt;/li&gt;
+      &lt;li&gt;새는 나뭇가지가 부러질것에 대해 불안해하지 않는다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;환경을 넘어서서 사는 방법은 자존감과 능력이다.
+    &lt;ul&gt;
+      &lt;li&gt;나 스스로에 대한 확신&lt;/li&gt;
+      &lt;li&gt;그 확신을 바탕으로 한 노력&lt;/li&gt;
+      &lt;li&gt;이를 통한 성장&lt;/li&gt;
+      &lt;li&gt;이 세 가지가 복합적으로 이루어졌을 때 자시만의 날개가 생긴다.&lt;/li&gt;
+      &lt;li&gt;나뭇가지에 앉은 새처럼 불안해 하지 않을 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;자존감
+    &lt;ul&gt;
+      &lt;li&gt;나는 나를 얼마나 좋아하는가?&lt;/li&gt;
+      &lt;li&gt;머리부터 발끝까지 나 자신을 사랑해야한다.&lt;/li&gt;
+      &lt;li&gt;그러기위해선 노력이 필요하다&lt;/li&gt;
+      &lt;li&gt;스스로에게 결과가 아닌 과정을 칭찬해줘야 한다.&lt;/li&gt;
+      &lt;li&gt;내가 나를 좋아하는 것도 내가 이룬 결과를 좋아해서는 안 되고 좋은 결과를 얻기 위해 노력하는 지금 이 과정을 좋아해야한다.
+        &lt;ul&gt;
+          &lt;li&gt;성적이 좀 나빠서 - 공부를 열심히 한다 - 이런 내가 마음에 든다.&lt;/li&gt;
+          &lt;li&gt;살이 좀 쪘네 - 운동을 열심히 한다. - 이런 내가 마음에 든다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;나의 상태를 좋아할 필요가 없다.&lt;/li&gt;
+      &lt;li&gt;나의 방향을 좋아하면 된다.
+남들에게도 그 사람의 상태가 아닌 그 사람이 나아가고 있는 방향을 칭찬해줘라&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-노력은-꾸준함-이다&quot;&gt;&lt;strong&gt;3. 노력은 꾸준함 이다.&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;노력은 밤새는 게 아니다&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;다음날 시험을 위해 밤을 새면 그 다음 시험에도 밤을 새게 된다.&lt;/li&gt;
+  &lt;li&gt;노력은 그 날 바짝 하는 게 아니라 평소에 꾸준히 하는 것이다.&lt;/li&gt;
+  &lt;li&gt;운동하기로 마음 먹었으면 매일 30분이라도 1년 내내 꾸준히하는게 노력이지 오늘 1km 뛰는 게 노력이 아니다.&lt;/li&gt;
+  &lt;li&gt;그래서 노력이 어려운거다.&lt;/li&gt;
+  &lt;li&gt;노력이 능력보다 훨씬 더 어렵다.&lt;/li&gt;
+  &lt;li&gt;무언가를 하려면 꾸준하게 할 마음으로 해야한다.&lt;/li&gt;
+  &lt;li&gt;습관의 힘
+    &lt;ul&gt;
+      &lt;li&gt;습관이 생겨야 꾸준히 할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;이러한 노력도 자존감이 있어야 할 수 있다.
+    &lt;ul&gt;
+      &lt;li&gt;자존감이 없으면 매일매일 이렇게 못 한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-성공의-3대-요소&quot;&gt;&lt;strong&gt;4. 성공의 3대 요소&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;능력&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;좋아하는 것? 잘하는 것?&lt;/li&gt;
+      &lt;li&gt;보통 잘하는 걸 좋아할 가능성이 높다.&lt;/li&gt;
+      &lt;li&gt;꾸준히 도전하고 성장하며 능력을 쌓아야한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;노력&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;누구나 김연아만큼 연습했으면 그 만큼 됐을 거다.&lt;/li&gt;
+      &lt;li&gt;그런데 아무도 그렇게 못한다. 그만큼 힘들다.&lt;/li&gt;
+      &lt;li&gt;이러한 노력 조차도 능력이 있어야 할 수 있다.&lt;/li&gt;
+      &lt;li&gt;능력 없이 노력만 하게 되면 제자리 걸음이 될 수 있다.&lt;/li&gt;
+      &lt;li&gt;내가 잘하는 것을 끊임 없이 노력하고 지속해야한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;기회&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;기회는 우리가 만들 수 있는 게 아니다.&lt;/li&gt;
+      &lt;li&gt;시간의 흐름에 따라 생긴다.&lt;/li&gt;
+      &lt;li&gt;능력과 노력이 있어도 기회가 없을 수 있다.&lt;/li&gt;
+      &lt;li&gt;하지만 기회만 있으면 그 기회를 잡을 수 없다. 그래서 없는 것과 마찬가지이다.&lt;/li&gt;
+      &lt;li&gt;기회는 끝없이 온다. 그 기회를 발견하고 잡을 수 있는 것은 능력과 노력이 준비되었을 때다.&lt;/li&gt;
+      &lt;li&gt;왜 나에게 기회가 주어지지 않는가를 고민할 필요할 없다.&lt;/li&gt;
+      &lt;li&gt;나는 어디에 능력이 있고 계속 노력하고 있는가 - 이것에 집중해야한다.&lt;/li&gt;
+      &lt;li&gt;그 사이 사이에 기회는 정말 많이 온다.&lt;/li&gt;
+      &lt;li&gt;능력과 노력이 부족해서 문제지 기회가 부족한 경우는 거의 없다.&lt;/li&gt;
+      &lt;li&gt;밖이 아닌 안에 쌓아라&lt;/li&gt;
+      &lt;li&gt;능력과 노력은 자기 안에 쌓는 거다&lt;/li&gt;
+      &lt;li&gt;내가 가지고 있는 시간과 돈을 최대한 다 쓰고 가고 싶다.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;100m 달리기를 할 때 100m를 다 달리고 체력이 남아서 더 뛰고 싶다는 건 의미가 없다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;5-채용할-때-보는-세-가지&quot;&gt;&lt;strong&gt;5. 채용할 때 보는 세 가지&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;똑똑한가&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;깊게 사고하는가&lt;/li&gt;
+      &lt;li&gt;보통 A,B만 생각하는데&lt;/li&gt;
+      &lt;li&gt;A앞에는 뭐가 있고 B 뒤에는 뭐가 있는지 생각할 줄 아는가&lt;/li&gt;
+      &lt;li&gt;대화를 해보면 금방 알 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;부지런한가&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;게으르면 안 된다.&lt;/li&gt;
+      &lt;li&gt;게으른 사람은 노력을 못 한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;착한가&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;사람이 선해야 한다.&lt;/li&gt;
+      &lt;li&gt;선해야 남들에게도 도움을 줄 수 있다.&lt;/li&gt;
+      &lt;li&gt;그 도움이 나중에 그 사람에게 돌아가며 선순환 구조를 이룬다.&lt;/li&gt;
+      &lt;li&gt;착하지 않은 사람은 자존감이 낮기 때문이라고 생각한다.&lt;/li&gt;
+      &lt;li&gt;자존감이 높은 사람은 사랑을 남에게서 받을 필요가 없고 자기 안에서 퍼주면 되기 때문에 착하다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Lv1 - 문자열 회전</title>
+   <link href="http://localhost:4000/algorithm%20test/2019/02/05/AT-rotate_string/"/>
+   <updated>2019-02-05T00:00:00+09:00</updated>
+   <id>http://localhost:4000/algorithm%20test/2019/02/05/AT-rotate_string</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;출처: &lt;a href=&quot;http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;amp;ejkGb=KOR&amp;amp;barcode=9788966263080&amp;amp;orderClick=JAj&quot;&gt;코딩인터뷰완전분석&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;1.9 문자열 회전&lt;/li&gt;
+  &lt;li&gt;한 단어가 다른 문자열에 포함되어 있는지 판별하는 isSubstring이라는 매서드가 있다고 하자.
+s1과 s2의 두 문자열이 주어졌고, s2가 s1을 회전시킨 결과인지 판별하고자 한다.&lt;/li&gt;
+  &lt;li&gt;Ex) waterbottle 은 erbottlewat 을 회전시켜 얻을 수 있는 문자열이다.&lt;/li&gt;
+  &lt;li&gt;isSubstring 메서드를 한 번만 호출해서 판별할 수 잇는 코드를 작성하라.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;풀이&quot;&gt;풀이&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rotateString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# 문자열 길이가 다르면 False
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;s1s1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1s1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1s1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'일치하는 문자열 없음'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;배운점&quot;&gt;배운점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;1시간을 고민 끝에 해설을 보고 힌트를 얻었다. 문자열 두 개를 연결하는 생각은 해설을 보지 못 않았으면 전혀 생각으 못 했을 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;느낀점&quot;&gt;느낀점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;최소 1시간은 고민하고 전혀 감이 안 잡힐 땐 해설을 보고 힌트를 얻자.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Lv1 - 문자열 압축</title>
+   <link href="http://localhost:4000/algorithm%20test/2019/02/04/AT-str_compression/"/>
+   <updated>2019-02-04T00:00:00+09:00</updated>
+   <id>http://localhost:4000/algorithm%20test/2019/02/04/AT-str_compression</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;출처: &lt;a href=&quot;http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;amp;ejkGb=KOR&amp;amp;barcode=9788966263080&amp;amp;orderClick=JAj&quot;&gt;코딩인터뷰완전분석&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;문제&quot;&gt;문제&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;1.6 문자열 압축&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;반복되는 문자의 개수를 세는 방식의 기본적인 문자열 압축 메서드를 작성하라.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ex) aabcccccaaa =&amp;gt; a2b1c5a3&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;제한사항&quot;&gt;제한사항&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;단, ‘압축된’ 문자열의 길이가 기존 문자열의 길이보다 길다면 기존 문자열을 반환해야 한다.
+문자열은 대소문자 알파벳(a~z)으로만 이루어져 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;풀이&quot;&gt;풀이&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;strCompression&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;new_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# 첫번째 문자 넣기
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;new_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 현재 문자와 다음 문자 비교
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]):&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 같다
+&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 같은 문자 수(count)
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 다르다
+&lt;/span&gt;            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 이전에 같은 문자가 있었다면
+&lt;/span&gt;                &lt;span class=&quot;n&quot;&gt;new_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 같은 문자 수(count) 넣기
+&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;new_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 다음 문자 넣기
+&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# count 초기화
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# 마지막 문자 수(count)
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 같은 문자가 있다면
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;new_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 같은 문자 수(count) 넣기
+&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_str&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;배운점&quot;&gt;배운점&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;기존의 문자열만 가지고 수정하기보다 새로운 문자열(&lt;code class=&quot;highlighter-rouge&quot;&gt;new_str&lt;/code&gt;)을 만들어서 하는 푸는 방법&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TIL_190203</title>
+   <link href="http://localhost:4000/til/2019/02/03/TIL/"/>
+   <updated>2019-02-03T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/02/03/TIL</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;혼자 공부하는 것보다 함께하는 게 더 좋다. 혼자하면 안 보이던 부분이 함께 공부하는 친구의 눈으로 보면 보인다. 어느 정도의 고민은 필요하지만 그 이상의 고민은 불필요할 때가 많다. 함께 공부하면 그런 불필요한 고민에서 빨리 빠져나올 수 있다.&lt;/li&gt;
+  &lt;li&gt;결론, 알고리즘 스터디를 하기 잘 한 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+  &lt;li&gt;알고리즘 공부&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TIL_190202</title>
+   <link href="http://localhost:4000/til/2019/02/02/TIL/"/>
+   <updated>2019-02-02T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/02/02/TIL</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;알고리즘 문제풀이: &lt;a href=&quot;http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;amp;ejkGb=KOR&amp;amp;barcode=9788966263080&amp;amp;orderClick=JAj&quot;&gt;코딩인터뷰완전분석&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;배열과 문자열&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;1.7 행렬 회전&lt;/li&gt;
+      &lt;li&gt;1.9 문자열 회전&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+  &lt;li&gt;김태훈님 D2 Factory meetup 참석
+    &lt;ul&gt;
+      &lt;li&gt;머신러닝
+        &lt;ul&gt;
+          &lt;li&gt;python만으로는 절대 잘 할 수 없음&lt;/li&gt;
+          &lt;li&gt;low level에서의 최적화를 하려면&lt;/li&gt;
+          &lt;li&gt;최소 C는 알아야 한다.&lt;/li&gt;
+          &lt;li&gt;프로젝트 10개 정도 구현(분야별 각가 2~3개씩)
+            &lt;ul&gt;
+              &lt;li&gt;Computer Vsion&lt;/li&gt;
+              &lt;li&gt;NLP&lt;/li&gt;
+              &lt;li&gt;RL&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Burnout이 생기는 이유
+        &lt;ul&gt;
+          &lt;li&gt;workload 때문이 아닌 mementum 때문&lt;/li&gt;
+          &lt;li&gt;일의 양이 많아서가 아니라 성장하지 않는다고 느낄 때 생김&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;OpenAI에서 일하시는 개발자 김태훈님이 기획하신 meetup 행사에 다녀왔다. 미국에서의 생활과 딥러닝 공부, 딥러닝 리서쳐와 엔지니어 사이의 고민 등에 딥러닝을 공부하는 개발자들에게 유용한 팁을 많이 들을 수 있었다.&lt;/li&gt;
+  &lt;li&gt;가길 정말 잘했다. 좋은 자극을 받았고 큰 동기부여가 되었다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+  &lt;li&gt;알고리즘 공부&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>TIL_190201</title>
