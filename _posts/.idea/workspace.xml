@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2e81191-1abb-4ec8-aff6-ce179fc05a3d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.sass-cache/6264fd62599d3ece5a2a0516b20572f16f98184e/_config.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/../.sass-cache/6264fd62599d3ece5a2a0516b20572f16f98184e/_config.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.sass-cache/e522d7613b144836af2d4fb34d76c59f7b7d4825/_post.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/../.sass-cache/e522d7613b144836af2d4fb34d76c59f7b7d4825/_post.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_scss/_config.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../_scss/_config.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_scss/component/_post.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../_scss/component/_post.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/atom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/blog/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/blog/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/blog/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/blog/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/10/TIL-01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/10/TIL-01/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/10/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/10/TIL/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/11/TIL-02/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/11/TIL-02/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/12/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/12/TIL/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_site/til/2019/01/13/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_site/til/2019/01/13/TIL/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,48 +14,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-01-TIL.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="16" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/../_scss/component/_masthead.scss">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../_config.yml">
+        <entry file="file://$PROJECT_DIR$/../_scss/component/_page.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../_scss/component/_sidebar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+            <state relative-caret-position="306">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../about.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="340">
-                <caret line="20" selection-start-line="20" selection-end-line="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../_scss/_config.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../_scss/component/_post.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -80,21 +41,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../_scss/base/_syntax.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="59" selection-start-line="20" selection-end-line="20" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-17-TIL.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-10-TIL.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="408">
-                <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <first_editor relative-caret-position="323">
+                <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -105,32 +57,8 @@
         <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-02-TIL.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="629">
-                <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-03-TIL.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="11" selection-start-line="11" selection-end-line="11" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-12-TIL.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="204">
-                <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="102" />
+              <first_editor relative-caret-position="221">
+                <caret line="13" selection-start-line="11" selection-end-line="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -173,7 +101,6 @@
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-21-TIL.md" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-22-TIL.md" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-23-TIL.md" />
-        <option value="$PROJECT_DIR$/python/2019-01-15-py-fastcampus01.md" />
         <option value="$PROJECT_DIR$/python/2019-01-20-py-fastcampus01.md" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-24-TIL.md" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-25-TIL.md" />
@@ -189,7 +116,6 @@
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-01-TIL.md" />
         <option value="$PROJECT_DIR$/../_scss/base/_syntax.scss" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-02-TIL.md" />
-        <option value="$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-03-TIL.md" />
         <option value="$PROJECT_DIR$/Algorithm_Test/2019-02-04-AT-str_compression.md" />
         <option value="$PROJECT_DIR$/Algorithm_Test/2019-02-05-AT-rotate_string.md" />
         <option value="$PROJECT_DIR$/etc/2019-02-06-etc-lecture01_JCP.md" />
@@ -197,6 +123,11 @@
         <option value="$PROJECT_DIR$/../about.md" />
         <option value="$PROJECT_DIR$/../_scss/_config.scss" />
         <option value="$PROJECT_DIR$/../_scss/component/_post.scss" />
+        <option value="$PROJECT_DIR$/python/2019-02-08-py-fastcampus03.md" />
+        <option value="$PROJECT_DIR$/python/2019-01-15-py-fastcampus01.md" />
+        <option value="$PROJECT_DIR$/python/2019-02-09-py-fastcampus05.md" />
+        <option value="$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-03-TIL.md" />
+        <option value="$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-10-TIL.md" />
       </list>
     </option>
   </component>
@@ -256,13 +187,6 @@
               <item name="~/sonypark.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="_posts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="TIL(Today I Learned)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="1901" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="_posts" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/sonypark.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="_posts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="TIL(Today I Learned)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="1902" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -297,11 +221,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python" />
       <recent name="$PROJECT_DIR$/etc" />
       <recent name="$PROJECT_DIR$/Algorithm_Test" />
       <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1902" />
       <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
-      <recent name="$PROJECT_DIR$/python" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
@@ -379,18 +303,21 @@
       <workItem from="1549349814207" duration="609000" />
       <workItem from="1549455768386" duration="2014000" />
       <workItem from="1549457983674" duration="79000" />
-      <workItem from="1549525695734" duration="542000" />
+      <workItem from="1549525695734" duration="816000" />
+      <workItem from="1549614762494" duration="206000" />
+      <workItem from="1549721001210" duration="209000" />
+      <workItem from="1549808123860" duration="541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38529000" />
+    <option name="totallyTimeSpent" value="39759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23175965" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -420,11 +347,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test2.php" />
-    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/test.php" />
-    <entry file="file://$PROJECT_DIR$/2014-01-01-example-content.md" />
-    <entry file="file://$PROJECT_DIR$/2014-01-02-introducing-lanyon.md" />
-    <entry file="file://$PROJECT_DIR$/2013-12-31-whats-jekyll.md" />
     <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-11-TIL.md" />
     <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-10-TIL-01.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -488,13 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../_scss/base/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../_scss/base/_poole.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -547,26 +462,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="527">
             <caret line="31" selection-start-line="31" selection-end-line="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/2019-01-15-py-fastcampus01.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" selection-start-line="4" selection-end-line="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/2019-01-20-py-fastcampus01.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
@@ -766,31 +661,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-02-TIL.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="629">
-            <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-03-TIL.md">
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-01-TIL.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="187">
-            <caret line="11" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-12-TIL.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="102" />
+            <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
@@ -806,20 +681,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-01-TIL.md">
+    <entry file="file://$PROJECT_DIR$/../_scss/_config.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_scss/base/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_scss/component/_masthead.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_scss/component/_page.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/2019-01-20-py-fastcampus02.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="16" />
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../_scss/_config.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+    <entry file="file://$PROJECT_DIR$/python/2019-02-08-py-fastcampus03.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/2019-01-15-py-fastcampus01.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -827,6 +735,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-12-TIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="102" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/2019-02-09-py-fastcampus05.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_scss/component/_sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-02-TIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="221">
+            <caret line="13" selection-start-line="11" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-10-TIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
