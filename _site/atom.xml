@@ -4,13 +4,1189 @@
  <title>SONY_DEV</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-02-07T17:03:08+09:00</updated>
+ <updated>2019-02-12T00:06:25+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>sonypark</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>TIL_190210</title>
+   <link href="http://localhost:4000/til/2019/02/10/TIL/"/>
+   <updated>2019-02-10T00:00:00+09:00</updated>
+   <id>http://localhost:4000/til/2019/02/10/TIL</id>
+   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;알고리즘 스터디
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;amp;ejkGb=KOR&amp;amp;barcode=9788966263080&amp;amp;orderClick=JAj&quot;&gt;코딩인터뷰완전분석&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;링크드 리스트&lt;/strong&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;이번주 알고리즘 스터디 내용이었던 링크드 리스트(LinkedList)는 너무 어려웠다. 개념은 이해되는 것 같은데 실제 코드로 구현하는게 많이 힘들었다. 8문제 중에 3문제 밖에 풀지 못 했다. 링크드 리스트는 중요한 부분이니 앞으로도 더 공부해야겠다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
+  &lt;li&gt;알고리즘 공부&lt;/li&gt;
+  &lt;li&gt;생활코딩 HTML, CSS강의 듣기&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>패스트캠퍼스_파이썬중급_05</title>
+   <link href="http://localhost:4000/python/2019/02/09/py-fastcampus05/"/>
+   <updated>2019-02-09T00:00:00+09:00</updated>
+   <id>http://localhost:4000/python/2019/02/09/py-fastcampus05</id>
+   <content type="html">&lt;noscript&gt;&lt;pre&gt;# 파이썬 속성 탐색
+
+## 객체 속성에 접근하는 방법
+
+* 스페셜 메소드
+
+`__getattribute__`
+
+`__getattr__`
+
+`__setattr__`
+
+`__delattr__`
+
+## `__getattribute__`
+
+속성을 탐색할때
+
+```python
+%%writefile d1.py
+
+class A:
+    x = 3
+
+    def __getattribute__(self, name):
+        print(&amp;quot;속성 탐색&amp;quot;)
+        return super().__getattribute__(name) # == object.__getattribute__(self, name) 를 호출하는것과 동일
+
+    
+a = A()
+print(a)
+print(a.x) # __getattribute__ 호출
+
+a.abc = 12
+print(a.abc) # __getattribute__ 호출
+
+print(a.__dict__)
+```
+```python
+!python d1.py
+```
+```python
+&amp;lt;__main__.A object at 0x7fca20d4b588&amp;gt;
+=&amp;gt; 속성 탐색
+=&amp;gt; 3
+=&amp;gt; 속성 탐색
+=&amp;gt; 12
+=&amp;gt; 속성 탐색
+=&amp;gt; {&amp;#39;abc&amp;#39;: 12}
+```
+
+## `__getattribute__` 활용
+
+특정조건을 만족하지 않으면 속성에 접근할 수 없게  -&amp;gt; 해당 클래스를
+
+```python
+%%writefile d2.py
+
+
+class Private:
+    def __getattribute__(self, name, perm=False): # instance.name -&amp;gt; 매개변수self에는 instance가 매개변수name에는 name이 할당
+        if not perm:
+            raise AttributeError(&amp;quot;속성에 접근할 수 없습니다.&amp;quot;)
+        return super().__getattribute__(name)
+    
+class A(Private):
+    pass
+
+a = A()
+a.x = 3
+
+# print(a.x) # 에러가 발생
+
+
+## a.x 접근하기 위해서는 어떻게???????????
+# 모든 메소드는 class 
+print(type(a).__getattribute__(a, &amp;#39;x&amp;#39;, True))
+```
+```python
+!python d2.py
+
+=&amp;gt; 3
+```
+
+## `__getattr__`
+
+속성을 탐색할때 : 가장 늦게 실행되는 로직
+
+값을 찾지 못했을때, 대체값을 리턴하는 일하거나.
+
+에러를 발생시키는 일
+
+```python
+%%writefile d3.py
+
+
+class A:
+    def __getattr__(self, name): # __getattribute__로 바꿔서 실행시켜보면, 어떠한값을 요청해도 &amp;#39;기본값&amp;#39;이라는 str 객체를 리턴
+        return &amp;#39;기본값&amp;#39;
+    
+    
+a = A()
+a.a = &amp;quot;!!!&amp;quot;
+print(a.a)
+
+print(a.b)
+```
+```python
+!python d3.py
+
+=&amp;gt; !!!
+=&amp;gt; 기본값
+```
+
+#### `__getattr__`활용 : 에러설정
+
+```python
+%%writefile d4.py
+
+class A:
+    def __getattr__(self, name): # __getattribute__로 바꿔서 실행시켜보면, 어떠한값을 요청해도 항상 에러 발생
+        # return 
+        raise AttributeError(&amp;quot;값이 없습니다.&amp;quot;)
+
+a = A()
+a.a = &amp;quot;!!!&amp;quot;
+print(a.a)
+
+print(a.b)
+```
+```python
+!python d4.py
+
+=&amp;gt; !!!
+=&amp;gt; Traceback (most recent call last):
+  File &amp;quot;d4.py&amp;quot;, line 11, in &amp;lt;module&amp;gt;
+    print(a.b)
+  File &amp;quot;d4.py&amp;quot;, line 5, in __getattr__
+    raise AttributeError(&amp;quot;값이 없습니다.&amp;quot;)
+AttributeError: 값이 없습니다.
+```
+
+```python
+%%writefile d5.py
+
+class A:
+    def __getattribute__(self, name):
+        print(&amp;quot;getattribute&amp;quot;)
+        return super().__getattribute__(name)
+
+    def __getattr__(self, name):
+        print(&amp;quot;getattr&amp;quot;)
+
+a = A()
+a.name = 123
+
+getattr(a, &amp;#39;name&amp;#39;) # 어느 스페셜 메소드가 실행되는지..
+getattr(a, &amp;#39;name2&amp;#39;)
+```
+```python
+# -&amp;gt; __getattribute__ 메소드 부터 찾아서 실행됨
+
+!python d5.py
+
+=&amp;gt; getattribute
+=&amp;gt; getattribute
+=&amp;gt; getattr
+```
+
+## `__setattr__`
+
+속성에 값을 부여할때
+
+```python
+%%writefile d6.py
+
+
+class A:
+    def __setattr__(self, name, value): # instance.name = value 
+        print(&amp;quot;set&amp;quot;)
+        self.__dict__[name] = value 
+        #super().__setattr__(name, value)  # 이 경우에는 위와 동일함
+        
+a = A()
+a.var = 3 # __setattr__ 실행
+
+print(a.var)
+print(a.__dict__)
+```
+
+```python
+!python d6.py
+
+=&amp;gt; set
+=&amp;gt; 3
+=&amp;gt; {&amp;#39;var&amp;#39;: 3}
+```
+
+## `__delattr__` 속성
+
+속성을 제거할때
+
+```python
+%%writefile d10.py
+
+class A:
+    def __delattr__(self, name):
+        print(&amp;quot;지운다.&amp;quot;)
+        super().__delattr__(name)
+        #del self.__dict__[name]
+        
+        
+a = A()
+a.var = 3
+print(a.var) # 3
+
+del a.var # &amp;quot;지운다&amp;quot;
+
+print(a.var) # Error
+```
+
+```python
+!python d10.py
+
+=&amp;gt; 3
+=&amp;gt; 지운다.
+=&amp;gt; Traceback (most recent call last):
+  File &amp;quot;d10.py&amp;quot;, line 15, in &amp;lt;module&amp;gt;
+    print(a.var) # Error
+AttributeError: &amp;#39;A&amp;#39; object has no attribute &amp;#39;var&amp;#39;
+```
+
+# 위에서 다룬 스페셜 메소드를 이용해서 속성별로 다른 작업을 부여
+
+원 : 반지름을 입력받아서 원 객체 생성
+
+* 반지름은 변경가능
+* 지름, 둘레, 넓이 : 수정불가, 반지름에 따라 결정되는 형태
+
+```python
+%%writefile d11.py
+
+
+MUTABLE = [&amp;#39;r&amp;#39;]
+IMMTAUBLE = &amp;#39;diameter&amp;#39;, &amp;#39;circumference&amp;#39;, &amp;#39;area&amp;#39;
+
+class Circle:
+    pi = 3.1415
+    
+    def __init__(self, r):
+        self.r = r
+        
+    def diameter(self):
+        return self.r * 2
+    
+    def circumference(self):
+        return self.r * self.pi * 2
+    
+    def area(self):
+        return (self.r ** 2 ) * self.pi
+    
+    def __setattr__(self, name, value):
+        # 속성 r은 변경가능, 나머지 속성(함수)는 변경불가능
+        if name in IMMTAUBLE: # IMMUTABLE 로 지정한 이름에 해당하는 속성들을 변경하려고할때 에러가 발생하도록
+            raise AttributeError(&amp;quot;속성을 변경할 수 없습니다.&amp;quot;)
+        return super().__setattr__(name, value)
+
+    def __getattribute__(self, name):
+        # 함수인 속성을, 호출하지않고 즉 ()를 붙이지 않고 값을 얻도록
+        if name in IMMTAUBLE: # IMMUTABLE즉 함수형태인 속성들일때 True
+            #return getattr(self, name)(self) # 무한뤂 에러 발생(재귀)
+            #return type(self).__dict__[name](self) # 아래와 동일
+            return type(self).__dict__[name].__get__(self, type(self))() 
+        return super().__getattribute__(name)
+
+    
+c = Circle(10)
+print(c.r)
+print(c.diameter) 
+
+c.area = 123
+```
+
+```python
+!python d11.py
+
+=&amp;gt; 10
+=&amp;gt; 20
+=&amp;gt; Traceback (most recent call last):
+  File &amp;quot;d11.py&amp;quot;, line 40, in &amp;lt;module&amp;gt;
+    c.area = 123
+  File &amp;quot;d11.py&amp;quot;, line 24, in __setattr__
+    raise AttributeError(&amp;quot;속성을 변경할 수 없습니다.&amp;quot;)
+AttributeError: 속성을 변경할 수 없습니다.
+```
+
+#### 문제점
+
+속성 별로 컨트롤 하기에 제약.
+
+무한루프에 빠지기 쉽다.
+
+
+## 해결책으로 도입된 디스크립터
+
+### descriptor 프로토콜
+
+`__get__`, `__set__`, `__delete__`중 하나가 구현되어있는 클래스
+
+```python
+class Descriptor:
+    def __init__(self, value):
+        self.value = value
+        
+    def __get__(self, instance, onwer):
+        print(&amp;quot;get&amp;quot;)
+        return self.value
+
+    def __set__(self, instance, value):
+        print(&amp;#39;set&amp;#39;)
+        self.value = value
+
+    def __delete__(self, instance):
+        print(&amp;quot;delete&amp;quot;)
+        del self.value
+        
+        
+class A:
+    value = Descriptor(123) # 속성값을 디스크립터 인스턴스에서 관리하도록 지정
+```
+```python
+A.__dict__
+
+=&amp;gt; mappingproxy({&amp;#39;__module__&amp;#39;: &amp;#39;__main__&amp;#39;,
+              &amp;#39;value&amp;#39;: &amp;lt;__main__.Descriptor at 0x103c8e470&amp;gt;,
+              &amp;#39;__dict__&amp;#39;: &amp;lt;attribute &amp;#39;__dict__&amp;#39; of &amp;#39;A&amp;#39; objects&amp;gt;,
+              &amp;#39;__weakref__&amp;#39;: &amp;lt;attribute &amp;#39;__weakref__&amp;#39; of &amp;#39;A&amp;#39; objects&amp;gt;,
+              &amp;#39;__doc__&amp;#39;: None})
+```
+
+### get
+
+```python
+a = A()
+
+type(a).__dict__[&amp;#39;value&amp;#39;].__get__(a, type(a))
+
+=&amp;gt; get
+=&amp;gt; 123
+```
+```python
+a.value # 인스턴스에서 value접근할때 : type(a).__dict__[&amp;#39;value&amp;#39;].__get__(a, type(a)) 호출한것과 동일
+
+=&amp;gt; get
+=&amp;gt; 123
+```
+```python
+A.value # 클래스에서 value접근할때 : A.__dict__[&amp;#39;value&amp;#39;].__get__(None, A) 호출한것고 동일
+
+=&amp;gt; get
+=&amp;gt; 123
+```
+
+```python
+A.__dict__[&amp;#39;value&amp;#39;].__get__(None, A)
+
+=&amp;gt; get
+=&amp;gt; 123
+```
+
+## set
+
+```python
+a.value = 300
+a.value
+
+=&amp;gt; set
+=&amp;gt; get
+=&amp;gt; 300
+```
+```python
+type(a).__dict__[&amp;#39;value&amp;#39;].__set__(a, 300)
+
+=&amp;gt; set
+```
+## del
+
+```python
+del a.value
+
+=&amp;gt; delete
+```
+```python
+a.value = 1
+type(a).__dict__[&amp;#39;value&amp;#39;].__delete__(a)
+
+=&amp;gt; set
+=&amp;gt; delete
+```
+
+### 실습 :  디스크립터 생성
+
+`__get__`만 존재하는 디스크립터 + `__set__` 메소드, `__init__`
+
+```python
+class FistDescriptor:
+    def __init__(self, a):
+        self.a = a
+    
+    def __get__(self, instance, owner):
+        return self.a
+    
+    def __set__(self, instance, value):
+        self.a = value
+
+class A:
+    a = FisrtDescriptor(3)
+```
+```python
+a = A()
+a.a
+
+=&amp;gt; 3
+```
+
+## 정보 저장위치에 따라 다르게 작동
+
+### 정보를 디스크립터에 저장
+
+```python
+class descriptor:
+    def __get__(self, instance, owner):
+        print(&amp;#39;get&amp;#39;)
+        return self.a
+        
+    def __set__(self, instance, value):
+        print(&amp;#39;set&amp;#39;)
+        self.a = value
+        
+class A:
+    x = descriptor()
+```
+
+```python
+a = A()
+a.x = 12
+
+=&amp;gt; set
+```
+```python
+a.x
+
+=&amp;gt; get
+=&amp;gt; 12
+```
+```python
+b = A()
+b.x # b인스턴스의 x 속성에 넣은적 없는 12라는 값이 들어있음
+
+=&amp;gt; get
+=&amp;gt; 12
+
+c = A()
+c.x # c인스턴스의 x 속성에 넣은적 없는 12라는 값이 들어있음
+
+=&amp;gt; get
+=&amp;gt; 12
+
+a.x = 300
+
+=&amp;gt; set
+
+c.x # c인스턴스의 x 속성에 넣은적 없는 300이라는 값이 들어있음
+
+=&amp;gt; get
+=&amp;gt; 300
+```
+```python
+c.__dict__
+type(c).__dict__
+
+=&amp;gt; 동일한 디스크립터 인스턴스를 사용하는 객체들끼리 정보가 공유됨
+```
+
+----
+
+### 인스턴스에 저장
+
+```python
+class descriptor:
+    def __get__(self, instance, owner):
+        print(&amp;#39;get&amp;#39;)
+        return instance.value
+        
+    def __set__(self, instance, value):
+        print(&amp;#39;set&amp;#39;)
+        instance.value = value
+        
+class A:
+    x = descriptor()
+```
+```python
+a = A()
+a.x = 123
+
+=&amp;gt; set
+```
+```python
+b = A()
+b.x = 123123
+
+=&amp;gt; set
+```
+```python
+a.x, b.x
+
+=&amp;gt; get
+=&amp;gt; get
+=&amp;gt; (123, 123123)
+```
+
+#### 디스크립터에 로직(함수)을 저장 : 인자를 받지 않는 함수
+
+```python
+class descriptor:
+    def __init__(self, func):
+        self.func = func
+    
+    def __get__(self, instance, onwer):
+        print(&amp;#39;get 함수 실행&amp;#39;)
+        return self.func(instance)
+        
+class A:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+        
+    @descriptor # add = descriptor(add)
+    def add(self):
+        return self.a + self.b + self.c
+```
+
+```python
+a = A(1, 2, 3)
+a.add # __get__호출, __get__ 메소드 안에서 대신 호출하고 결과를 리턴해줌
+
+=&amp;gt; get 함수실행
+=&amp;gt; 6
+```
+
+#### 디스크립터에 로직(함수)을 저장 : 인자를 받는 함수
+
+```python
+from functolls import partial
+
+class descriptor:
+    def __init__(self, func):
+        self.func = func
+    
+    def __get__(self, instance, owner):
+        print(&amp;#39;get 함수실행&amp;#39;)
+        return partial(self.func, instance)
+        
+class A:
+    def __init__(self, a):
+        self.a = a
+
+    @descriptor # add = descriptor(add)
+    def add(self, b, c):
+        return self.a + b + c
+```
+```python
+a = A(10)
+a.add(3, 4) # 디스크립터에 함수를 저장하지만, 호출은 외부에서
+
+=&amp;gt; get 함수실행
+=&amp;gt; 17
+```
+
+```python
+class ImmutableAttribute:
+    def __init__(self, func):
+        self.func = func
+        
+    def __get__(self, instance, owner):
+        return self.func(instance)
+    
+    def __set__(self, instance, value):
+        raise AttributeError(&amp;quot;read only&amp;quot;)
+        
+    def __delete__(self, instance):
+        raise AttributeError(&amp;#39;read only&amp;#39;)
+        
+        
+class Circle:
+    pi = 3.1415
+    
+    def __init__(self, r):
+        self.r = r
+    
+    @ImmutableAttribute
+    def diameter(self):
+        return self.r * 2
+
+    @ImmutableAttribute    
+    def circumference(self):
+        return self.r * self.pi * 2
+    
+    @ImmutableAttribute
+    def area(self):
+        return (self.r ** 2 ) * self.pi
+```
+```python
+c = Circle(10)
+c.r
+
+=&amp;gt; 10
+
+c.area
+
+=&amp;gt; 314.15000000000003
+
+c.area = 12
+
+=&amp;gt; ---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+&amp;lt;ipython-input-245-97004bf3c700&amp;gt; in &amp;lt;module&amp;gt;
+----&amp;gt; 1 c.area = 12
+
+&amp;lt;ipython-input-241-c5f65d768795&amp;gt; in __set__(self, instance, value)
+      7 
+      8     def __set__(self, instance, value):
+----&amp;gt; 9         raise AttributeError(&amp;quot;read only&amp;quot;)
+     10 
+     11     def __delete__(self, instance):
+
+AttributeError: read only
+```&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/sonypark/66725901ed262b3b8fbed3dd39ad9aab.js&quot;&gt; &lt;/script&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>패스트캠퍼스_파이썬중급_03</title>
+   <link href="http://localhost:4000/python/2019/02/08/py-fastcampus03/"/>
+   <updated>2019-02-08T00:00:00+09:00</updated>
+   <id>http://localhost:4000/python/2019/02/08/py-fastcampus03</id>
+   <content type="html">&lt;noscript&gt;&lt;pre&gt;# 변수 name
+
+`name`이란 파이썬에서 객체 인스턴스의 이름
+
+1. 하나의 객체가 여러 이름을 가질 수 있음
+2. 이름은 하나의 객체만 가르킬 수 있음
+3. 이름을 호출했을때, 객체의 메모리 주소를 참고하여 객체를 호출함
+
+```python
+number = 1000
+string = &amp;quot;Hello World&amp;quot;
+list_ = [1, 2, 3]
+```
+```python
+id(number), id(string), id(list_)
+
+=&amp;gt; (4403225744, 4403379632, 4403376520)
+```
+
+### `is`와 `==`의 차이
+
+`is`: id가 같은지를 확인      (메모리 주소 비교)
+
+
+`==`: `__eq__` 메소드를 호출  (value 비교)
+
+```python
+# 타입체크 안좋은 예
+
+a = 1
+
+&amp;quot;정수&amp;quot; if type(a) == int else &amp;quot;오류&amp;quot;
+```
+```pyhton
+=&amp;gt; &amp;#39;정수&amp;#39;
+````
+
+```python
+class Always(type):
+    def __eq__(self, other):
+        # self == other
+        return True
+    
+class A(metaclass=Always):
+    pass
+```
+```python
+# vscode에서 warning
+
+a = A()
+
+&amp;quot;정수&amp;quot; if type(a) == int else &amp;quot;오류&amp;quot;
+```
+```pyhton
+=&amp;gt; &amp;#39;정수&amp;#39;
+```
+```python
+isinstance(1, int)  # type비교는 isinstance를 사용한다.
+```
+```python
+=&amp;gt; True
+```
+
+
+## 질문1
+&amp;gt; - 타입 체크를  `==`로 비교하면 안 되는 이유가 `==`는 value를 비교하는 연산자이기 때문인가요?
+&amp;gt; - 그럼에도 불구하고 위의 예시에서 `==`로 타입 비교를 하는데 오류가 나지 않고 &amp;#39;정수&amp;#39;라는 결과값이 나오는 이유가 궁금합니다.
+
+
+## is 연산자
+
+```python
+number1 = 10000
+number2 = 10000
+```
+```python
+number1 == number2 # `==`-&amp;gt; value 비교
+```
+```python
+=&amp;gt; True
+```
+```python
+number1 is number2 # `is`-&amp;gt; id 비교
+```
+```python
+=&amp;gt; False
+```
+```python
+id(number1), id(number2)
+```
+```python
+=&amp;gt; (4403227600, 4403226960)
+```
+```python
+n1 = 1
+n2 = 1
+```
+```python
+n1 is n2
+```
+```python
+=&amp;gt; True 
+# 이때는 왜 `is`로 비교해도 True일까? --&amp;gt; 정수는 [-5,256] 범위에 있는 정수 객체를 internal로 미리 생성해서 가지고 있기 때문이다.
+```
+
+### str의 경우
+
+```python
+## 띄어쓰기와 느낌표(!) 때문에 id값이 달라진다.
+## 변수 name 선언이 가능한 조건을 만족할 경우에는 id값이 같다.
+## 즉, 띄어쓰기나 느낌표(특수문자)등을 없애면 id값은 같아진다. (REPL 환경에서)
+string1 = &amp;quot;Hello World!&amp;quot;
+string2 = &amp;quot;Hello World!&amp;quot;
+```
+```python
+id(string1), id(string2)
+```
+```python
+=&amp;gt; (4403379888, 4404061040)
+```
+
+```python
+string1 is string2
+```
+```python
+=&amp;gt; False
+```
+
+```python
+str1 = &amp;quot;asjldfasdfjawhfohasdfhlksdhfkjhzkxbnklfjnkwanahfu&amp;quot;
+str2 = &amp;quot;asjldfasdfjawhfohasdfhlksdhfkjhzkxbnklfjnkwanahfu&amp;quot;
+```
+
+```python
+str1 is str2
+```
+```python
+=&amp;gt; True # 띄어쓰기와 특수문자가 없으므로 변수 조건에 부합한다. 따라서 `id`값이 같다
+```
+```python
+t1 = ()
+t2 = ()
+```
+```python
+t1 is t2
+```
+```python
+=&amp;gt; True # 빈 튜플의 `id`값은 같다. Tuple은 immutable
+```
+```python
+l1 = []
+l2 = []
+```
+```python
+l1 is l2 
+```
+```python
+=&amp;gt; False # 빈 리스트는 `id`값이 다르다. 리스트는 언제든 바뀔 수 있기 때문(immutable)
+```
+
+# 객체의 캐쉬 : internal
+
+## 정수 : 조건 [-5, 256] 범위에 있는 정수들
+
+정수 객체를 미리 생성해서 가지고 있다.
+
+```python
+a = 100
+b = 100
+c = 100
+```
+```python
+d = 100
+a is b is c is d
+```
+```python
+=&amp;gt; True
+```
+## immutable 객체 (  str 해당 없음 ) 
+
+조건 : 비어있는 객체
+
+```python
+a = ()
+b = ()
+c = ()
+```
+```python
+a is b is c
+```
+```python
+=&amp;gt; True
+```
+```python
+a = (1,)
+b = (1,)
+c = (1,)
+a is b is c
+```
+```python
+=&amp;gt; False
+```
+## 질문2
+&amp;gt; - 튜플은 immutable한데 왜 값이 있다고 해서 `is` 연산이 False가 되는건가요?
+
+
+```python
+a = frozenset()
+b = frozenset()
+c = frozenset()
+```
+```python
+a is b is c
+```
+```python
+=&amp;gt; True
+```
+
+## str 객체 cached internal
+
+조건 : 변수 사용가능한 문자들 
+
+```python
+a = &amp;quot;_asdfliu____&amp;quot;
+b = &amp;quot;_asdfliu____&amp;quot;
+c = &amp;quot;_asdfliu____&amp;quot;
+```
+```python
+a is b is c
+
+=&amp;gt; True
+```
+
+```python
+a = &amp;quot;a!&amp;quot;
+b = &amp;quot;b!&amp;quot;
+c = &amp;quot;c!&amp;quot;
+```
+```python
+a is b is c
+```
+```python
+=&amp;gt; False
+```
+```python
+a = &amp;quot;a b&amp;quot;
+b = &amp;quot;a b&amp;quot;
+c = &amp;quot;a b&amp;quot;
+a is b is c
+```
+```python
+=&amp;gt; False
+```
+
+### str 강제 인터닝
+
+
+```python
+from sys import intern
+help(intern)
+```
+&amp;#39;&amp;#39;&amp;#39;
+Help on built-in function intern in module sys:
+
+intern(...)
+    intern(string) -&amp;gt; string
+    
+    ``Intern&amp;#39;&amp;#39; the given string.  This enters the string in the (global)
+    table of interned strings whose purpose is to speed up dictionary lookups.
+    Return the string itself or the previously interned string object with the
+    same value.
+&amp;#39;&amp;#39;&amp;#39;
+
+```python
+a = intern(&amp;quot;a b&amp;quot;)
+b = intern(&amp;quot;a b&amp;quot;)
+c = intern(&amp;quot;a b&amp;quot;)
+```
+```python
+=&amp;gt; True
+```
+```python
+a is b is c
+
+=&amp;gt; True
+```
+----
+## 지금까지는 REPL 환경에서 작업할 때 적용되는 기준이었다.
+#### IDE를 이용한 Script 환경에서는 신경쓰지 않아도 된다.
+
+
+```python
+source = &amp;quot;&amp;quot;&amp;quot;
+a = &amp;#39;ab cd!&amp;#39;
+b = &amp;#39;ab cd!&amp;#39;
+c = &amp;#39;ab cd!&amp;#39;
+print(a is b is c)
+&amp;quot;&amp;quot;&amp;quot;
+```
+```python
+exec(source)
+=&amp;gt; True
+```
+```python
+source = &amp;quot;&amp;quot;&amp;quot;
+a = 123123
+b = 123123
+c = 123123
+print(a is b is c)
+&amp;quot;&amp;quot;&amp;quot;
+```
+```python
+exec(source)
+=&amp;gt; True
+```
+
+----
+
+# 함수형 프로그래밍
+
+프로그램의 함수를 수학적 함수의 평가로 간주하고,
+
+상태 변경 및 변경가능한 데이터를 피하는 방식(순수함수)
+
+
+### 함수형 프로그래밍의 정의
+
+1. 함수의 1급 객체
+2. Recursion은 주요한 흐름 제어 방법. 
+&amp;gt; loop구문 없는 언어도 존재
+3. Sequence를 중점으로 다룬다.
+4. 순수함수를 사용
+5. 구문을 지양하거나, 완전히 허용하지 않는다. 표현식을 주로 사용. 
+하나의 프로그램은 하나의 표현식(+정의)이다.
+6. 고차함수를 사용한다.
+
+
+## 철학자 루트비히 비트겐슈타인 - 언어의 한계가 나의 세계의 한계다.
+
+
+### 함수형 프로그래밍의 장점
+
+1. 코드양 적다.
+2. 최적화하기 쉽다.
+3. 모듈화 하기 쉽고 (기능별로 분리하기 쉽다.)
+&amp;gt; 병행/병렬화 하기 쉽다.
+4. 공식적인 증명가능
+&amp;gt; 수학개념을 통해서 프로그램 증명할 수 있다.
+
+
+## 함수형 언어의 조건
+
+함수가 1급 객체인 언어
+
+파이썬은 TCO(Tail Call Optimization; 꼬리 재귀 최적화)가 구현되어있지 않다.
+
+
+## 함수형 vs 절차형 언어 비교
+1부터 n까지 각 정수의 세제곱들의 합을 구하는 코드
+
+
+```python
+# 절차(명령)
+n = 3
+result = 0
+for i in range(1, n+1):
+    result += i**3
+print(result)
+```
+```python
+=&amp;gt; 36
+```
+```python
+# 함수형
+sum(map(lambda x: x**3, range(3+1)))
+
+map(function_to_apply, list_of_inputs)
+```
+```python
+=&amp;gt; 36
+```
+
+---
+
+문자열 안에 숫자들의 합
+
+&amp;quot;28+31++++32++39&amp;quot; 문자에서 숫자들의 합을 구하는 코드
+
+&amp;gt; 출처: 2012 UA Pycon
+
+
+```python
+# 절차
+expr = &amp;quot;28+31++++32++39&amp;quot;
+res = 0
+for t in expr.split(&amp;quot;+&amp;quot;):
+    if t != &amp;quot;&amp;quot;:
+        res += int(t)
+print(res)
+```
+```python
+=&amp;gt; 130
+```
+```python
+# 함수형
+expr = &amp;quot;28+31++++32++39&amp;quot;
+sum(map(int, filter(len, expr.split(&amp;quot;+&amp;quot;))))
+```
+```python
+=&amp;gt; 130
+```
+
+# 재귀함수
+
+`자연에서 발생하는 문제들을 분석하면 결국엔 반복적인 관계가 생긴다.`
+
+-&amp;gt; 점화식을 풀기 위한 기법
+
+# 실습 : 등차수열
+
+```
+a(1) = 3
+a(n) = a(n-1) + 2
+```
+```python
+def a(n):
+    if n == 1:
+        return 3
+    return a(n-1) + 2
+```
+### 실습 : 팩토리얼
+
+```
+a(1) = 1
+a(n) = n * a(n-1)
+```
+
+```python
+def a(n):
+  if n ==1:
+    return 1
+  return n * a(n-1)
+```
+
+### 실습 : 3항 점화식
+
+완전순열
+
+A, B, C, D의 학생들이 시험 후 서로를 채점하게 할때, 
+그 누구도 본인의 시험지를 채점하지 않고 모든 시험지를 채점하는 경우의 수는?
+
+&amp;gt; 위 문제를 해결하는 점화식은 아래와 같습니다.
+
+```
+a(n) = n -1 (if n &amp;lt; 4)
+a(n) = (n-1) * ( a(n-1) + a(n-2) )
+
+a(n) =&amp;gt; n명이 자기 자신의 것을 갖지 않는 경우의 수
+i)  두 번째 사람이 첫 번째 사람의 수를 가질 때: (n-1) * (1 * a(n-2))
+ii) 두 번째 사람이 첫 버째 사람의 수를 가지지 않을 때: (n-1) * ( a(n-1) )
+```
+```python
+def a(n):
+  if n&amp;lt;4:
+    return n-1
+  return (n-1)*(a(n-1)+a(n-2))
+```
+
+
+
+#### 실습 : 피보나치 수열
+
+```
+a(n) = 1 (if n &amp;lt; 3)
+a(n) = a(n-1) + a(n-2)
+```
+
+```python
+def a(n):
+  if(n&amp;lt;3):
+    return 1
+    
+  return a(n-1) + a(n-2)
+```&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/sonypark/25b5be822b6c0772d7ac0470eedee4ef.js&quot;&gt; &lt;/script&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>박종천님 청춘특강</title>
@@ -361,32 +1537,6 @@ s1과 s2의 두 문자열이 주어졌고, s2가 s1을 회전시킨 결과인지
  </entry>
  
  <entry>
-   <title>TIL_190203</title>
-   <link href="http://localhost:4000/til/2019/02/03/TIL/"/>
-   <updated>2019-02-03T00:00:00+09:00</updated>
-   <id>http://localhost:4000/til/2019/02/03/TIL</id>
-   <content type="html">&lt;h1 id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;느낀점&quot;&gt;느낀점&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;혼자 공부하는 것보다 함께하는 게 더 좋다. 혼자하면 안 보이던 부분이 함께 공부하는 친구의 눈으로 보면 보인다. 어느 정도의 고민은 필요하지만 그 이상의 고민은 불필요할 때가 많다. 함께 공부하면 그런 불필요한 고민에서 빨리 빠져나올 수 있다.&lt;/li&gt;
-  &lt;li&gt;결론, 알고리즘 스터디를 하기 잘 한 것 같다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;내일-할-일&quot;&gt;내일 할 일&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;영어공부: 생활 영어 표현 5개 암기 및 작문&lt;/li&gt;
-  &lt;li&gt;알고리즘 공부&lt;/li&gt;
-&lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
    <title>TIL_190202</title>
    <link href="http://localhost:4000/til/2019/02/02/TIL/"/>
    <updated>2019-02-02T00:00:00+09:00</updated>
@@ -637,13 +1787,12 @@ ex) (1071,1029) = (1029,42) = (42,21) = (21,0) = 21
   &lt;li&gt;(a,b) = (b,r)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(1071,1029) = (1029,42) = (42,21) = (21,0) = 21
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1071&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1029&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1029&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;
 
-1071 = 1029 * 1 + 42
-1029 = 42 *24 + 21
-42 = 21 * 2
+&lt;span class=&quot;mi&quot;&gt;1071&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1029&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;1029&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
 </content>
  </entry>
  
@@ -1048,9 +2197,9 @@ ex) (1071,1029) = (1029,42) = (42,21) = (21,0) = 21
  
  <entry>
    <title>패스트캠퍼스_파이썬중급_02</title>
-   <link href="http://localhost:4000/python/2019/01/20/py-fastcampus01/"/>
+   <link href="http://localhost:4000/python/2019/01/20/py-fastcampus02/"/>
    <updated>2019-01-20T00:00:00+09:00</updated>
-   <id>http://localhost:4000/python/2019/01/20/py-fastcampus01</id>
+   <id>http://localhost:4000/python/2019/01/20/py-fastcampus02</id>
    <content type="html">&lt;noscript&gt;&lt;pre&gt;#  함수의 정의 및 호출
  - 함수 객체 이해하기
  - 함수 네임스페이스 및 스코프
