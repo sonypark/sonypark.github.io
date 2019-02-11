@@ -39,9 +39,9 @@ nav:
     - '/'
   Categories:           
     - '/blog/'
-    - { TIL (Today I Learned): '/blog/categories/#til' }  
+    - { TIL (Today I Learned): '/blog/categories/#til-today-i-learned' }
     - { python: '/blog/categories/#python' }
-    - { Algorithm Test: '/blog/categories/#Algorithm-Test' }
+    - { Algorithm Test: '/blog/categories/#algorithm-test' }
     - { etc: '/blog/categories/#etc' }
 
       # - { Tags: '/blog/tags/' }
