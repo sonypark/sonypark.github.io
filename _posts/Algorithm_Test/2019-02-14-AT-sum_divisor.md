@@ -25,7 +25,7 @@ def sum_divisor(n):
 ```
 
 ## 더 효율적인 방법
-```pyhton
+```python
 import math
 def sum_divisor2(n):
     sum = 0
