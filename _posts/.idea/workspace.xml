@@ -49,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-02-14-AT-sum_divisor.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="174">
+              <first_editor relative-caret-position="425">
                 <caret line="25" selection-start-line="25" selection-end-line="25" />
               </first_editor>
               <second_editor />
@@ -57,12 +57,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-02-15-AT-list_index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="327">
-                <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <first_editor relative-caret-position="493">
+                <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-15-TIL.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="531">
+                <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
               </first_editor>
               <second_editor />
             </state>
@@ -107,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TIL(Today I Learned)/2019-01-10-TIL-01.md" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/test2.php" />
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/test.php" />
@@ -158,6 +169,7 @@
         <option value="$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-13-TIL.md" />
         <option value="$PROJECT_DIR$/Algorithm_Test/2019-02-14-AT-sum_divisor.md" />
         <option value="$PROJECT_DIR$/Algorithm_Test/2019-02-15-AT-list_index.md" />
+        <option value="$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-15-TIL.md" />
       </list>
     </option>
   </component>
@@ -250,16 +262,16 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
-      <recent name="$PROJECT_DIR$/TIL(Today I Learned)" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Algorithm_Test" />
       <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1902" />
+      <recent name="$PROJECT_DIR$/Algorithm_Test" />
       <recent name="$PROJECT_DIR$/python" />
       <recent name="$PROJECT_DIR$/etc" />
       <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TIL(Today I Learned)/1901" />
+      <recent name="$PROJECT_DIR$/TIL(Today I Learned)" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,18 +352,19 @@
       <workItem from="1549891227409" duration="4984000" />
       <workItem from="1550047878634" duration="952000" />
       <workItem from="1550123782009" duration="864000" />
-      <workItem from="1550203722499" duration="311000" />
+      <workItem from="1550203722499" duration="857000" />
+      <workItem from="1550242345132" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47416000" />
+    <option name="totallyTimeSpent" value="48208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2546495" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25822604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -381,9 +394,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1901/2019-01-11-TIL-02.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -798,6 +808,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-02-14-AT-sum_divisor.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="425">
+            <caret line="25" selection-start-line="25" selection-end-line="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-01-30-AT-gcdlcm.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -815,21 +835,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-02-14-AT-sum_divisor.md">
+    <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-02-15-AT-list_index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="174">
-            <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <first_editor relative-caret-position="493">
+            <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-02-15-AT-list_index.md">
+    <entry file="file://$PROJECT_DIR$/TIL(Today I Learned)/1902/2019-02-15-TIL.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="327">
-            <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <first_editor relative-caret-position="531">
+            <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
           </first_editor>
           <second_editor />
         </state>
