@@ -11,7 +11,7 @@ comments: true
 ## 문제
 - 3.2 스택 Min
 - 기본적인 push, pop 기능이 구현된 스택에서 최소값을 반환하는 min 함수를 추가하라. 
-- 단 push, pop min 연산은 모두 O(1) 시간에 동작해야 한다.
+- 단 push, pop, min 연산은 모두 O(1) 시간에 동작해야 한다.
 
 
 ## 풀이

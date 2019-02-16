@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2e81191-1abb-4ec8-aff6-ce179fc05a3d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm_Test/2019-02-16-AT-stack-min.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm_Test/2019-02-16-AT-stack-min.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,8 +88,8 @@
         <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-02-16-AT-stack-min.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="633">
-                <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+              <first_editor relative-caret-position="221">
+                <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -381,12 +381,12 @@
       <workItem from="1550123782009" duration="864000" />
       <workItem from="1550203722499" duration="857000" />
       <workItem from="1550242345132" duration="638000" />
-      <workItem from="1550289474274" duration="1664000" />
+      <workItem from="1550289474274" duration="1836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50264000" />
+    <option name="totallyTimeSpent" value="50436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -876,8 +876,8 @@
     <entry file="file://$PROJECT_DIR$/Algorithm_Test/2019-02-16-AT-stack-min.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="633">
-            <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+          <first_editor relative-caret-position="221">
+            <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
