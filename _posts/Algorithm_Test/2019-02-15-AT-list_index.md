@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lv1 - 서울에서 김서방 찾
+title: Lv1 - 서울에서 김서방 찾기
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]
