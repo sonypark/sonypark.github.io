@@ -210,1508 +210,12 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/til/2019/02/10/TIL/">
-        TIL_190210
+      <a href="/algorithm%20test/2019/03/03/AT-kth-array/">
+        Lv1 - k번째
       </a>
     </h1>
 
-    <span class="post-date">10 Feb 2019</span>
-     | 
-    
-    <a href="/blog/tags/#til" class="post-tag">TIL</a>
-    
-    
-
-    <article>
-      <h1 id="오늘-한-일">오늘 한 일</h1>
-<ul>
-  <li>알고리즘 스터디
-    <ul>
-      <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9788966263080&amp;orderClick=JAj">코딩인터뷰완전분석</a>
-        <ul>
-          <li><strong>링크드 리스트</strong></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="느낀점">느낀점</h1>
-<ul>
-  <li>이번주 알고리즘 스터디 내용이었던 링크드 리스트(LinkedList)는 너무 어려웠다. 개념은 이해되는 것 같은데 실제 코드로 구현하는게 많이 힘들었다. 8문제 중에 3문제 밖에 풀지 못 했다. 링크드 리스트는 중요한 부분이니 앞으로도 더 공부해야겠다.</li>
-</ul>
-
-<h1 id="내일-할-일">내일 할 일</h1>
-
-<ul>
-  <li>영어공부: 생활 영어 표현 5개 암기 및 작문</li>
-  <li>알고리즘 공부</li>
-  <li>생활코딩 HTML, CSS강의 듣기</li>
-</ul>
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/til/2019/02/10/TIL/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/til/2019/02/10/TIL/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/python/2019/02/09/py-fastcampus05/">
-        패스트캠퍼스_파이썬중급_05
-      </a>
-    </h1>
-
-    <span class="post-date">09 Feb 2019</span>
-     | 
-    
-    <a href="/blog/tags/#python" class="post-tag">python</a>
-    
-    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
-    
-    <a href="/blog/tags/#패스트캠퍼스" class="post-tag">패스트캠퍼스</a>
-    
-    
-
-    <article>
-      <noscript><pre># 파이썬 속성 탐색
-
-## 객체 속성에 접근하는 방법
-
-* 스페셜 메소드
-
-`__getattribute__`
-
-`__getattr__`
-
-`__setattr__`
-
-`__delattr__`
-
-## `__getattribute__`
-
-속성을 탐색할때
-
-```python
-%%writefile d1.py
-
-class A:
-    x = 3
-
-    def __getattribute__(self, name):
-        print(&quot;속성 탐색&quot;)
-        return super().__getattribute__(name) # == object.__getattribute__(self, name) 를 호출하는것과 동일
-
-    
-a = A()
-print(a)
-print(a.x) # __getattribute__ 호출
-
-a.abc = 12
-print(a.abc) # __getattribute__ 호출
-
-print(a.__dict__)
-```
-```python
-!python d1.py
-```
-```python
-&lt;__main__.A object at 0x7fca20d4b588&gt;
-=&gt; 속성 탐색
-=&gt; 3
-=&gt; 속성 탐색
-=&gt; 12
-=&gt; 속성 탐색
-=&gt; {&#39;abc&#39;: 12}
-```
-
-## `__getattribute__` 활용
-
-특정조건을 만족하지 않으면 속성에 접근할 수 없게  -&gt; 해당 클래스를
-
-```python
-%%writefile d2.py
-
-
-class Private:
-    def __getattribute__(self, name, perm=False): # instance.name -&gt; 매개변수self에는 instance가 매개변수name에는 name이 할당
-        if not perm:
-            raise AttributeError(&quot;속성에 접근할 수 없습니다.&quot;)
-        return super().__getattribute__(name)
-    
-class A(Private):
-    pass
-
-a = A()
-a.x = 3
-
-# print(a.x) # 에러가 발생
-
-
-## a.x 접근하기 위해서는 어떻게???????????
-# 모든 메소드는 class 
-print(type(a).__getattribute__(a, &#39;x&#39;, True))
-```
-```python
-!python d2.py
-
-=&gt; 3
-```
-
-## `__getattr__`
-
-속성을 탐색할때 : 가장 늦게 실행되는 로직
-
-값을 찾지 못했을때, 대체값을 리턴하는 일하거나.
-
-에러를 발생시키는 일
-
-```python
-%%writefile d3.py
-
-
-class A:
-    def __getattr__(self, name): # __getattribute__로 바꿔서 실행시켜보면, 어떠한값을 요청해도 &#39;기본값&#39;이라는 str 객체를 리턴
-        return &#39;기본값&#39;
-    
-    
-a = A()
-a.a = &quot;!!!&quot;
-print(a.a)
-
-print(a.b)
-```
-```python
-!python d3.py
-
-=&gt; !!!
-=&gt; 기본값
-```
-
-#### `__getattr__`활용 : 에러설정
-
-```python
-%%writefile d4.py
-
-class A:
-    def __getattr__(self, name): # __getattribute__로 바꿔서 실행시켜보면, 어떠한값을 요청해도 항상 에러 발생
-        # return 
-        raise AttributeError(&quot;값이 없습니다.&quot;)
-
-a = A()
-a.a = &quot;!!!&quot;
-print(a.a)
-
-print(a.b)
-```
-```python
-!python d4.py
-
-=&gt; !!!
-=&gt; Traceback (most recent call last):
-  File &quot;d4.py&quot;, line 11, in &lt;module&gt;
-    print(a.b)
-  File &quot;d4.py&quot;, line 5, in __getattr__
-    raise AttributeError(&quot;값이 없습니다.&quot;)
-AttributeError: 값이 없습니다.
-```
-
-```python
-%%writefile d5.py
-
-class A:
-    def __getattribute__(self, name):
-        print(&quot;getattribute&quot;)
-        return super().__getattribute__(name)
-
-    def __getattr__(self, name):
-        print(&quot;getattr&quot;)
-
-a = A()
-a.name = 123
-
-getattr(a, &#39;name&#39;) # 어느 스페셜 메소드가 실행되는지..
-getattr(a, &#39;name2&#39;)
-```
-```python
-# -&gt; __getattribute__ 메소드 부터 찾아서 실행됨
-
-!python d5.py
-
-=&gt; getattribute
-=&gt; getattribute
-=&gt; getattr
-```
-
-## `__setattr__`
-
-속성에 값을 부여할때
-
-```python
-%%writefile d6.py
-
-
-class A:
-    def __setattr__(self, name, value): # instance.name = value 
-        print(&quot;set&quot;)
-        self.__dict__[name] = value 
-        #super().__setattr__(name, value)  # 이 경우에는 위와 동일함
-        
-a = A()
-a.var = 3 # __setattr__ 실행
-
-print(a.var)
-print(a.__dict__)
-```
-
-```python
-!python d6.py
-
-=&gt; set
-=&gt; 3
-=&gt; {&#39;var&#39;: 3}
-```
-
-## `__delattr__` 속성
-
-속성을 제거할때
-
-```python
-%%writefile d10.py
-
-class A:
-    def __delattr__(self, name):
-        print(&quot;지운다.&quot;)
-        super().__delattr__(name)
-        #del self.__dict__[name]
-        
-        
-a = A()
-a.var = 3
-print(a.var) # 3
-
-del a.var # &quot;지운다&quot;
-
-print(a.var) # Error
-```
-
-```python
-!python d10.py
-
-=&gt; 3
-=&gt; 지운다.
-=&gt; Traceback (most recent call last):
-  File &quot;d10.py&quot;, line 15, in &lt;module&gt;
-    print(a.var) # Error
-AttributeError: &#39;A&#39; object has no attribute &#39;var&#39;
-```
-
-# 위에서 다룬 스페셜 메소드를 이용해서 속성별로 다른 작업을 부여
-
-원 : 반지름을 입력받아서 원 객체 생성
-
-* 반지름은 변경가능
-* 지름, 둘레, 넓이 : 수정불가, 반지름에 따라 결정되는 형태
-
-```python
-%%writefile d11.py
-
-
-MUTABLE = [&#39;r&#39;]
-IMMTAUBLE = &#39;diameter&#39;, &#39;circumference&#39;, &#39;area&#39;
-
-class Circle:
-    pi = 3.1415
-    
-    def __init__(self, r):
-        self.r = r
-        
-    def diameter(self):
-        return self.r * 2
-    
-    def circumference(self):
-        return self.r * self.pi * 2
-    
-    def area(self):
-        return (self.r ** 2 ) * self.pi
-    
-    def __setattr__(self, name, value):
-        # 속성 r은 변경가능, 나머지 속성(함수)는 변경불가능
-        if name in IMMTAUBLE: # IMMUTABLE 로 지정한 이름에 해당하는 속성들을 변경하려고할때 에러가 발생하도록
-            raise AttributeError(&quot;속성을 변경할 수 없습니다.&quot;)
-        return super().__setattr__(name, value)
-
-    def __getattribute__(self, name):
-        # 함수인 속성을, 호출하지않고 즉 ()를 붙이지 않고 값을 얻도록
-        if name in IMMTAUBLE: # IMMUTABLE즉 함수형태인 속성들일때 True
-            #return getattr(self, name)(self) # 무한뤂 에러 발생(재귀)
-            #return type(self).__dict__[name](self) # 아래와 동일
-            return type(self).__dict__[name].__get__(self, type(self))() 
-        return super().__getattribute__(name)
-
-    
-c = Circle(10)
-print(c.r)
-print(c.diameter) 
-
-c.area = 123
-```
-
-```python
-!python d11.py
-
-=&gt; 10
-=&gt; 20
-=&gt; Traceback (most recent call last):
-  File &quot;d11.py&quot;, line 40, in &lt;module&gt;
-    c.area = 123
-  File &quot;d11.py&quot;, line 24, in __setattr__
-    raise AttributeError(&quot;속성을 변경할 수 없습니다.&quot;)
-AttributeError: 속성을 변경할 수 없습니다.
-```
-
-#### 문제점
-
-속성 별로 컨트롤 하기에 제약.
-
-무한루프에 빠지기 쉽다.
-
-
-## 해결책으로 도입된 디스크립터
-
-### descriptor 프로토콜
-
-`__get__`, `__set__`, `__delete__`중 하나가 구현되어있는 클래스
-
-```python
-class Descriptor:
-    def __init__(self, value):
-        self.value = value
-        
-    def __get__(self, instance, onwer):
-        print(&quot;get&quot;)
-        return self.value
-
-    def __set__(self, instance, value):
-        print(&#39;set&#39;)
-        self.value = value
-
-    def __delete__(self, instance):
-        print(&quot;delete&quot;)
-        del self.value
-        
-        
-class A:
-    value = Descriptor(123) # 속성값을 디스크립터 인스턴스에서 관리하도록 지정
-```
-```python
-A.__dict__
-
-=&gt; mappingproxy({&#39;__module__&#39;: &#39;__main__&#39;,
-              &#39;value&#39;: &lt;__main__.Descriptor at 0x103c8e470&gt;,
-              &#39;__dict__&#39;: &lt;attribute &#39;__dict__&#39; of &#39;A&#39; objects&gt;,
-              &#39;__weakref__&#39;: &lt;attribute &#39;__weakref__&#39; of &#39;A&#39; objects&gt;,
-              &#39;__doc__&#39;: None})
-```
-
-### get
-
-```python
-a = A()
-
-type(a).__dict__[&#39;value&#39;].__get__(a, type(a))
-
-=&gt; get
-=&gt; 123
-```
-```python
-a.value # 인스턴스에서 value접근할때 : type(a).__dict__[&#39;value&#39;].__get__(a, type(a)) 호출한것과 동일
-
-=&gt; get
-=&gt; 123
-```
-```python
-A.value # 클래스에서 value접근할때 : A.__dict__[&#39;value&#39;].__get__(None, A) 호출한것고 동일
-
-=&gt; get
-=&gt; 123
-```
-
-```python
-A.__dict__[&#39;value&#39;].__get__(None, A)
-
-=&gt; get
-=&gt; 123
-```
-
-## set
-
-```python
-a.value = 300
-a.value
-
-=&gt; set
-=&gt; get
-=&gt; 300
-```
-```python
-type(a).__dict__[&#39;value&#39;].__set__(a, 300)
-
-=&gt; set
-```
-## del
-
-```python
-del a.value
-
-=&gt; delete
-```
-```python
-a.value = 1
-type(a).__dict__[&#39;value&#39;].__delete__(a)
-
-=&gt; set
-=&gt; delete
-```
-
-### 실습 :  디스크립터 생성
-
-`__get__`만 존재하는 디스크립터 + `__set__` 메소드, `__init__`
-
-```python
-class FistDescriptor:
-    def __init__(self, a):
-        self.a = a
-    
-    def __get__(self, instance, owner):
-        return self.a
-    
-    def __set__(self, instance, value):
-        self.a = value
-
-class A:
-    a = FisrtDescriptor(3)
-```
-```python
-a = A()
-a.a
-
-=&gt; 3
-```
-
-## 정보 저장위치에 따라 다르게 작동
-
-### 정보를 디스크립터에 저장
-
-```python
-class descriptor:
-    def __get__(self, instance, owner):
-        print(&#39;get&#39;)
-        return self.a
-        
-    def __set__(self, instance, value):
-        print(&#39;set&#39;)
-        self.a = value
-        
-class A:
-    x = descriptor()
-```
-
-```python
-a = A()
-a.x = 12
-
-=&gt; set
-```
-```python
-a.x
-
-=&gt; get
-=&gt; 12
-```
-```python
-b = A()
-b.x # b인스턴스의 x 속성에 넣은적 없는 12라는 값이 들어있음
-
-=&gt; get
-=&gt; 12
-
-c = A()
-c.x # c인스턴스의 x 속성에 넣은적 없는 12라는 값이 들어있음
-
-=&gt; get
-=&gt; 12
-
-a.x = 300
-
-=&gt; set
-
-c.x # c인스턴스의 x 속성에 넣은적 없는 300이라는 값이 들어있음
-
-=&gt; get
-=&gt; 300
-```
-```python
-c.__dict__
-type(c).__dict__
-
-=&gt; 동일한 디스크립터 인스턴스를 사용하는 객체들끼리 정보가 공유됨
-```
-
-----
-
-### 인스턴스에 저장
-
-```python
-class descriptor:
-    def __get__(self, instance, owner):
-        print(&#39;get&#39;)
-        return instance.value
-        
-    def __set__(self, instance, value):
-        print(&#39;set&#39;)
-        instance.value = value
-        
-class A:
-    x = descriptor()
-```
-```python
-a = A()
-a.x = 123
-
-=&gt; set
-```
-```python
-b = A()
-b.x = 123123
-
-=&gt; set
-```
-```python
-a.x, b.x
-
-=&gt; get
-=&gt; get
-=&gt; (123, 123123)
-```
-
-#### 디스크립터에 로직(함수)을 저장 : 인자를 받지 않는 함수
-
-```python
-class descriptor:
-    def __init__(self, func):
-        self.func = func
-    
-    def __get__(self, instance, onwer):
-        print(&#39;get 함수 실행&#39;)
-        return self.func(instance)
-        
-class A:
-    def __init__(self, a, b, c):
-        self.a = a
-        self.b = b
-        self.c = c
-        
-    @descriptor # add = descriptor(add)
-    def add(self):
-        return self.a + self.b + self.c
-```
-
-```python
-a = A(1, 2, 3)
-a.add # __get__호출, __get__ 메소드 안에서 대신 호출하고 결과를 리턴해줌
-
-=&gt; get 함수실행
-=&gt; 6
-```
-
-#### 디스크립터에 로직(함수)을 저장 : 인자를 받는 함수
-
-```python
-from functolls import partial
-
-class descriptor:
-    def __init__(self, func):
-        self.func = func
-    
-    def __get__(self, instance, owner):
-        print(&#39;get 함수실행&#39;)
-        return partial(self.func, instance)
-        
-class A:
-    def __init__(self, a):
-        self.a = a
-
-    @descriptor # add = descriptor(add)
-    def add(self, b, c):
-        return self.a + b + c
-```
-```python
-a = A(10)
-a.add(3, 4) # 디스크립터에 함수를 저장하지만, 호출은 외부에서
-
-=&gt; get 함수실행
-=&gt; 17
-```
-
-```python
-class ImmutableAttribute:
-    def __init__(self, func):
-        self.func = func
-        
-    def __get__(self, instance, owner):
-        return self.func(instance)
-    
-    def __set__(self, instance, value):
-        raise AttributeError(&quot;read only&quot;)
-        
-    def __delete__(self, instance):
-        raise AttributeError(&#39;read only&#39;)
-        
-        
-class Circle:
-    pi = 3.1415
-    
-    def __init__(self, r):
-        self.r = r
-    
-    @ImmutableAttribute
-    def diameter(self):
-        return self.r * 2
-
-    @ImmutableAttribute    
-    def circumference(self):
-        return self.r * self.pi * 2
-    
-    @ImmutableAttribute
-    def area(self):
-        return (self.r ** 2 ) * self.pi
-```
-```python
-c = Circle(10)
-c.r
-
-=&gt; 10
-
-c.area
-
-=&gt; 314.15000000000003
-
-c.area = 12
-
-=&gt; ---------------------------------------------------------------------------
-AttributeError                            Traceback (most recent call last)
-&lt;ipython-input-245-97004bf3c700&gt; in &lt;module&gt;
-----&gt; 1 c.area = 12
-
-&lt;ipython-input-241-c5f65d768795&gt; in __set__(self, instance, value)
-      7 
-      8     def __set__(self, instance, value):
-----&gt; 9         raise AttributeError(&quot;read only&quot;)
-     10 
-     11     def __delete__(self, instance):
-
-AttributeError: read only
-```</pre></noscript>
-<script src="https://gist.github.com/sonypark/66725901ed262b3b8fbed3dd39ad9aab.js"> </script>
-
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/python/2019/02/09/py-fastcampus05/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/python/2019/02/09/py-fastcampus05/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/python/2019/02/08/py-fastcampus03/">
-        패스트캠퍼스_파이썬중급_03
-      </a>
-    </h1>
-
-    <span class="post-date">08 Feb 2019</span>
-     | 
-    
-    <a href="/blog/tags/#python" class="post-tag">python</a>
-    
-    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
-    
-    <a href="/blog/tags/#패스트캠퍼스" class="post-tag">패스트캠퍼스</a>
-    
-    
-
-    <article>
-      <noscript><pre># 변수 name
-
-`name`이란 파이썬에서 객체 인스턴스의 이름
-
-1. 하나의 객체가 여러 이름을 가질 수 있음
-2. 이름은 하나의 객체만 가르킬 수 있음
-3. 이름을 호출했을때, 객체의 메모리 주소를 참고하여 객체를 호출함
-
-```python
-number = 1000
-string = &quot;Hello World&quot;
-list_ = [1, 2, 3]
-```
-```python
-id(number), id(string), id(list_)
-
-=&gt; (4403225744, 4403379632, 4403376520)
-```
-
-### `is`와 `==`의 차이
-
-`is`: id가 같은지를 확인      (메모리 주소 비교)
-
-
-`==`: `__eq__` 메소드를 호출  (value 비교)
-
-```python
-# 타입체크 안좋은 예
-
-a = 1
-
-&quot;정수&quot; if type(a) == int else &quot;오류&quot;
-```
-```pyhton
-=&gt; &#39;정수&#39;
-````
-
-```python
-class Always(type):
-    def __eq__(self, other):
-        # self == other
-        return True
-    
-class A(metaclass=Always):
-    pass
-```
-```python
-# vscode에서 warning
-
-a = A()
-
-&quot;정수&quot; if type(a) == int else &quot;오류&quot;
-```
-```pyhton
-=&gt; &#39;정수&#39;
-```
-```python
-isinstance(1, int)  # type비교는 isinstance를 사용한다.
-```
-```python
-=&gt; True
-```
-
-
-## 질문1
-&gt; - 타입 체크를  `==`로 비교하면 안 되는 이유가 `==`는 value를 비교하는 연산자이기 때문인가요?
-&gt; - 그럼에도 불구하고 위의 예시에서 `==`로 타입 비교를 하는데 오류가 나지 않고 &#39;정수&#39;라는 결과값이 나오는 이유가 궁금합니다.
-
-
-## is 연산자
-
-```python
-number1 = 10000
-number2 = 10000
-```
-```python
-number1 == number2 # `==`-&gt; value 비교
-```
-```python
-=&gt; True
-```
-```python
-number1 is number2 # `is`-&gt; id 비교
-```
-```python
-=&gt; False
-```
-```python
-id(number1), id(number2)
-```
-```python
-=&gt; (4403227600, 4403226960)
-```
-```python
-n1 = 1
-n2 = 1
-```
-```python
-n1 is n2
-```
-```python
-=&gt; True 
-# 이때는 왜 `is`로 비교해도 True일까? --&gt; 정수는 [-5,256] 범위에 있는 정수 객체를 internal로 미리 생성해서 가지고 있기 때문이다.
-```
-
-### str의 경우
-
-```python
-## 띄어쓰기와 느낌표(!) 때문에 id값이 달라진다.
-## 변수 name 선언이 가능한 조건을 만족할 경우에는 id값이 같다.
-## 즉, 띄어쓰기나 느낌표(특수문자)등을 없애면 id값은 같아진다. (REPL 환경에서)
-string1 = &quot;Hello World!&quot;
-string2 = &quot;Hello World!&quot;
-```
-```python
-id(string1), id(string2)
-```
-```python
-=&gt; (4403379888, 4404061040)
-```
-
-```python
-string1 is string2
-```
-```python
-=&gt; False
-```
-
-```python
-str1 = &quot;asjldfasdfjawhfohasdfhlksdhfkjhzkxbnklfjnkwanahfu&quot;
-str2 = &quot;asjldfasdfjawhfohasdfhlksdhfkjhzkxbnklfjnkwanahfu&quot;
-```
-
-```python
-str1 is str2
-```
-```python
-=&gt; True # 띄어쓰기와 특수문자가 없으므로 변수 조건에 부합한다. 따라서 `id`값이 같다
-```
-```python
-t1 = ()
-t2 = ()
-```
-```python
-t1 is t2
-```
-```python
-=&gt; True # 빈 튜플의 `id`값은 같다. Tuple은 immutable
-```
-```python
-l1 = []
-l2 = []
-```
-```python
-l1 is l2 
-```
-```python
-=&gt; False # 빈 리스트는 `id`값이 다르다. 리스트는 언제든 바뀔 수 있기 때문(immutable)
-```
-
-# 객체의 캐쉬 : internal
-
-## 정수 : 조건 [-5, 256] 범위에 있는 정수들
-
-정수 객체를 미리 생성해서 가지고 있다.
-
-```python
-a = 100
-b = 100
-c = 100
-```
-```python
-d = 100
-a is b is c is d
-```
-```python
-=&gt; True
-```
-## immutable 객체 (  str 해당 없음 ) 
-
-조건 : 비어있는 객체
-
-```python
-a = ()
-b = ()
-c = ()
-```
-```python
-a is b is c
-```
-```python
-=&gt; True
-```
-```python
-a = (1,)
-b = (1,)
-c = (1,)
-a is b is c
-```
-```python
-=&gt; False
-```
-## 질문2
-&gt; - 튜플은 immutable한데 왜 값이 있다고 해서 `is` 연산이 False가 되는건가요?
-
-
-```python
-a = frozenset()
-b = frozenset()
-c = frozenset()
-```
-```python
-a is b is c
-```
-```python
-=&gt; True
-```
-
-## str 객체 cached internal
-
-조건 : 변수 사용가능한 문자들 
-
-```python
-a = &quot;_asdfliu____&quot;
-b = &quot;_asdfliu____&quot;
-c = &quot;_asdfliu____&quot;
-```
-```python
-a is b is c
-
-=&gt; True
-```
-
-```python
-a = &quot;a!&quot;
-b = &quot;b!&quot;
-c = &quot;c!&quot;
-```
-```python
-a is b is c
-```
-```python
-=&gt; False
-```
-```python
-a = &quot;a b&quot;
-b = &quot;a b&quot;
-c = &quot;a b&quot;
-a is b is c
-```
-```python
-=&gt; False
-```
-
-### str 강제 인터닝
-
-
-```python
-from sys import intern
-help(intern)
-```
-&#39;&#39;&#39;
-Help on built-in function intern in module sys:
-
-intern(...)
-    intern(string) -&gt; string
-    
-    ``Intern&#39;&#39; the given string.  This enters the string in the (global)
-    table of interned strings whose purpose is to speed up dictionary lookups.
-    Return the string itself or the previously interned string object with the
-    same value.
-&#39;&#39;&#39;
-
-```python
-a = intern(&quot;a b&quot;)
-b = intern(&quot;a b&quot;)
-c = intern(&quot;a b&quot;)
-```
-```python
-=&gt; True
-```
-```python
-a is b is c
-
-=&gt; True
-```
-----
-## 지금까지는 REPL 환경에서 작업할 때 적용되는 기준이었다.
-#### IDE를 이용한 Script 환경에서는 신경쓰지 않아도 된다.
-
-
-```python
-source = &quot;&quot;&quot;
-a = &#39;ab cd!&#39;
-b = &#39;ab cd!&#39;
-c = &#39;ab cd!&#39;
-print(a is b is c)
-&quot;&quot;&quot;
-```
-```python
-exec(source)
-=&gt; True
-```
-```python
-source = &quot;&quot;&quot;
-a = 123123
-b = 123123
-c = 123123
-print(a is b is c)
-&quot;&quot;&quot;
-```
-```python
-exec(source)
-=&gt; True
-```
-
-----
-
-# 함수형 프로그래밍
-
-프로그램의 함수를 수학적 함수의 평가로 간주하고,
-
-상태 변경 및 변경가능한 데이터를 피하는 방식(순수함수)
-
-
-### 함수형 프로그래밍의 정의
-
-1. 함수의 1급 객체
-2. Recursion은 주요한 흐름 제어 방법. 
-&gt; loop구문 없는 언어도 존재
-3. Sequence를 중점으로 다룬다.
-4. 순수함수를 사용
-5. 구문을 지양하거나, 완전히 허용하지 않는다. 표현식을 주로 사용. 
-하나의 프로그램은 하나의 표현식(+정의)이다.
-6. 고차함수를 사용한다.
-
-
-## 철학자 루트비히 비트겐슈타인 - 언어의 한계가 나의 세계의 한계다.
-
-
-### 함수형 프로그래밍의 장점
-
-1. 코드양 적다.
-2. 최적화하기 쉽다.
-3. 모듈화 하기 쉽고 (기능별로 분리하기 쉽다.)
-&gt; 병행/병렬화 하기 쉽다.
-4. 공식적인 증명가능
-&gt; 수학개념을 통해서 프로그램 증명할 수 있다.
-
-
-## 함수형 언어의 조건
-
-함수가 1급 객체인 언어
-
-파이썬은 TCO(Tail Call Optimization; 꼬리 재귀 최적화)가 구현되어있지 않다.
-
-
-## 함수형 vs 절차형 언어 비교
-1부터 n까지 각 정수의 세제곱들의 합을 구하는 코드
-
-
-```python
-# 절차(명령)
-n = 3
-result = 0
-for i in range(1, n+1):
-    result += i**3
-print(result)
-```
-```python
-=&gt; 36
-```
-```python
-# 함수형
-sum(map(lambda x: x**3, range(3+1)))
-
-map(function_to_apply, list_of_inputs)
-```
-```python
-=&gt; 36
-```
-
----
-
-문자열 안에 숫자들의 합
-
-&quot;28+31++++32++39&quot; 문자에서 숫자들의 합을 구하는 코드
-
-&gt; 출처: 2012 UA Pycon
-
-
-```python
-# 절차
-expr = &quot;28+31++++32++39&quot;
-res = 0
-for t in expr.split(&quot;+&quot;):
-    if t != &quot;&quot;:
-        res += int(t)
-print(res)
-```
-```python
-=&gt; 130
-```
-```python
-# 함수형
-expr = &quot;28+31++++32++39&quot;
-sum(map(int, filter(len, expr.split(&quot;+&quot;))))
-```
-```python
-=&gt; 130
-```
-
-# 재귀함수
-
-`자연에서 발생하는 문제들을 분석하면 결국엔 반복적인 관계가 생긴다.`
-
--&gt; 점화식을 풀기 위한 기법
-
-# 실습 : 등차수열
-
-```
-a(1) = 3
-a(n) = a(n-1) + 2
-```
-```python
-def a(n):
-    if n == 1:
-        return 3
-    return a(n-1) + 2
-```
-### 실습 : 팩토리얼
-
-```
-a(1) = 1
-a(n) = n * a(n-1)
-```
-
-```python
-def a(n):
-  if n ==1:
-    return 1
-  return n * a(n-1)
-```
-
-### 실습 : 3항 점화식
-
-완전순열
-
-A, B, C, D의 학생들이 시험 후 서로를 채점하게 할때, 
-그 누구도 본인의 시험지를 채점하지 않고 모든 시험지를 채점하는 경우의 수는?
-
-&gt; 위 문제를 해결하는 점화식은 아래와 같습니다.
-
-```
-a(n) = n -1 (if n &lt; 4)
-a(n) = (n-1) * ( a(n-1) + a(n-2) )
-
-a(n) =&gt; n명이 자기 자신의 것을 갖지 않는 경우의 수
-i)  두 번째 사람이 첫 번째 사람의 수를 가질 때: (n-1) * (1 * a(n-2))
-ii) 두 번째 사람이 첫 버째 사람의 수를 가지지 않을 때: (n-1) * ( a(n-1) )
-```
-```python
-def a(n):
-  if n&lt;4:
-    return n-1
-  return (n-1)*(a(n-1)+a(n-2))
-```
-
-
-
-#### 실습 : 피보나치 수열
-
-```
-a(n) = 1 (if n &lt; 3)
-a(n) = a(n-1) + a(n-2)
-```
-
-```python
-def a(n):
-  if(n&lt;3):
-    return 1
-    
-  return a(n-1) + a(n-2)
-```</pre></noscript>
-<script src="https://gist.github.com/sonypark/25b5be822b6c0772d7ac0470eedee4ef.js"> </script>
-
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/python/2019/02/08/py-fastcampus03/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/python/2019/02/08/py-fastcampus03/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/etc/2019/02/06/etc-lecture01_JCP/">
-        박종천님 청춘특강
-      </a>
-    </h1>
-
-    <span class="post-date">06 Feb 2019</span>
-     | 
-    
-    <a href="/blog/tags/#박종천님-특강" class="post-tag">박종천님 특강</a>
-    
-    <a href="/blog/tags/#청춘특강" class="post-tag">청춘특강</a>
-    
-    <a href="/blog/tags/#동기부여" class="post-tag">동기부여</a>
-    
-    
-
-    <article>
-      <blockquote>
-  <p>출처: <a href="https://www.youtube.com/watch?v=Ve-yWkrV29c">[YCM] 제 1회 “끌리면 오라: 청춘특강” - 박종천 강사님</a></p>
-
-  <p>아래 내용은 위의 강의를 요약 정리한 내용입니다.</p>
-</blockquote>
-
-<h2 id="사람들은-나에게-왜-블리자드를-나왔냐고-묻는다">사람들은 나에게 왜 블리자드를 나왔냐고 묻는다</h2>
-<ul>
-  <li>사실 블리자드는 좋다</li>
-  <li>연봉도 높고, 편하고, 안정적이다.</li>
-  <li>그러나 그게 문제다</li>
-  <li>다 편하고 좋으니까 사람이 녹이 슨다.</li>
-  <li>배부른 돼지가 되는 거다</li>
-  <li>무엇이 중요한가?</li>
-  <li>우리의 삶의 목적은 무엇인가?</li>
-  <li>사람마다 다를 수 있다.</li>
-  <li>오늘은 내가 살아온 방식에 대해서 공유하고자 한다.</li>
-</ul>
-
-<h2 id="강의를-듣는-사람의-세-가지-유형">강의를 듣는 사람의 세 가지 유형</h2>
-<ol>
-  <li>듣고 잊어버림</li>
-  <li>듣고 기억함</li>
-  <li>듣고 기억하고 삶이 변함</li>
-</ol>
-
-<p>이 강의를 듣고 삶이 조금이라도 변했으면 좋겠다.</p>
-
-<h2 id="1-편한-곳-보단-힘든-곳으로-가라"><strong>1. 편한 곳 보단 힘든 곳으로 가라</strong></h2>
-<ul>
-  <li>삶에서 중요한 건?</li>
-  <li>편한게 꼭 좋은 건 아니다</li>
-  <li>편하면 노력을 덜하게 되고 성장을 할 수 없다.
-    <ul>
-      <li>나의 경험</li>
-      <li>토목 회사 vs 한글과컴퓨터</li>
-      <li>토목 회사
-        <ul>
-          <li>개발 실장</li>
-          <li>높은 연봉</li>
-          <li>편하다</li>
-        </ul>
-      </li>
-      <li>한글과컴퓨터
-        <ul>
-          <li>말단 직원</li>
-          <li>낮은 연봉</li>
-          <li>일이 어려움</li>
-          <li>But, 뛰어난 개발자들이 많음</li>
-        </ul>
-      </li>
-      <li>사람이 한 번 쉬운걸 선택하면 계속 쉬운 것만 선택한다.</li>
-      <li>그 다음에도 쉽고 할 수 있는 것만 선택하게 된다.
-        <ul>
-          <li>우리는 언제 성장할까?</li>
-          <li>실패할 때? 성공할 때?
-            <ul>
-              <li>근육이 찢어져야 성장한다.</li>
-              <li>자신이 10kg을 들 수 있는데 1년 내내 5kg만 들어봤자 운동은 하나도 안 된다.</li>
-              <li>편하지만 성장하지 않는다.</li>
-              <li>11kg 이상 들어야 한다.</li>
-            </ul>
-          </li>
-          <li>자신의 능력보다 조금 더 힘든 걸 해야 배우고 성장한다.</li>
-          <li>나는 회사에서 일을 시킬 때 반은 실패하도록 한다.</li>
-          <li>실패가 있어야 성장이 있다.</li>
-          <li>한 번도 실패하지 않는 사람은 한 번도 도전하지 않은 사람이다.</li>
-          <li>도전 없이 성장은 없다.</li>
-        </ul>
-      </li>
-      <li>결국 한글과컴퓨터를 선택했다.
-        <ul>
-          <li>그곳에서는 힘들었지만 나오고 나니 다른 데서 일할 때는 너무 쉬웠다.</li>
-          <li>블리자드에서 오래 일하니 익숙해지고 편해졌다.</li>
-          <li>더이상 성장하지 않는다고 느꼈다.</li>
-          <li>좀 더 어려운 일을 하며 성장하기 위해 넥슨에 오기로 했다.</li>
-        </ul>
-      </li>
-      <li>자신의 능력을 쌓아야 한다.</li>
-      <li>능력은 어려운 것에 도전하고 성장하는 과정에서 쌓인다
-        <ul>
-          <li>남들은 나에게 어떻게 했길래 그렇게 성공적인 길만 갈 수 있었느냐고 물은다</li>
-          <li>교만해 보일 수 있지만 나는 이렇게 말한다.</li>
-          <li>“어느 누구나 나만큼 노력하고 도전했다면 지금 이 자리에 왔을 거라고 믿는다.”</li>
-          <li>남들이 보기엔 편하게 편하게 산 것 같지만 그렇지 않다.</li>
-          <li>남들이 3번 도전해서 1번 성공할 때 나는 30번 도전해서 3번 성공했다.</li>
-          <li>이러한 강연 자체도 그렇다.</li>
-          <li>망한 강연도 굉장히 많다. 혼자서 속상해한 적도 많다.</li>
-          <li>실패한 강연이 지금의 나를 만들었다.</li>
-          <li>실패가 나를 만든 거지 성공이 나를 만든게 아니다.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="2-나-스스로에-대한-믿음이-있어야-한다---자존감"><strong>2. 나 스스로에 대한 믿음이 있어야 한다. - 자존감</strong></h2>
-<ul>
-  <li>마음속 깊이 나는 할 수 있다는 느낌이 있어야 한다.</li>
-  <li>사람은 실패했을 때 본성이 나온다.</li>
-  <li>성공을 했을 때는 그냥 가지만 실패했을 때 무너진다.</li>
-  <li>실패했을 때 다시 올라갈 수 있는 힘이 바로 자존감이다.</li>
-  <li>결과가 아닌 과정을 칭찬하라
-    <ul>
-      <li>남과의 경쟁은 중요한 게 아니다</li>
-      <li>모든 것의 중심은 나여야 한다.</li>
-      <li>밖을 보는 만큼 안도 봐야한다.</li>
-      <li>나 스스로를 믿고 중심을 잡을 때 굳건히 성장할 수 있다.</li>
-    </ul>
-  </li>
-  <li>나뭇가지에 앉은 새는 나뭇가지가 부러지는 것에 대해 걱정하지 않는다.
-    <ul>
-      <li>그것은 나뭇가지가 부러지지 않을 거라는 믿음이 있어서가 아니라 자신에게 날개가 있기 때문이다.</li>
-      <li>사람들은 보통 환경에 대해 불안해한다.</li>
-      <li>새는 나뭇가지가 부러질것에 대해 불안해하지 않는다.</li>
-    </ul>
-  </li>
-  <li>환경을 넘어서서 사는 방법은 자존감과 능력이다.
-    <ul>
-      <li>나 스스로에 대한 확신</li>
-      <li>그 확신을 바탕으로 한 노력</li>
-      <li>이를 통한 성장</li>
-      <li>이 세 가지가 복합적으로 이루어졌을 때 자시만의 날개가 생긴다.</li>
-      <li>나뭇가지에 앉은 새처럼 불안해 하지 않을 수 있다.</li>
-    </ul>
-  </li>
-  <li>자존감
-    <ul>
-      <li>나는 나를 얼마나 좋아하는가?</li>
-      <li>머리부터 발끝까지 나 자신을 사랑해야한다.</li>
-      <li>그러기위해선 노력이 필요하다</li>
-      <li>스스로에게 결과가 아닌 과정을 칭찬해줘야 한다.</li>
-      <li>내가 나를 좋아하는 것도 내가 이룬 결과를 좋아해서는 안 되고 좋은 결과를 얻기 위해 노력하는 지금 이 과정을 좋아해야한다.
-        <ul>
-          <li>성적이 좀 나빠서 - 공부를 열심히 한다 - 이런 내가 마음에 든다.</li>
-          <li>살이 좀 쪘네 - 운동을 열심히 한다. - 이런 내가 마음에 든다.</li>
-        </ul>
-      </li>
-      <li>나의 상태를 좋아할 필요가 없다.</li>
-      <li>나의 방향을 좋아하면 된다.
-남들에게도 그 사람의 상태가 아닌 그 사람이 나아가고 있는 방향을 칭찬해줘라</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="3-노력은-꾸준함-이다"><strong>3. 노력은 꾸준함 이다.</strong></h2>
-<ul>
-  <li><strong>노력은 밤새는 게 아니다</strong></li>
-  <li>다음날 시험을 위해 밤을 새면 그 다음 시험에도 밤을 새게 된다.</li>
-  <li>노력은 그 날 바짝 하는 게 아니라 평소에 꾸준히 하는 것이다.</li>
-  <li>운동하기로 마음 먹었으면 매일 30분이라도 1년 내내 꾸준히하는게 노력이지 오늘 1km 뛰는 게 노력이 아니다.</li>
-  <li>그래서 노력이 어려운거다.</li>
-  <li>노력이 능력보다 훨씬 더 어렵다.</li>
-  <li>무언가를 하려면 꾸준하게 할 마음으로 해야한다.</li>
-  <li>습관의 힘
-    <ul>
-      <li>습관이 생겨야 꾸준히 할 수 있다.</li>
-    </ul>
-  </li>
-  <li>이러한 노력도 자존감이 있어야 할 수 있다.
-    <ul>
-      <li>자존감이 없으면 매일매일 이렇게 못 한다.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="4-성공의-3대-요소"><strong>4. 성공의 3대 요소</strong></h2>
-
-<ol>
-  <li><strong>능력</strong>
-    <ul>
-      <li>좋아하는 것? 잘하는 것?</li>
-      <li>보통 잘하는 걸 좋아할 가능성이 높다.</li>
-      <li>꾸준히 도전하고 성장하며 능력을 쌓아야한다.</li>
-    </ul>
-  </li>
-  <li><strong>노력</strong>
-    <ul>
-      <li>누구나 김연아만큼 연습했으면 그 만큼 됐을 거다.</li>
-      <li>그런데 아무도 그렇게 못한다. 그만큼 힘들다.</li>
-      <li>이러한 노력 조차도 능력이 있어야 할 수 있다.</li>
-      <li>능력 없이 노력만 하게 되면 제자리 걸음이 될 수 있다.</li>
-      <li>내가 잘하는 것을 끊임 없이 노력하고 지속해야한다.</li>
-    </ul>
-  </li>
-  <li><strong>기회</strong>
-    <ul>
-      <li>기회는 우리가 만들 수 있는 게 아니다.</li>
-      <li>시간의 흐름에 따라 생긴다.</li>
-      <li>능력과 노력이 있어도 기회가 없을 수 있다.</li>
-      <li>하지만 기회만 있으면 그 기회를 잡을 수 없다. 그래서 없는 것과 마찬가지이다.</li>
-      <li>기회는 끝없이 온다. 그 기회를 발견하고 잡을 수 있는 것은 능력과 노력이 준비되었을 때다.</li>
-      <li>왜 나에게 기회가 주어지지 않는가를 고민할 필요할 없다.</li>
-      <li>나는 어디에 능력이 있고 계속 노력하고 있는가 - 이것에 집중해야한다.</li>
-      <li>그 사이 사이에 기회는 정말 많이 온다.</li>
-      <li>능력과 노력이 부족해서 문제지 기회가 부족한 경우는 거의 없다.</li>
-      <li>밖이 아닌 안에 쌓아라</li>
-      <li>능력과 노력은 자기 안에 쌓는 거다</li>
-      <li>내가 가지고 있는 시간과 돈을 최대한 다 쓰고 가고 싶다.</li>
-    </ul>
-    <ul>
-      <li>100m 달리기를 할 때 100m를 다 달리고 체력이 남아서 더 뛰고 싶다는 건 의미가 없다.</li>
-    </ul>
-  </li>
-</ol>
-
-<h2 id="5-채용할-때-보는-세-가지"><strong>5. 채용할 때 보는 세 가지</strong></h2>
-<ol>
-  <li><strong>똑똑한가</strong>
-    <ul>
-      <li>깊게 사고하는가</li>
-      <li>보통 A,B만 생각하는데</li>
-      <li>A앞에는 뭐가 있고 B 뒤에는 뭐가 있는지 생각할 줄 아는가</li>
-      <li>대화를 해보면 금방 알 수 있다.</li>
-    </ul>
-  </li>
-  <li><strong>부지런한가</strong>
-    <ul>
-      <li>게으르면 안 된다.</li>
-      <li>게으른 사람은 노력을 못 한다.</li>
-    </ul>
-  </li>
-  <li><strong>착한가</strong>
-    <ul>
-      <li>사람이 선해야 한다.</li>
-      <li>선해야 남들에게도 도움을 줄 수 있다.</li>
-      <li>그 도움이 나중에 그 사람에게 돌아가며 선순환 구조를 이룬다.</li>
-      <li>착하지 않은 사람은 자존감이 낮기 때문이라고 생각한다.</li>
-      <li>자존감이 높은 사람은 사랑을 남에게서 받을 필요가 없고 자기 안에서 퍼주면 되기 때문에 착하다.</li>
-    </ul>
-  </li>
-</ol>
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/etc/2019/02/06/etc-lecture01_JCP/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/etc/2019/02/06/etc-lecture01_JCP/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/algorithm%20test/2019/02/05/AT-rotate_string/">
-        Lv1 - 문자열 회전
-      </a>
-    </h1>
-
-    <span class="post-date">05 Feb 2019</span>
+    <span class="post-date">03 Mar 2019</span>
      | 
     
     <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
@@ -1726,51 +230,512 @@ def a(n):
 
     <article>
       <blockquote>
-  <p>출처: <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9788966263080&amp;orderClick=JAj">코딩인터뷰완전분석</a></p>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/42748</p>
+</blockquote>
+
+<blockquote>
+  <p>개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.</p>
 </blockquote>
 
 <h2 id="문제">문제</h2>
+<p>배열 array의 i번째 숫자부터 j번째 숫자까지 자르고 정렬했을 때, k번째에 있는 수를 구하려 합니다.</p>
+
+<p>예를 들어 array가 [1, 5, 2, 6, 3, 7, 4], i = 2, j = 5, k = 3이라면</p>
+
+<ol>
+  <li>array의 2번째부터 5번째까지 자르면 [5, 2, 6, 3]입니다.</li>
+  <li>1에서 나온 배열을 정렬하면 [2, 3, 5, 6]입니다.</li>
+  <li>2에서 나온 배열의 3번째 숫자는 5입니다.</li>
+</ol>
+
+<p>배열 array, [i, j, k]를 원소로 가진 2차원 배열 commands가 매개변수로 주어질 때, commands의 모든 원소에 대해 앞서 설명한 연산을 적용했을 때 나온 결과를 배열에 담아 return 하도록 solution 함수를 작성해주세요.</p>
+
+<h4 id="제한사항">제한사항</h4>
 <ul>
-  <li>1.9 문자열 회전</li>
-  <li>한 단어가 다른 문자열에 포함되어 있는지 판별하는 isSubstring이라는 매서드가 있다고 하자.
-s1과 s2의 두 문자열이 주어졌고, s2가 s1을 회전시킨 결과인지 판별하고자 한다.</li>
-  <li>Ex) waterbottle 은 erbottlewat 을 회전시켜 얻을 수 있는 문자열이다.</li>
-  <li>isSubstring 메서드를 한 번만 호출해서 판별할 수 잇는 코드를 작성하라.</li>
+  <li>array의 길이는 1 이상 100 이하입니다.</li>
+  <li>array의 각 원소는 1 이상 100 이하입니다.</li>
+  <li>commands의 길이는 1 이상 50 이하입니다.</li>
+  <li>commands의 각 원소는 길이가 3입니다.</li>
 </ul>
 
-<h2 id="풀이">풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">rotateString</span><span class="p">(</span><span class="n">s1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">s2</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">bool</span><span class="p">:</span>
+<h4 id="입출력-예">입출력 예</h4>
 
-    <span class="c1"># 문자열 길이가 다르면 False
-</span>    <span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">)):</span>
-        <span class="k">return</span> <span class="bp">False</span>
+<table>
+  <thead>
+    <tr>
+      <th>array</th>
+      <th>commands</th>
+      <th>return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[1, 5, 2, 6, 3, 7, 4]</td>
+      <td>[[2, 5, 3], [4, 4, 1], [1, 7, 3]]</td>
+      <td>[5, 6, 3]</td>
+    </tr>
+  </tbody>
+</table>
 
-    <span class="n">s1s1</span> <span class="o">=</span> <span class="n">s1</span><span class="o">+</span><span class="n">s1</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">s1s1</span><span class="p">)</span>
+<h2 id="내-풀이">내 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">Kth_array</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">commands</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
 
-    <span class="k">if</span><span class="p">(</span><span class="n">s2</span> <span class="ow">in</span> <span class="n">s1s1</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">True</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">'일치하는 문자열 없음'</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">False</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">commands</span><span class="p">:</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">answer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">s</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">e</span><span class="p">])[</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">answer</span>
+</code></pre></div></div>
+
+<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">commands</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="nb">sorted</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]])[</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">commands</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="배운점">배운점</h2>
+<h4 id="lambda-함수-출처-w3schoolcom">lambda 함수 (<a href="https://www.w3schools.com/python/python_lambda.asp">출처: w3school.com</a></h4>
+<ul>
+  <li><code class="highlighter-rouge">lambda arguments : expression</code></li>
+  <li>한 줄의 로직만 표현하고 사라지는 함수. - 메모리에 저장되지 않아 메모를 아낄 수 있다.</li>
+  <li>선언과 동시에 호출이 되기 때문에 간단한 로직을 구현할 때 편리하다.</li>
+  <li>append: <code class="highlighter-rouge">객체를</code> 리스트 끝에 추가 (Appends object at the end)
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="o">=&gt;</span> <span class="mi">30</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="map-함수출처-w3schoolcom">map 함수(<a href="https://www.w3schools.com/python/ref_func_map.asp">출처: w3school.com</a></h4>
+<ul>
+  <li><code class="highlighter-rouge">map(function, iterables)</code></li>
+  <li>반복 가능한(iterable) 자료형의 각 요소를 함수에 넣어 실행한 결과를 반환한다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">myfunc</span><span class="p">,</span> <span class="p">(</span><span class="s">'apple'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">,</span> <span class="s">'cherry'</span><span class="p">),</span> <span class="p">(</span><span class="s">'orange'</span><span class="p">,</span> <span class="s">'lemon'</span><span class="p">,</span> <span class="s">'pineapple'</span><span class="p">))</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nb">map</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x034244F0</span><span class="o">&gt;</span>
+
+<span class="c1">#convert the map into a list, for readability:
+</span><span class="k">print</span> <span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="o">=&gt;</span> <span class="p">[</span><span class="s">'appleorange'</span><span class="p">,</span> <span class="s">'bananalemon'</span><span class="p">,</span> <span class="s">'cherrypineapple'</span><span class="p">]</span>
+</code></pre></div></div>
+
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/algorithm%20test/2019/03/03/AT-kth-array/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/algorithm%20test/2019/03/03/AT-kth-array/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/algorithm%20test/2019/03/01/AT-rectangle/">
+        Lv1 - 직사각형의 꼭지점 찾기
+      </a>
+    </h1>
+
+    <span class="post-date">01 Mar 2019</span>
+     | 
+    
+    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
+    
+    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
+    
+    
+
+    <article>
+      <blockquote>
+  <p>출처: 코드스쿼드 마스터코스 온라인코딩 데모 테스트</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>직사각형을 만드는 데 필요한 4개의 점 중 3개의 좌표가 주어질 때, 나머지 한 점의 좌표를 구하려고 합니다. 직사각형을 이루는 좌표를 담은 배열 v와 배열 v의 길이 v_len이 매개변수로 주어질 때, 직사각형을 만드는 데 필요한 나머지 한 점의 좌표를 return 하도록 solution 함수를 완성해주세요. 단, 직사각형의 각 변은 x축, y축에 평행하며, 반드시 직사각형을 만들 수 있는 경우만 입력으로 주어집니다.</p>
+
+<h4 id="제한사항">제한사항</h4>
+<ul>
+  <li>v는 세 점의 좌표가 들어있는 2차원 배열입니다.</li>
+  <li>v의 각 원소는 점의 좌표를 나타내며, 좌표는 [x축 좌표, y축 좌표] 순으로 주어집니다.</li>
+  <li>좌표값은 1 이상 10억 이하의 자연수입니다.</li>
+  <li>v_len은 항상 3입니다.</li>
+  <li>직사각형을 만드는 데 필요한 나머지 한 점의 좌표를 [x축 좌표, y축 좌표] 순으로 담아 return 해주세요.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>v</th>
+      <th>v_len</th>
+      <th>return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[[1, 4], [3, 4], [3, 10]]</td>
+      <td>3</td>
+      <td>[1,10]</td>
+    </tr>
+    <tr>
+      <td>[[1, 1], [2, 2], [1, 2]]</td>
+      <td>3</td>
+      <td>[2,1]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="내-풀이">내 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">collections</span>
+
+<span class="k">def</span> <span class="nf">fourth_point_of_rectangle</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">p4</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># 찾고자 하는 4번째 꼭지점 좌표
+</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">v</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="n">counter_x</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">counter_y</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+    <span class="n">xx</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">counter_x</span> <span class="k">if</span> <span class="n">counter_x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">yy</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">counter_y</span> <span class="k">if</span> <span class="n">counter_y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+
+    <span class="n">p4</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
+    <span class="n">p4</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">p4</span>
+</code></pre></div></div>
+
+<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">rectangle</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">p4</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">zip_v</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">v</span><span class="p">)</span> <span class="c1"># by using `*v` apply all tuples in `v` as separate arguments to the zip() function
+</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">zip_v</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">point</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">point</span><span class="p">)</span>
+        <span class="n">p4</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">point</span> <span class="k">if</span> <span class="n">point</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">p4</span>
+</code></pre></div></div>
+
+<h2 id="배운점">배운점</h2>
+<h4 id="append-vs-extend-출처-stack-overflow">append vs extend (<a href="https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python">출처: stack overflow</a>)</h4>
+<ul>
+  <li>append: <code class="highlighter-rouge">객체를</code> 리스트 끝에 추가 (Appends object at the end)</li>
+  <li>extend: 이터러블 <code class="highlighter-rouge">객체에 담긴 요소를</code> 리스트 끝에 추가 Extends list by appending elements from the iterable
+```python
+x = [1, 2, 3]
+x.append([4, 5])</li>
+</ul>
+
+<p>print (x)
+=&gt; [1, 2, 3, [4, 5]]</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```python
+x = [1, 2, 3]
+x.extend([4, 5])
+
+print (x)
+=&gt;[1, 2, 3, [4, 5]]
+</code></pre></div></div>
+
+<h4 id="zip">zip()</h4>
+<ul>
+  <li>zip(): 같은 길이의 리스트를 같은 인덱스 요소끼리 잘라 튜플 형태로 반환</li>
+  <li><code class="highlighter-rouge">*</code>는 sequence/collection을 언팩(unpack) 하는 기능이 있다.</li>
+  <li>v = [[1, 4], [3, 4], [3, 10]] 일 때 *v 하면 v = [1, 4] [3, 4] [3, 10]</li>
+  <li>zip(*v) =&gt; (1, 3, 3), (4, 4, 10) 형태의 zip 객체 반환</li>
+</ul>
+
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/algorithm%20test/2019/03/01/AT-rectangle/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/algorithm%20test/2019/03/01/AT-rectangle/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/algorithm%20test/2019/02/28/AT-number-generator/">
+        Lv1 - x만큼 간격이 있는 n개의 숫자
+      </a>
+    </h1>
+
+    <span class="post-date">28 Feb 2019</span>
+     | 
+    
+    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
+    
+    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
+    
+    
+
+    <article>
+      <blockquote>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12954</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다.
+다음 제한 조건을 보고, 조건을 만족하는 함수, solution을 완성해주세요.</p>
+
+<h4 id="제한사항">제한사항</h4>
+<ul>
+  <li>x는 -10000000 이상, 10000000 이하인 정수입니다.</li>
+  <li>n은 1000 이하인 자연수입니다.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>x</th>
+      <th>n</th>
+      <th>return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>5</td>
+      <td>[2,4,6,8,10]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td>[4,8,12]</td>
+    </tr>
+    <tr>
+      <td>-4</td>
+      <td>2</td>
+      <td>[-4,-8]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="내-풀이">내 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">number_generator</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">ll</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">ll</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">*</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+            <span class="n">ll</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+            <span class="n">ll</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">ll</span>
+</code></pre></div></div>
+
+<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">number_generator</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+</code></pre></div></div>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/algorithm%20test/2019/02/28/AT-number-generator/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/algorithm%20test/2019/02/28/AT-number-generator/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/algorithm%20test/2019/02/27/AT-hide-numbers/">
+        Lv1 - 핸드폰 번호 가리기
+      </a>
+    </h1>
+
+    <span class="post-date">27 Feb 2019</span>
+     | 
+    
+    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
+    
+    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
+    
+    
+
+    <article>
+      <blockquote>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12948</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>프로그래머스 모바일은 개인정보 보호를 위해 고지서를 보낼 때 고객들의 전화번호의 일부를 가립니다.
+전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 <code class="highlighter-rouge">*</code>으로 가린 문자열을 리턴하는 함수, solution을 완성해주세요.</p>
+
+<h4 id="제한사항">제한사항</h4>
+<ul>
+  <li>s는 길이 4 이상, 20이하인 문자열입니다.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>phone_number</th>
+      <th>return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“01033334444”</td>
+      <td>“<strong>**</strong>*4444”</td>
+    </tr>
+    <tr>
+      <td>“027778888”</td>
+      <td>“*****8888”</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="내-풀이">내 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hide_numbers</span><span class="p">(</span><span class="n">phone_number</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">phone_number</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">phone_number</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="p">,</span> <span class="s">'*'</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">phone_number</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hide_numbers</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s">"*"</span><span class="o">*</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span>
+</code></pre></div></div>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/algorithm%20test/2019/02/27/AT-hide-numbers/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/algorithm%20test/2019/02/27/AT-hide-numbers/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/algorithm%20test/2019/02/24/AT-sort-alphabet-reverse/">
+        Lv1 - 문자열 내림차순 배
+      </a>
+    </h1>
+
+    <span class="post-date">24 Feb 2019</span>
+     | 
+    
+    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
+    
+    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
+    
+    
+
+    <article>
+      <blockquote>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12917</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>문자열 s에 나타나는 문자를 큰것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요.
+s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보다 작은 것으로 간주합니다.</p>
+
+<h4 id="제한사항">제한사항</h4>
+<ul>
+  <li>str은 길이 1 이상인 문자열입니다.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>s</th>
+      <th>return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“Zbcdefg”</td>
+      <td>“gfedcbZ”</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="내-풀이">내 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sort_alphabet_reverse</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
+    <span class="n">st</span> <span class="o">=</span> <span class="s">""</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+        <span class="n">st</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">st</span>
+</code></pre></div></div>
+
+<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># join 함수 이용
+</span><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 리스트로 변환 후 sort
+</span><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">lst</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+        <span class="n">answer</span> <span class="o">+=</span> <span class="n">i</span>
+
+    <span class="c1">#return lst
+</span>    <span class="k">return</span> <span class="n">answer</span>
 </code></pre></div></div>
 
 <h2 id="배운점">배운점</h2>
 <ul>
-  <li>1시간을 고민 끝에 해설을 보고 힌트를 얻었다. 문자열 두 개를 연결하는 생각은 해설을 보지 못 않았으면 전혀 생각으 못 했을 것 같다.</li>
-</ul>
-
-<h2 id="느낀점">느낀점</h2>
-<ul>
-  <li>최소 1시간은 고민하고 전혀 감이 안 잡힐 땐 해설을 보고 힌트를 얻자.</li>
+  <li>join() 함수 : 문자열(string)에 element를 추가할 수 있다.</li>
+  <li><code class="highlighter-rouge">str +=</code> element. <code class="highlighter-rouge">str.join</code>(element) 모두 같은 결과 반환</li>
 </ul>
 
     <article>
     <div class="post-more">
       
-      <a href="/algorithm%20test/2019/02/05/AT-rotate_string/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      <a href="/algorithm%20test/2019/02/24/AT-sort-alphabet-reverse/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
       
-      <a href="/algorithm%20test/2019/02/05/AT-rotate_string/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+      <a href="/algorithm%20test/2019/02/24/AT-sort-alphabet-reverse/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div>
   </div>
   
