@@ -4,7 +4,7 @@
  <title>SONY_DEV</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-03-03T23:43:27+09:00</updated>
+ <updated>2019-03-04T00:17:36+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>sonypark</name>
@@ -51,16 +51,16 @@
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;array&lt;/th&gt;
-      &lt;th&gt;commands&lt;/th&gt;
-      &lt;th&gt;return&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;array&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;commands&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;return&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;[1, 5, 2, 6, 3, 7, 4]&lt;/td&gt;
-      &lt;td&gt;[[2, 5, 3], [4, 4, 1], [1, 7, 3]]&lt;/td&gt;
-      &lt;td&gt;[5, 6, 3]&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[1, 5, 2, 6, 3, 7, 4]&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[[2, 5, 3], [4, 4, 1], [1, 7, 3]]&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[5, 6, 3]&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
