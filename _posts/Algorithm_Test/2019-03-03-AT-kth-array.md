@@ -55,7 +55,7 @@ def solution(array, commands):
 ```
 
 ## 배운점
-####  lambda 함수 ([출처: w3school.com](https://www.w3schools.com/python/python_lambda.asp)
+####  lambda 함수 [출처: w3school.com](https://www.w3schools.com/python/python_lambda.asp)
 - `lambda arguments : expression`
 - 한 줄의 로직만 표현하고 사라지는 함수. - 메모리에 저장되지 않아 메모를 아낄 수 있다.
 - 선언과 동시에 호출이 되기 때문에 간단한 로직을 구현할 때 편리하다.
@@ -66,7 +66,7 @@ print(x(5, 6))
 => 30
 ```
 
-#### map 함수([출처: w3school.com](https://www.w3schools.com/python/ref_func_map.asp)
+#### map 함수 [출처: w3school.com](https://www.w3schools.com/python/ref_func_map.asp)
 - `map(function, iterables)`
 - 반복 가능한(iterable) 자료형의 각 요소를 함수에 넣어 실행한 결과를 반환한다.
 
