@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lv1 - 문자열 내림차순 배
+title: Lv1 - 문자열 내림차순 배치
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]
