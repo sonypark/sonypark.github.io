@@ -35,7 +35,7 @@ def digit_reverse(n):
 ```
 
 
-## 다른 사람 풀
+## 다른 사람 풀이
 ```python
 def digit_reverse(n):
     return list(map(int, reversed(str(n))))

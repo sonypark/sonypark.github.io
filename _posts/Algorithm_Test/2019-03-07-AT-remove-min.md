@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lv1 - 직사각형 별찍
+title: Lv1 - 제일 작은 수 제거하기
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]

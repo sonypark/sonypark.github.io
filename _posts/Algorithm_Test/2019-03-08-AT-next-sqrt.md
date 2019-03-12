@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lv1 - 직사각형 별찍
+title: Lv1 - 정수 제곱근 판별
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]
