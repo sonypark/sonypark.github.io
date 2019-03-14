@@ -132,8 +132,8 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
             
             
             
-              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/categories/#python">
-                python
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/categories/#algorithm-test">
+                Algorithm Test
               </a>
           
         
@@ -141,8 +141,8 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
             
             
             
-              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/categories/#algorithm-test">
-                Algorithm Test
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/categories/#python">
+                python
               </a>
           
         
@@ -210,12 +210,12 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/algorithm%20test/2019/03/03/AT-kth-array/">
-        Lv1 - k번째
+      <a href="/algorithm%20test/2019/03/14/AT-collatz/">
+        Lv1 - 콜라츠 추측
       </a>
     </h1>
 
-    <span class="post-date">03 Mar 2019</span>
+    <span class="post-date">14 Mar 2019</span>
      | 
     
     <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
@@ -230,7 +230,7 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 
     <article>
       <blockquote>
-  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/42748</p>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12943</p>
 </blockquote>
 
 <blockquote>
@@ -238,24 +238,18 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 </blockquote>
 
 <h2 id="문제">문제</h2>
-<p>배열 array의 i번째 숫자부터 j번째 숫자까지 자르고 정렬했을 때, k번째에 있는 수를 구하려 합니다.</p>
+<p>1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.</p>
 
-<p>예를 들어 array가 [1, 5, 2, 6, 3, 7, 4], i = 2, j = 5, k = 3이라면</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1-1. 입력된 수가 짝수라면 2로 나눕니다. 
+1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다.
+2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다.
+</code></pre></div></div>
 
-<ol>
-  <li>array의 2번째부터 5번째까지 자르면 [5, 2, 6, 3]입니다.</li>
-  <li>1에서 나온 배열을 정렬하면 [2, 3, 5, 6]입니다.</li>
-  <li>2에서 나온 배열의 3번째 숫자는 5입니다.</li>
-</ol>
-
-<p>배열 array, [i, j, k]를 원소로 가진 2차원 배열 commands가 매개변수로 주어질 때, commands의 모든 원소에 대해 앞서 설명한 연산을 적용했을 때 나온 결과를 배열에 담아 return 하도록 solution 함수를 작성해주세요.</p>
+<p>예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다. 위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요. 단, 작업을 500번을 반복해도 1이 되지 않는다면 –1을 반환해 주세요.</p>
 
 <h4 id="제한사항">제한사항</h4>
 <ul>
-  <li>array의 길이는 1 이상 100 이하입니다.</li>
-  <li>array의 각 원소는 1 이상 100 이하입니다.</li>
-  <li>commands의 길이는 1 이상 50 이하입니다.</li>
-  <li>commands의 각 원소는 길이가 3입니다.</li>
+  <li>입력된 수, num은 1 이상 8000000 미만인 정수입니다.</li>
 </ul>
 
 <h4 id="입출력-예">입출력 예</h4>
@@ -263,87 +257,147 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">array</th>
-      <th style="text-align: center">commands</th>
+      <th style="text-align: center">n</th>
       <th style="text-align: center">return</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">[1, 5, 2, 6, 3, 7, 4]</td>
-      <td style="text-align: center">[[2, 5, 3], [4, 4, 1], [1, 7, 3]]</td>
-      <td style="text-align: center">[5, 6, 3]</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16</td>
+      <td style="text-align: center">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">626331</td>
+      <td style="text-align: center">-1</td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="내-풀이">내 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">Kth_array</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">commands</span><span class="p">):</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">collatz</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">commands</span><span class="p">:</span>
-        <span class="n">s</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">e</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">k</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-        <span class="n">answer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">s</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">e</span><span class="p">])[</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">n</span> <span class="o">*=</span> <span class="mi">3</span>
+            <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="p">:</span>
+            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">count</span>
+</code></pre></div></div>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/algorithm%20test/2019/03/14/AT-collatz/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/algorithm%20test/2019/03/14/AT-collatz/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/algorithm%20test/2019/03/10/AT-digit-reverse/">
+        Lv1 - 자연수 뒤집어 배열로 만들기
+      </a>
+    </h1>
+
+    <span class="post-date">10 Mar 2019</span>
+     | 
+    
+    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
+    
+    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
+    
+    
+
+    <article>
+      <blockquote>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12932</p>
+</blockquote>
+
+<blockquote>
+  <p>개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요. 
+예를들어 n이 12345이면 [5,4,3,2,1]을 리턴합니다.</p>
+
+<h4 id="제한사항">제한사항</h4>
+<ul>
+  <li>n은 10,000,000,000이하인 자연수입니다.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">n</th>
+      <th style="text-align: center">return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">12345</td>
+      <td style="text-align: center">[5,4,3,2,1]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="내-풀이">내 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">digit_reverse</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)):</span>
+        <span class="n">answer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">answer</span>
 </code></pre></div></div>
 
 <h2 id="다른-사람-풀이">다른 사람 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">commands</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="nb">sorted</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]])[</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">commands</span><span class="p">))</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">digit_reverse</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))))</span>
 </code></pre></div></div>
 
-<h2 id="배운점">배운점</h2>
-<h4 id="lambda-함수-출처-w3schoolcom">lambda 함수 (<a href="https://www.w3schools.com/python/python_lambda.asp">출처: w3school.com</a></h4>
+<h2 id="느낀점">느낀점</h2>
 <ul>
-  <li><code class="highlighter-rouge">lambda arguments : expression</code></li>
-  <li>한 줄의 로직만 표현하고 사라지는 함수. - 메모리에 저장되지 않아 메모를 아낄 수 있다.</li>
-  <li>선언과 동시에 호출이 되기 때문에 간단한 로직을 구현할 때 편리하다.</li>
-  <li>append: <code class="highlighter-rouge">객체를</code> 리스트 끝에 추가 (Appends object at the end)
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="o">=&gt;</span> <span class="mi">30</span>
-</code></pre></div>    </div>
-  </li>
+  <li><code class="highlighter-rouge">map()</code> 함수를 잘 이용하자</li>
+  <li>이론적으로 알고 있는 것과 실제로 사용하는 건 전혀 다르다.</li>
+  <li>이론을 설명하지 못 하면 아는게 아니듯</li>
+  <li>코드를 사용하지 못 한다면 모르는 것이다.</li>
 </ul>
-
-<h4 id="map-함수출처-w3schoolcom">map 함수(<a href="https://www.w3schools.com/python/ref_func_map.asp">출처: w3school.com</a></h4>
-<ul>
-  <li><code class="highlighter-rouge">map(function, iterables)</code></li>
-  <li>반복 가능한(iterable) 자료형의 각 요소를 함수에 넣어 실행한 결과를 반환한다.</li>
-</ul>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-<span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">myfunc</span><span class="p">,</span> <span class="p">(</span><span class="s">'apple'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">,</span> <span class="s">'cherry'</span><span class="p">),</span> <span class="p">(</span><span class="s">'orange'</span><span class="p">,</span> <span class="s">'lemon'</span><span class="p">,</span> <span class="s">'pineapple'</span><span class="p">))</span>
-<span class="k">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nb">map</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x034244F0</span><span class="o">&gt;</span>
-
-<span class="c1">#convert the map into a list, for readability:
-</span><span class="k">print</span> <span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-<span class="o">=&gt;</span> <span class="p">[</span><span class="s">'appleorange'</span><span class="p">,</span> <span class="s">'bananalemon'</span><span class="p">,</span> <span class="s">'cherrypineapple'</span><span class="p">]</span>
-</code></pre></div></div>
-
 
     <article>
     <div class="post-more">
       
-      <a href="/algorithm%20test/2019/03/03/AT-kth-array/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      <a href="/algorithm%20test/2019/03/10/AT-digit-reverse/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
       
-      <a href="/algorithm%20test/2019/03/03/AT-kth-array/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+      <a href="/algorithm%20test/2019/03/10/AT-digit-reverse/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div>
   </div>
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/algorithm%20test/2019/03/01/AT-rectangle/">
-        Lv1 - 직사각형의 꼭지점 찾기
+      <a href="/algorithm%20test/2019/03/09/AT-sort-desc/">
+        Lv1 - 정수 내림차순으로 배치하기
       </a>
     </h1>
 
-    <span class="post-date">01 Mar 2019</span>
+    <span class="post-date">09 Mar 2019</span>
      | 
     
     <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
@@ -358,19 +412,21 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 
     <article>
       <blockquote>
-  <p>출처: 코드스쿼드 마스터코스 온라인코딩 데모 테스트</p>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12933</p>
+</blockquote>
+
+<blockquote>
+  <p>개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.</p>
 </blockquote>
 
 <h2 id="문제">문제</h2>
-<p>직사각형을 만드는 데 필요한 4개의 점 중 3개의 좌표가 주어질 때, 나머지 한 점의 좌표를 구하려고 합니다. 직사각형을 이루는 좌표를 담은 배열 v와 배열 v의 길이 v_len이 매개변수로 주어질 때, 직사각형을 만드는 데 필요한 나머지 한 점의 좌표를 return 하도록 solution 함수를 완성해주세요. 단, 직사각형의 각 변은 x축, y축에 평행하며, 반드시 직사각형을 만들 수 있는 경우만 입력으로 주어집니다.</p>
+<p>함수 solution은 정수 n을 매개변수로 입력받습니다. n의 각 자릿수를 큰것부터 작은 순으로 정렬한 새로운 정수를 리턴해주세요.</p>
+
+<p>예를들어 n이 118372면 873211을 리턴하면 됩니다.</p>
 
 <h4 id="제한사항">제한사항</h4>
 <ul>
-  <li>v는 세 점의 좌표가 들어있는 2차원 배열입니다.</li>
-  <li>v의 각 원소는 점의 좌표를 나타내며, 좌표는 [x축 좌표, y축 좌표] 순으로 주어집니다.</li>
-  <li>좌표값은 1 이상 10억 이하의 자연수입니다.</li>
-  <li>v_len은 항상 3입니다.</li>
-  <li>직사각형을 만드는 데 필요한 나머지 한 점의 좌표를 [x축 좌표, y축 좌표] 순으로 담아 return 해주세요.</li>
+  <li>n은 1이상 8000000000 이하인 자연수입니다.</li>
 </ul>
 
 <h4 id="입출력-예">입출력 예</h4>
@@ -378,364 +434,216 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">v</th>
-      <th style="text-align: center">v_len</th>
-      <th style="text-align: center">return</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">[[1, 4], [3, 4], [3, 10]]</td>
-      <td style="text-align: center">3</td>
-      <td style="text-align: center">[1,10]</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">[[1, 1], [2, 2], [1, 2]]</td>
-      <td style="text-align: center">3</td>
-      <td style="text-align: center">[2,1]</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="내-풀이">내 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">collections</span>
-
-<span class="k">def</span> <span class="nf">fourth_point_of_rectangle</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
-    <span class="n">p4</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># 찾고자 하는 4번째 꼭지점 좌표
-</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">v</span><span class="p">:</span>
-        <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-    <span class="n">counter_x</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">counter_y</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-
-    <span class="n">xx</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">counter_x</span> <span class="k">if</span> <span class="n">counter_x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">counter_y</span> <span class="k">if</span> <span class="n">counter_y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
-
-    <span class="n">p4</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
-    <span class="n">p4</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">p4</span>
-</code></pre></div></div>
-
-<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">rectangle</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
-    <span class="n">p4</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">zip_v</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">v</span><span class="p">)</span> <span class="c1"># by using `*v` apply all tuples in `v` as separate arguments to the zip() function
-</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">zip_v</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-        <span class="n">point</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">point</span><span class="p">)</span>
-        <span class="n">p4</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">point</span> <span class="k">if</span> <span class="n">point</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">])</span>
-
-    <span class="k">return</span> <span class="n">p4</span>
-</code></pre></div></div>
-
-<h2 id="배운점">배운점</h2>
-<h4 id="append-vs-extend-출처-stack-overflow">append vs extend (<a href="https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python">출처: stack overflow</a>)</h4>
-<ul>
-  <li>append: <code class="highlighter-rouge">객체를</code> 리스트 끝에 추가 (Appends object at the end)</li>
-  <li>extend: 이터러블 <code class="highlighter-rouge">객체에 담긴 요소를</code> 리스트 끝에 추가 Extends list by appending elements from the iterable
-```python
-x = [1, 2, 3]
-x.append([4, 5])</li>
-</ul>
-
-<p>print (x)
-=&gt; [1, 2, 3, [4, 5]]</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```python
-x = [1, 2, 3]
-x.extend([4, 5])
-
-print (x)
-=&gt;[1, 2, 3, [4, 5]]
-</code></pre></div></div>
-
-<h4 id="zip">zip()</h4>
-<ul>
-  <li>zip(): 같은 길이의 리스트를 같은 인덱스 요소끼리 잘라 튜플 형태로 반환</li>
-  <li><code class="highlighter-rouge">*</code>는 sequence/collection을 언팩(unpack) 하는 기능이 있다.</li>
-  <li>v = [[1, 4], [3, 4], [3, 10]] 일 때 *v 하면 v = [1, 4] [3, 4] [3, 10]</li>
-  <li>zip(*v) =&gt; (1, 3, 3), (4, 4, 10) 형태의 zip 객체 반환</li>
-</ul>
-
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/algorithm%20test/2019/03/01/AT-rectangle/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/algorithm%20test/2019/03/01/AT-rectangle/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/algorithm%20test/2019/02/28/AT-number-generator/">
-        Lv1 - x만큼 간격이 있는 n개의 숫자
-      </a>
-    </h1>
-
-    <span class="post-date">28 Feb 2019</span>
-     | 
-    
-    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
-    
-    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
-    
-    <a href="/blog/tags/#python" class="post-tag">python</a>
-    
-    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
-    
-    
-
-    <article>
-      <blockquote>
-  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12954</p>
-</blockquote>
-
-<h2 id="문제">문제</h2>
-<p>함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다.
-다음 제한 조건을 보고, 조건을 만족하는 함수, solution을 완성해주세요.</p>
-
-<h4 id="제한사항">제한사항</h4>
-<ul>
-  <li>x는 -10000000 이상, 10000000 이하인 정수입니다.</li>
-  <li>n은 1000 이하인 자연수입니다.</li>
-</ul>
-
-<h4 id="입출력-예">입출력 예</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">x</th>
       <th style="text-align: center">n</th>
-      <th>return</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">2</td>
-      <td style="text-align: center">5</td>
-      <td>[2,4,6,8,10]</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">4</td>
-      <td style="text-align: center">3</td>
-      <td>[4,8,12]</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">-4</td>
-      <td style="text-align: center">2</td>
-      <td>[-4,-8]</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="내-풀이">내 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">number_generator</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">ll</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-            <span class="n">ll</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">*</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-            <span class="n">ll</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-
-    <span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-            <span class="n">ll</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">ll</span>
-</code></pre></div></div>
-
-<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">number_generator</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
-</code></pre></div></div>
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/algorithm%20test/2019/02/28/AT-number-generator/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/algorithm%20test/2019/02/28/AT-number-generator/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/algorithm%20test/2019/02/27/AT-hide-numbers/">
-        Lv1 - 핸드폰 번호 가리기
-      </a>
-    </h1>
-
-    <span class="post-date">27 Feb 2019</span>
-     | 
-    
-    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
-    
-    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
-    
-    <a href="/blog/tags/#python" class="post-tag">python</a>
-    
-    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
-    
-    
-
-    <article>
-      <blockquote>
-  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12948</p>
-</blockquote>
-
-<h2 id="문제">문제</h2>
-<p>프로그래머스 모바일은 개인정보 보호를 위해 고지서를 보낼 때 고객들의 전화번호의 일부를 가립니다.
-전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 <code class="highlighter-rouge">*</code>으로 가린 문자열을 리턴하는 함수, solution을 완성해주세요.</p>
-
-<h4 id="제한사항">제한사항</h4>
-<ul>
-  <li>s는 길이 4 이상, 20이하인 문자열입니다.</li>
-</ul>
-
-<h4 id="입출력-예">입출력 예</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">phone_number</th>
       <th style="text-align: center">return</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">“01033334444”</td>
-      <td style="text-align: center">“<strong>**</strong>*4444”</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">“027778888”</td>
-      <td style="text-align: center">“*****8888”</td>
+      <td style="text-align: center">118372</td>
+      <td style="text-align: center">873211</td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="내-풀이">내 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hide_numbers</span><span class="p">(</span><span class="n">phone_number</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">phone_number</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">phone_number</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="p">,</span> <span class="s">'*'</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">phone_number</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]))</span>
-</code></pre></div></div>
-
-<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hide_numbers</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-    <span class="k">return</span> <span class="s">"*"</span><span class="o">*</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span>
-</code></pre></div></div>
-
-    <article>
-    <div class="post-more">
-      
-      <a href="/algorithm%20test/2019/02/27/AT-hide-numbers/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
-      
-      <a href="/algorithm%20test/2019/02/27/AT-hide-numbers/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/algorithm%20test/2019/02/24/AT-sort-alphabet-reverse/">
-        Lv1 - 문자열 내림차순 배
-      </a>
-    </h1>
-
-    <span class="post-date">24 Feb 2019</span>
-     | 
-    
-    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
-    
-    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
-    
-    <a href="/blog/tags/#python" class="post-tag">python</a>
-    
-    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
-    
-    
-
-    <article>
-      <blockquote>
-  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12917</p>
-</blockquote>
-
-<h2 id="문제">문제</h2>
-<p>문자열 s에 나타나는 문자를 큰것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요.
-s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보다 작은 것으로 간주합니다.</p>
-
-<h4 id="제한사항">제한사항</h4>
-<ul>
-  <li>str은 길이 1 이상인 문자열입니다.</li>
-</ul>
-
-<h4 id="입출력-예">입출력 예</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">s</th>
-      <th style="text-align: center">return</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">“Zbcdefg”</td>
-      <td style="text-align: center">“gfedcbZ”</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="내-풀이">내 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sort_alphabet_reverse</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
-    <span class="n">st</span> <span class="o">=</span> <span class="s">""</span>
-    <span class="n">s</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-        <span class="n">st</span> <span class="o">+=</span> <span class="n">i</span>
-    <span class="k">return</span> <span class="n">st</span>
-</code></pre></div></div>
-
-<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># join 함수 이용
-</span><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-    <span class="k">return</span> <span class="s">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 리스트로 변환 후 sort
-</span><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="s">''</span>
-    <span class="n">lst</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-    <span class="n">lst</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-    <span class="n">lst</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="n">answer</span> <span class="o">+=</span> <span class="n">i</span>
-
-    <span class="c1">#return lst
-</span>    <span class="k">return</span> <span class="n">answer</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sort_desc</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="s">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)))</span>
 </code></pre></div></div>
 
 <h2 id="배운점">배운점</h2>
 <ul>
-  <li>join() 함수 : 문자열(string)에 element를 추가할 수 있다.</li>
-  <li><code class="highlighter-rouge">str +=</code> element. <code class="highlighter-rouge">str.join</code>(element) 모두 같은 결과 반환</li>
+  <li><code class="highlighter-rouge">''.join()</code>을 이용해 리스트 내 문자를 합칠 수 있다.</li>
+  <li>유용하므로 잘 기억해두자</li>
 </ul>
 
     <article>
     <div class="post-more">
       
-      <a href="/algorithm%20test/2019/02/24/AT-sort-alphabet-reverse/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      <a href="/algorithm%20test/2019/03/09/AT-sort-desc/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
       
-      <a href="/algorithm%20test/2019/02/24/AT-sort-alphabet-reverse/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+      <a href="/algorithm%20test/2019/03/09/AT-sort-desc/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/algorithm%20test/2019/03/08/AT-next-sqrt/">
+        Lv1 - 정수 제곱근 판별
+      </a>
+    </h1>
+
+    <span class="post-date">08 Mar 2019</span>
+     | 
+    
+    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
+    
+    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
+    
+    
+
+    <article>
+      <blockquote>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12934</p>
+</blockquote>
+
+<blockquote>
+  <p>개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>임의의 정수 n에 대해, n이 어떤 정수 x의 제곱인지 아닌지 판단하려 합니다.
+n이 정수 x의 제곱이라면 x+1의 제곱을 리턴하고, n이 정수 x의 제곱이 아니라면 -1을 리턴하는 함수를 완성하세요.</p>
+
+<h4 id="제한사항">제한사항</h4>
+<ul>
+  <li>n은 1이상, 50000000000000 이하인 정수입니다.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">n</th>
+      <th style="text-align: center">return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">121</td>
+      <td style="text-align: center">144</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="내-풀이">내 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">next_sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">.</span><span class="n">is_integer</span><span class="p">():</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">((</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div></div>
+
+<h2 id="다른-사람-풀이">다른 사람 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">next_sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">sqrt</span> <span class="o">=</span> <span class="n">n</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">sqrt</span> <span class="o">%</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">sqrt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div></div>
+
+<h2 id="배운점">배운점</h2>
+<ul>
+  <li><code class="highlighter-rouge">math.sqrt().is_integer()</code></li>
+  <li>math 모듈의 sqrt()를 이용해 제곱근을 구할 수 있다.</li>
+  <li>math 모듈의 is_integer() 함수를 통해 정수인지 아닌지 판별할 수 있다.</li>
+</ul>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/algorithm%20test/2019/03/08/AT-next-sqrt/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/algorithm%20test/2019/03/08/AT-next-sqrt/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/algorithm%20test/2019/03/07/AT-remove-min/">
+        Lv1 - 제일 작은 수 제거하기
+      </a>
+    </h1>
+
+    <span class="post-date">07 Mar 2019</span>
+     | 
+    
+    <a href="/blog/tags/#알고리즘" class="post-tag">알고리즘</a>
+    
+    <a href="/blog/tags/#algorithm" class="post-tag">algorithm</a>
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#파이썬" class="post-tag">파이썬</a>
+    
+    
+
+    <article>
+      <blockquote>
+  <p>출처: https://programmers.co.kr/learn/courses/30/lessons/12935</p>
+</blockquote>
+
+<blockquote>
+  <p>개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>정수를 저장한 배열, arr 에서 가장 작은 수를 제거한 배열을 리턴하는 함수, solution을 완성해주세요. 단, 리턴하려는 배열이 빈 배열인 경우엔 배열에 -1을 채워 리턴하세요.</p>
+
+<p>예를들어 arr이 [4,3,2,1]인 경우는 [4,3,2]를 리턴 하고, [10]면 [-1]을 리턴 합니다.</p>
+
+<h4 id="제한사항">제한사항</h4>
+<ul>
+  <li>arr은 길이 1 이상인 배열입니다.</li>
+  <li>인덱스 i, j에 대해 i ≠ j이면 arr[i] ≠ arr[j] 입니다.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">arr</th>
+      <th style="text-align: center">return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">[4, 3, 2, 1]</td>
+      <td style="text-align: center">[4, 3, 2]</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">[10]</td>
+      <td style="text-align: center">[-1]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="내-풀이">내 풀이</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">remove_min</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;</span><span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="n">arr</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">arr</span>
+</code></pre></div></div>
+
+<h2 id="배운점">배운점</h2>
+<ul>
+  <li><code class="highlighter-rouge">remove()</code></li>
+  <li>리스트에서 <code class="highlighter-rouge">remove()</code>는 해당 값(value)을 갖는 element를 삭제한다.</li>
+  <li>cf) <code class="highlighter-rouge">pop()</code>은 해당 index의 값(value)을 삭제한다.</li>
+</ul>
+
+    <article>
+    <div class="post-more">
+      
+      <a href="/algorithm%20test/2019/03/07/AT-remove-min/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/algorithm%20test/2019/03/07/AT-remove-min/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div>
   </div>
   
