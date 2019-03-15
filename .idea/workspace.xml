@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/atom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/til/2019/01/10/TIL-01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/til/2019/01/10/TIL-01/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/til/2019/01/10/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/til/2019/01/10/TIL/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/til/2019/01/11/TIL-02/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/til/2019/01/11/TIL-02/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/til/2019/01/12/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/til/2019/01/12/TIL/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/til/2019/01/13/TIL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/til/2019/01/13/TIL/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-15-AT-harshad.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="269">
-                <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+              <first_editor relative-caret-position="966">
+                <caret line="42" selection-start-line="42" selection-end-line="42" />
               </first_editor>
               <second_editor />
             </state>
@@ -40,8 +29,32 @@
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-sum_matrix.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="851">
-                <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              <first_editor relative-caret-position="200">
+                <caret line="37" selection-start-line="37" selection-end-line="37" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-17-AT-allocate-budget.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-655">
+                <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-18-AT-to-weird-case.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="893">
+                <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -49,11 +62,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-17-AT-allocate-budget.md">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-to-caesar-code.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="407">
-                <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+              <first_editor relative-caret-position="476">
+                <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -95,6 +108,8 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-add_matrix.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-sum_matrix.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-17-AT-allocate-budget.md" />
+        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-18-AT-to-weird-case.md" />
+        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-to-caesar-code.md" />
       </list>
     </option>
   </component>
@@ -194,18 +209,20 @@
       <workItem from="1551617272202" duration="2818000" />
       <workItem from="1551673849653" duration="1143000" />
       <workItem from="1551863838631" duration="3616000" />
-      <workItem from="1552298179495" duration="5533000" />
+      <workItem from="1552298179495" duration="6676000" />
+      <workItem from="1552559115733" duration="17000" />
+      <workItem from="1552617326996" duration="894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22548000" />
+    <option name="totallyTimeSpent" value="24602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31232092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32234958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -414,8 +431,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-15-AT-harshad.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="269">
-            <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <first_editor relative-caret-position="966">
+            <caret line="42" selection-start-line="42" selection-end-line="42" />
           </first_editor>
           <second_editor />
         </state>
@@ -424,8 +441,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-sum_matrix.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="851">
-            <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <first_editor relative-caret-position="200">
+            <caret line="37" selection-start-line="37" selection-end-line="37" />
           </first_editor>
           <second_editor />
         </state>
@@ -434,8 +451,28 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-17-AT-allocate-budget.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="407">
-            <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+          <first_editor relative-caret-position="-655">
+            <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-18-AT-to-weird-case.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="893">
+            <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-to-caesar-code.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="476">
+            <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
