@@ -33,7 +33,7 @@ def sum_divisor2(n):
 
     for i in range(1, mid+1):
         if n % i == 0:
-            if i*i == n: # i제곱이 n일 경우는 한 번만 더 해줘야 한다. (ex. 25의 약수: 1, 5 ,25)
+            if i*i == n: # i제곱이 n일 경우는 한 번만 더해줘야 한다. (ex. 25의 약수: 1, 5 ,25)
                 sum += i
             else:
                 sum += i + n/i
