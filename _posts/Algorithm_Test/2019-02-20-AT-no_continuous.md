@@ -42,10 +42,7 @@ def no_continuous(arr):
             answer.append(arr[i])
 
     # last_val_inArray
-    if arr[-1] != arr[-2]:
-        answer.append(arr[-1])
-    else:
-        answer.append(arr[-1])
+    answer.append(arr[-1])
 
     return answer
 ```
