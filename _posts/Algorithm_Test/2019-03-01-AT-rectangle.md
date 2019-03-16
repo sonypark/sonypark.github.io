@@ -69,7 +69,8 @@ def rectangle(v):
 ## 배운점
 #### append vs extend ([출처: stack overflow](https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python))
 - append: `객체를` 리스트 끝에 추가 (Appends object at the end)
-- extend: 이터러블 `객체에 담긴 요소를` 리스트 끝에 추가 Extends list by appending elements from the iterable
+- extend: 이터러블 `객체에 담긴 요소를` 리스트 끝에 추가 (Extends list by appending elements from the iterable)
+
 ```python
 x = [1, 2, 3]
 x.append([4, 5])
@@ -77,6 +78,7 @@ x.append([4, 5])
 print (x)
 => [1, 2, 3, [4, 5]]
 ```
+
 ```python
 x = [1, 2, 3]
 x.extend([4, 5])
