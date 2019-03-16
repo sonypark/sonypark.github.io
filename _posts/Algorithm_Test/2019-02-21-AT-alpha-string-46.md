@@ -40,9 +40,9 @@ def alpha_string46(str)->bool:
 ```
 
 ## 배운점
-- Python String isdigit() Method
-- isdigit(): 모든 문자가 숫자인지 알려준다. 맞다면 True 아니면 False 리턴
-- Syntax: string.isdigit()
+- Python String `isdigit()` Method
+- `isdigit()`: 모든 문자가 숫자인지 알려준다. 맞다면 True 아니면 False 리턴
+- Syntax: `string.isdigit()`
 
 
 ## 느낀점
