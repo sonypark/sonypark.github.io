@@ -25,17 +25,15 @@ def rotateString(s1: str, s2:str)->bool:
         return False
 
     s1s1 = s1+s1
-    print(s1s1)
 
     if(s2 in s1s1):
         return True
     else:
-        print('일치하는 문자열 없음')
         return False
 ```
 
 ## 배운점
-- 1시간을 고민 끝에 해설을 보고 힌트를 얻었다. 문자열 두 개를 연결하는 생각은 해설을 보지 못 않았으면 전혀 생각으 못 했을 것 같다.
+- 1시간을 고민 끝에 해설을 보고 힌트를 얻었다. 문자열 두 개를 연결하는 건 해설을 보지 않았으면 전혀 생각 못 했을 것 같다.
 
 
 ## 느낀점
