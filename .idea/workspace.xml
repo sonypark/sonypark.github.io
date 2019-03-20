@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="" />
+    <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-to-caesar-code.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-caesar-code.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-20-AT-to-take-a-guess.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-20-AT-take-a-guess.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,11 +110,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-20-AT-to-take-a-guess.md">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-20-AT-take-a-guess.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="2415">
-                <caret line="105" column="3" lean-forward="true" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+                <caret line="105" column="3" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -119,7 +122,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-to-caesar-code.md">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-caesar-code.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="391">
@@ -178,7 +181,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -274,15 +277,15 @@
       <workItem from="1552665850741" duration="21000" />
       <workItem from="1552707853404" duration="958000" />
       <workItem from="1552713975075" duration="273000" />
-      <workItem from="1553007899349" duration="493000" />
+      <workItem from="1553007899349" duration="602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27869000" />
+    <option name="totallyTimeSpent" value="27978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35243553" />
@@ -571,17 +574,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-20-AT-to-take-a-guess.md">
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-20-AT-take-a-guess.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2415">
-            <caret line="105" column="3" lean-forward="true" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+            <caret line="105" column="3" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-to-caesar-code.md">
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-19-AT-caesar-code.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="391">
