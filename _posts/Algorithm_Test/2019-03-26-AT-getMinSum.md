@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lv1 - 최솟값 만들기
+title: Lv2 - 최솟값 만들기
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬, 피보나치]

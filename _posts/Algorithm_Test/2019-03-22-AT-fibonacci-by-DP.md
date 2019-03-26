@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lv1 - 피보나치 수열 함수 구현(Dynamic programming)
+title: Lv2 - 피보나치 수열 함수 구현(Dynamic programming)
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬, 피보나치]

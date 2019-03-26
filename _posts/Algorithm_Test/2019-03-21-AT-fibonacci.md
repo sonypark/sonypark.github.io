@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lv1 - 피보나치 수
+title: Lv2 - 피보나치 수
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬, 피보나치]
