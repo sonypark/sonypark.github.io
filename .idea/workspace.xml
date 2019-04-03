@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-29-AT-count-prime-number.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1403">
+              <first_editor relative-caret-position="660">
                 <caret line="61" selection-start-line="61" selection-end-line="61" />
               </first_editor>
               <second_editor />
@@ -97,11 +97,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/etc/2019-04-01-etc-forEach.md">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="276">
-                <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <first_editor relative-caret-position="916">
+                <caret line="69" selection-start-line="69" selection-end-line="69" />
               </first_editor>
               <second_editor />
             </state>
@@ -158,6 +158,7 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-28-AT-is-pair.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-29-AT-count-prime-number.md" />
         <option value="$PROJECT_DIR$/_posts/etc/2019-04-01-etc-forEach.md" />
+        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md" />
       </list>
     </option>
   </component>
@@ -282,16 +283,20 @@
       <workItem from="1554036941825" duration="745000" />
       <workItem from="1554106454682" duration="451000" />
       <workItem from="1554110173763" duration="135000" />
+      <workItem from="1554174816415" duration="15000" />
+      <workItem from="1554264250144" duration="5000" />
+      <workItem from="1554276329390" duration="410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41061000" />
+    <option name="totallyTimeSpent" value="41491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4448424" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.46633238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -597,6 +602,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/etc/2019-04-01-etc-forEach.md" />
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-26-AT-getMinSum.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -660,18 +666,18 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-29-AT-count-prime-number.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1403">
+          <first_editor relative-caret-position="660">
             <caret line="61" selection-start-line="61" selection-end-line="61" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/etc/2019-04-01-etc-forEach.md">
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="276">
-            <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <first_editor relative-caret-position="916">
+            <caret line="69" selection-start-line="69" selection-end-line="69" />
           </first_editor>
           <second_editor />
         </state>
