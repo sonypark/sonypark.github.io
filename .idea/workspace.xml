@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-29-AT-count-prime-number.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="660">
+              <first_editor relative-caret-position="1403">
                 <caret line="61" selection-start-line="61" selection-end-line="61" />
               </first_editor>
               <second_editor />
@@ -100,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="916">
-                <caret line="69" selection-start-line="69" selection-end-line="69" />
+              <first_editor relative-caret-position="140">
+                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -178,6 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,7 +207,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,18 +285,18 @@
       <workItem from="1554110173763" duration="135000" />
       <workItem from="1554174816415" duration="15000" />
       <workItem from="1554264250144" duration="5000" />
-      <workItem from="1554276329390" duration="410000" />
+      <workItem from="1554276329390" duration="883000" />
+      <workItem from="1554302838774" duration="697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41491000" />
+    <option name="totallyTimeSpent" value="42661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.46633238" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4734957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -666,7 +666,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-29-AT-count-prime-number.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="660">
+          <first_editor relative-caret-position="1403">
             <caret line="61" selection-start-line="61" selection-end-line="61" />
           </first_editor>
           <second_editor />
@@ -676,8 +676,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="916">
-            <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <first_editor relative-caret-position="140">
+            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           </first_editor>
           <second_editor />
         </state>
