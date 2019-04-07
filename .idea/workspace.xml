@@ -96,12 +96,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="140">
-                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <first_editor relative-caret-position="255">
+                <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904/2019-04-07-TIL.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="368">
+                <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -159,6 +171,7 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-29-AT-count-prime-number.md" />
         <option value="$PROJECT_DIR$/_posts/etc/2019-04-01-etc-forEach.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md" />
+        <option value="$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904/2019-04-07-TIL.md" />
       </list>
     </option>
   </component>
@@ -178,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,18 +207,26 @@
               <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="Algorithm_Test" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
+              <item name="TIL(Today I Learned)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="TIL(Today I Learned)" type="462c0819:PsiDirectoryNode" />
+              <item name="1904" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,6 +238,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904" />
       <recent name="$PROJECT_DIR$/_posts/Algorithm_Test" />
       <recent name="$PROJECT_DIR$/_posts/Kth-array" />
     </key>
@@ -287,16 +308,21 @@
       <workItem from="1554264250144" duration="5000" />
       <workItem from="1554276329390" duration="883000" />
       <workItem from="1554302838774" duration="697000" />
+      <workItem from="1554551711498" duration="59000" />
+      <workItem from="1554553247413" duration="1164000" />
+      <workItem from="1554560690831" duration="708000" />
+      <workItem from="1554616181642" duration="1309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42661000" />
+    <option name="totallyTimeSpent" value="45901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4734957" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23710601" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -676,8 +702,18 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="140">
-            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <first_editor relative-caret-position="255">
+            <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904/2019-04-07-TIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="368">
+            <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           </first_editor>
           <second_editor />
         </state>
