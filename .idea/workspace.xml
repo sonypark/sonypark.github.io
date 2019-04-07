@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,12 +106,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904/2019-04-07-TIL.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="368">
-                <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <first_editor relative-caret-position="207">
+                <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/etc/2019-04-01-etc-VSCodeDebugging.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="329">
+                <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -172,6 +182,7 @@
         <option value="$PROJECT_DIR$/_posts/etc/2019-04-01-etc-forEach.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md" />
         <option value="$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904/2019-04-07-TIL.md" />
+        <option value="$PROJECT_DIR$/_posts/etc/2019-04-01-etc-VSCodeDebugging.md" />
       </list>
     </option>
   </component>
@@ -213,14 +224,8 @@
               <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="TIL(Today I Learned)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="TIL(Today I Learned)" type="462c0819:PsiDirectoryNode" />
-              <item name="1904" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,6 +243,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts/etc" />
       <recent name="$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904" />
       <recent name="$PROJECT_DIR$/_posts/Algorithm_Test" />
       <recent name="$PROJECT_DIR$/_posts/Kth-array" />
@@ -311,12 +317,12 @@
       <workItem from="1554551711498" duration="59000" />
       <workItem from="1554553247413" duration="1164000" />
       <workItem from="1554560690831" duration="708000" />
-      <workItem from="1554616181642" duration="1309000" />
+      <workItem from="1554616181642" duration="1884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45901000" />
+    <option name="totallyTimeSpent" value="46476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -712,8 +718,18 @@
     <entry file="file://$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904/2019-04-07-TIL.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="368">
-            <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <first_editor relative-caret-position="207">
+            <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/etc/2019-04-01-etc-VSCodeDebugging.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="329">
+            <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
