@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/Javascript/2019-04-05-ES6Module.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Javascript/2019-04-05-ES6Module.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/NodeJS/2019-04-05-NodejsModule.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/NodeJS/2019-04-05-NodejsModule.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/NodeJS/2019-04-05-VSCode_Debugging_Guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/NodeJS/2019-04-05-VSCode_Debugging_Guide.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/NodeJS/2019-04-05-nodejs-VSCode_Debugging_Guide.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +13,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/Javascript/2019-04-05-ES6Module.md">
+        <entry file="file://$PROJECT_DIR$/_posts/Javascript/2019-04-05-JS-ES6Module.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <first_editor relative-caret-position="667">
+                <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               </first_editor>
               <second_editor />
             </state>
@@ -37,23 +35,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-NodejsModule.md">
+        <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-nodejs-NodejsModule.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor>
-                <caret lean-forward="true" selection-end-line="8" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-VSCode_Debugging_Guide.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="138">
-                <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+                <caret selection-end-line="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -328,15 +314,16 @@
       <workItem from="1554866595634" duration="1310000" />
       <workItem from="1554967128459" duration="31000" />
       <workItem from="1554969131437" duration="21000" />
-      <workItem from="1554997273188" duration="1652000" />
+      <workItem from="1554997273188" duration="1876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53098000" />
+    <option name="totallyTimeSpent" value="53322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26217765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -774,21 +761,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-NodejsModule.md">
+    <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-nodejs-NodejsModule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
-            <caret lean-forward="true" selection-end-line="8" />
+            <caret selection-end-line="8" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-VSCode_Debugging_Guide.md">
+    <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-nodejs-VSCode_Debugging_Guide.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="138">
-            <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
@@ -801,11 +788,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/Javascript/2019-04-05-ES6Module.md">
+    <entry file="file://$PROJECT_DIR$/_posts/Javascript/2019-04-05-JS-ES6Module.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <first_editor relative-caret-position="667">
+            <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           </first_editor>
           <second_editor />
         </state>
