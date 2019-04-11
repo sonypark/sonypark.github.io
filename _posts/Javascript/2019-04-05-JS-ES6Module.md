@@ -8,7 +8,7 @@ comments: true
 ---
 
 ![es6-logo](https://user-images.githubusercontent.com/34808501/55971946-6e437600-5cbd-11e9-9796-1dd7b29cfed2.png)
-)
+
 
 # ES6 Module
 
