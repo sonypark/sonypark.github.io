@@ -233,7 +233,7 @@ const foo = require('./lib/foo');
 
 ### 참고
 
-- [Modules | Node.js v11.13.0 Documentation](https://nodejs.org/api/modules.html)
+- [Modules - Node.js v11.13.0 Documentation](https://nodejs.org/api/modules.html)
 - [Node.js의 module loading system](https://poiemaweb.com/nodejs-module)
 
 
