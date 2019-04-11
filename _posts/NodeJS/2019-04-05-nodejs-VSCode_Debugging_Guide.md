@@ -1,3 +1,13 @@
+---
+layout: post
+title: VSCODE 디버깅 가이드
+category: Node.js
+
+tags: [Nodejs, debugging, 디버깅]
+comments: true
+---
+
+
 # VSCODE - Node.js Debugging
 
 ## Break Point
