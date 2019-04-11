@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="" />
+    <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +36,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-VSCode_Debugging_Guide.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="3030">
-                <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+                <caret line="132" selection-start-line="132" selection-end-line="132" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/etc/2019-04-04-etc-AboutGit.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -73,7 +93,6 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-07-AT-remove-min.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-08-AT-next-sqrt.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-10-AT-digit-reverse.md" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-14-AT-collatz.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-15-AT-harshad.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-add_matrix.md" />
@@ -103,6 +122,8 @@
         <option value="$PROJECT_DIR$/_posts/Javascript/2019-04-05-ES6Module.md" />
         <option value="$PROJECT_DIR$/_posts/NodeJS/2019-04-05-NodejsModule.md" />
         <option value="$PROJECT_DIR$/_posts/NodeJS/2019-04-05-VSCode_Debugging_Guide.md" />
+        <option value="$PROJECT_DIR$/_posts/etc/2019-04-04-AboutGit.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -135,6 +156,37 @@
               <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="Javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="NodeJS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="TIL(Today I Learned)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="TIL(Today I Learned)" type="462c0819:PsiDirectoryNode" />
+              <item name="1901" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,12 +288,12 @@
       <workItem from="1554866595634" duration="1310000" />
       <workItem from="1554967128459" duration="31000" />
       <workItem from="1554969131437" duration="21000" />
-      <workItem from="1554997273188" duration="1052000" />
+      <workItem from="1554997273188" duration="1350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52498000" />
+    <option name="totallyTimeSpent" value="52796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -395,13 +447,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-10-AT-digit-reverse.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -672,16 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/Javascript/2019-04-05-ES6Module.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="8" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/NodeJS/2019-04-05-NodejsModule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -702,9 +737,33 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="3030">
-            <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+            <caret line="132" selection-start-line="132" selection-end-line="132" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Javascript/2019-04-05-ES6Module.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="184">
+            <caret line="8" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/etc/2019-04-04-etc-AboutGit.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
         </state>
       </provider>
     </entry>
