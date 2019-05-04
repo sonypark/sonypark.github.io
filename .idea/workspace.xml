@@ -13,18 +13,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-27-AT-sortNum3.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="115">
-                <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-01-AT-lastPointofRectangle.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -52,8 +40,20 @@
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-voteAB.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="276">
-                <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <first_editor relative-caret-position="660">
+                <caret line="101" column="3" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-04-AT-sumDivisor.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="430">
+                <caret line="138" column="3" lean-forward="true" selection-start-line="138" selection-start-column="3" selection-end-line="138" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -64,20 +64,20 @@
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-1263">
-                <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-end-line="16" selection-end-column="38" />
+              <first_editor relative-caret-position="368">
+                <caret line="16" column="38" selection-start-line="16" selection-end-line="16" selection-end-column="38" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome_summary.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="568">
-                <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+              <first_editor relative-caret-position="1380">
+                <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -145,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-07-AT-remove-min.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-08-AT-next-sqrt.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-10-AT-digit-reverse.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-14-AT-collatz.md" />
@@ -196,6 +195,7 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-voteAB.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome_summary.md" />
+        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-04-AT-sumDivisor.md" />
       </list>
     </option>
   </component>
@@ -260,15 +260,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts/NodeJS" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts/Algorithm_Test" />
       <recent name="$PROJECT_DIR$/_posts/Javascript" />
       <recent name="$PROJECT_DIR$/_posts/Javascript/img" />
       <recent name="$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904" />
       <recent name="$PROJECT_DIR$/_posts/etc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts/NodeJS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -370,18 +370,19 @@
       <workItem from="1556692023453" duration="15000" />
       <workItem from="1556773206136" duration="840000" />
       <workItem from="1556847419889" duration="624000" />
-      <workItem from="1556849632158" duration="1683000" />
+      <workItem from="1556849632158" duration="2053000" />
+      <workItem from="1556974697906" duration="777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72029000" />
+    <option name="totallyTimeSpent" value="73176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37893984" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3846705" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -407,16 +408,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-15-AT-harshad.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="966">
-            <caret line="42" selection-start-line="42" selection-end-line="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-18-AT-to-weird-case.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -632,15 +623,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/etc/2019-04-04-etc-AboutGit.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -807,6 +798,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="368">
+            <caret line="16" column="38" selection-start-line="16" selection-end-line="16" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome_summary.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1380">
+            <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-17-AT-sortWords.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -850,28 +861,18 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-voteAB.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="276">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <first_editor relative-caret-position="660">
+            <caret line="101" column="3" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome.md">
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-04-AT-sumDivisor.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1263">
-            <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-end-line="16" selection-end-column="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome_summary.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="568">
-            <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+          <first_editor relative-caret-position="430">
+            <caret line="138" column="3" lean-forward="true" selection-start-line="138" selection-start-column="3" selection-end-line="138" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
