@@ -58,23 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="502">
+              <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome_summary.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1380">
-                <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -140,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-14-AT-collatz.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-15-AT-harshad.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-add_matrix.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-sum_matrix.md" />
@@ -166,7 +162,6 @@
         <option value="$PROJECT_DIR$/_posts/etc/2019-04-01-etc-VSCodeDebugging.md" />
         <option value="$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904/2019-04-09-TIL.md" />
         <option value="$PROJECT_DIR$/_posts/etc/2019-04-04-AboutGit.md" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/python/2019-01-15-py-fastcampus01.md" />
         <option value="$PROJECT_DIR$/_posts/Javascript/2019-04-05-ES6Module.md" />
         <option value="$PROJECT_DIR$/_posts/NodeJS/2019-04-05-NodejsModule.md" />
@@ -191,6 +186,8 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-04-AT-sumDivisor.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-05-AT-microwave.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-07-AT-chealsea.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
       </list>
     </option>
   </component>
@@ -217,6 +214,16 @@
             <path>
               <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -364,16 +371,15 @@
       <workItem from="1557025798819" duration="370000" />
       <workItem from="1557053668715" duration="39000" />
       <workItem from="1557053709533" duration="11000" />
-      <workItem from="1557225747841" duration="927000" />
+      <workItem from="1557225747841" duration="1172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74576000" />
+    <option name="totallyTimeSpent" value="74821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26002866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -401,16 +407,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-sum_matrix.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="828">
-            <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-02-14-AT-sum_divisor.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -866,8 +862,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="502">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
