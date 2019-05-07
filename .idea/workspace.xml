@@ -13,30 +13,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-01-AT-lastPointofRectangle.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1541">
-                <caret line="67" selection-start-line="67" selection-end-line="68" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-02-AT-diceGame.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2001">
-                <caret line="87" selection-start-line="87" selection-end-line="87" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-voteAB.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -48,12 +24,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-04-AT-sumDivisor.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="430">
-                <caret line="138" column="3" lean-forward="true" selection-start-line="138" selection-start-column="3" selection-end-line="138" selection-end-column="3" />
+              <first_editor relative-caret-position="1288">
+                <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-05-AT-microwave.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="207">
+                <caret line="45" selection-start-line="45" selection-end-line="45" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-07-AT-chealsea.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="607">
+                <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
               </first_editor>
               <second_editor />
             </state>
@@ -145,8 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-08-AT-next-sqrt.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-10-AT-digit-reverse.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-14-AT-collatz.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-15-AT-harshad.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-add_matrix.md" />
@@ -196,6 +194,8 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome_summary.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-04-AT-sumDivisor.md" />
+        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-05-AT-microwave.md" />
+        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-07-AT-chealsea.md" />
       </list>
     </option>
   </component>
@@ -215,6 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,7 +250,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,18 +371,22 @@
       <workItem from="1556773206136" duration="840000" />
       <workItem from="1556847419889" duration="624000" />
       <workItem from="1556849632158" duration="2053000" />
-      <workItem from="1556974697906" duration="777000" />
+      <workItem from="1556974697906" duration="830000" />
+      <workItem from="1557025798819" duration="370000" />
+      <workItem from="1557053668715" duration="39000" />
+      <workItem from="1557053709533" duration="11000" />
+      <workItem from="1557225747841" duration="774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73176000" />
+    <option name="totallyTimeSpent" value="74423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3846705" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26002866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -408,26 +412,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-18-AT-to-weird-case.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1495">
-            <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-17-AT-allocate-budget.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="437">
-            <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-16-AT-sum_matrix.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -871,8 +855,28 @@
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-04-AT-sumDivisor.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="430">
-            <caret line="138" column="3" lean-forward="true" selection-start-line="138" selection-start-column="3" selection-end-line="138" selection-end-column="3" />
+          <first_editor relative-caret-position="1288">
+            <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-05-AT-microwave.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="207">
+            <caret line="45" selection-start-line="45" selection-end-line="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-07-AT-chealsea.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="607">
+            <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
           </first_editor>
           <second_editor />
         </state>
