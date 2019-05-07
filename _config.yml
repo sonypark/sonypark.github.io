@@ -60,6 +60,6 @@ hero:
 
 # Puglins
 mathjax: true # whether support mathjax
-google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+google_analytics_token: 'UA-139737410-1' # leave blank if you don't want google analytics
 disqus_short_name: 'sonypark-github-io' # leave blank if you don't want disqus
 
