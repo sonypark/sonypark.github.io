@@ -100,3 +100,6 @@ if __name__ == '__main__':
 - 이 문제로 백준에서 처음으로 파이썬 문제풀이 등수 2위를 했다.
 - 배열의 인덱스를 이용한 풀이가 꽤 괜찮은 풀이였나보다 :)
 
+<img width="962" alt="Screen Shot 2019-05-08 at 6 16 54 PM" src="https://user-images.githubusercontent.com/34808501/57364161-955a6e00-71bd-11e9-975e-9243545bbe8f.png">
+
+
