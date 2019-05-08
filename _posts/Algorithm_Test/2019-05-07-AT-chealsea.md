@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [백준 11098] 첼시를 도와줘
+title: 백준 11098 - 첼시를 도와줘
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]

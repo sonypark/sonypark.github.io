@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [백준 10162] 전자레인지
+title: 백준 10162 - 전자레인지
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]

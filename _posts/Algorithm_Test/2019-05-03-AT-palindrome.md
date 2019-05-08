@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [백준 10988] 펠린드롬(Palindrome) - 앞뒤가 똑같은 문자열
+title: 백준 10988 - 펠린드롬(Palindrome) - 앞뒤가 똑같은 문자열
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]

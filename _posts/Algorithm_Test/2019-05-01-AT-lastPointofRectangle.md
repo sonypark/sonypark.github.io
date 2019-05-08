@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [백준 3009] 직사각형 네 번 째 점
+title: 백준 3009 - 직사각형 네 번 째 점
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]

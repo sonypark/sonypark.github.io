@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [백준 9506] 약수들의 합
+title: 백준 9506 - 약수들의 합
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]

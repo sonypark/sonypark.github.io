@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [백준 2839] 설탕 배달
+title: 백준 2839 - 설탕 배달
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬, 피보나치]

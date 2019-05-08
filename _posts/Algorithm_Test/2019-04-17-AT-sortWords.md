@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [백준 1181] 단어 정렬
+title: 백준 1181 - 단어 정렬
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬, 피보나치]
