@@ -6,6 +6,7 @@ category: Algorithm Test
 tags: [알고리즘, algorithm, python, 파이썬]
 comments: true
 ---
+
 > 출처: https://www.acmicpc.net/problem/10162
 
 > 개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.

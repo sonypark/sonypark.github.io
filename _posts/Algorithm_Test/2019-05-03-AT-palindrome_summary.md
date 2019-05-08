@@ -6,6 +6,7 @@ category: Algorithm Test
 tags: [알고리즘, algorithm, python, 파이썬]
 comments: true
 ---
+
 > 출처: [GreeksforGreeks](https://www.geeksforgeeks.org/python-program-check-string-palindrome-not/)
 
 ## 정의
