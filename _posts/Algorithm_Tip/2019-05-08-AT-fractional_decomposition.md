@@ -26,7 +26,6 @@ def getprime(n):
         if count != 0:
             for i in range(count):
                 print ("%d" % x)
-# getprime(n)
 ```
 
 ## Method #2
