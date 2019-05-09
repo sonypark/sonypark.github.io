@@ -41,6 +41,7 @@ nav:
     - '/blog/'
     - { TIL (Today I Learned): '/blog/categories/#til-today-i-learned' }
     - { Algorithm Test: '/blog/categories/#algorithm-test' }
+    - { Algorithm Tip: '/blog/categories/#algorithm-tip' }
     - { Javascript: '/blog/categories/#javascript' }
     - { Node.js: '/blog/categories/#node-js' }
     - { python: '/blog/categories/#python' }
