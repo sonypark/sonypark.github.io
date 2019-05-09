@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 백준 5635 - 생일 - sort(key=cmp)
+title: 백준 5635 - 생일 - sort(key=cmp)**
 category: Algorithm Test
 
 tags: [알고리즘, algorithm, python, 파이썬]
