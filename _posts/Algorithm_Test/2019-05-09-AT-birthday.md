@@ -117,7 +117,7 @@ birthday = [['Jerry', 18, 9, 1990], ['Garfield', 20, 9, 1990], ['Alice', 30, 12,
 # 년도별 오름차순 정렬
 sorted(birthday, key=lambda year: year[3])
 birthday.sort(key = lambda year: year[3]) 
-# [['Jerry', 18, 9, 1990], ['Garfield', 20, 9, 1990], ['Alice', 30, 12, 1990], ['Mickey', 1, 10, 1991], ['Tom', 15, 8, 1993]] 
+# => [['Jerry', 18, 9, 1990], ['Garfield', 20, 9, 1990], ['Alice', 30, 12, 1990], ['Mickey', 1, 10, 1991], ['Tom', 15, 8, 1993]] 
 ```
 
 - 두 개 이상의 요소를 기준으로 정렬
@@ -134,7 +134,7 @@ def compareBirthDay(a, b):
 
 # 년 월 일 순으로 오름차순 정렬
 birthday.sort(key=functools.cmp_to_key(compareBirthDay))
-[['Jerry', 18, 9, 1990], ['Garfield', 20, 9, 1990], ['Alice', 30, 12, 1990], ['Mickey', 1, 10, 1991], ['Tom', 15, 8, 1993]]
+# => [['Jerry', 18, 9, 1990], ['Garfield', 20, 9, 1990], ['Alice', 30, 12, 1990], ['Mickey', 1, 10, 1991], ['Tom', 15, 8, 1993]]
 ```
 
 - `,`로 정렬 우선 순위 정해 줄 수 있음
@@ -146,7 +146,7 @@ def compareBirthDay(x):
     return x[3],x[2],x[1]
 
 birthday.sort(key=compareBirthDay)
-[['Jerry', 18, 9, 1990], ['Garfield', 20, 9, 1990], ['Alice', 30, 12, 1990], ['Mickey', 1, 10, 1991], ['Tom', 15, 8, 1993]]
+# => [['Jerry', 18, 9, 1990], ['Garfield', 20, 9, 1990], ['Alice', 30, 12, 1990], ['Mickey', 1, 10, 1991], ['Tom', 15, 8, 1993]]
 ```
 
 ## 느낀점
