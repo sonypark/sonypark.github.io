@@ -6,7 +6,6 @@ category: Javascript
 tags: [Javascript, callByValue, callByReference]
 comments: true
 ---
-
 # Call by value  VS Call by reference in javascript
 
 ## **Call by Value**
@@ -34,7 +33,7 @@ b    | 'hello'
 c    | null
 d    | undefined
 
-- primitive type 데이터가 할당된 변수를 다른 변수에 할당 할 때, `값(value)을 복사(copy)`한다.
+- **primitive type** 데이터가 할당된 변수를 다른 변수에 할당 할 때, **값(value)을 복사(copy)** 한다.
 
 ```javascript
 var x = 10;
@@ -77,10 +76,10 @@ console.log(x, y, a, b); // -> 10, 'hello', 5, 'def'
     - 이 세가지 모두 객체(Object)이다.
     - 따라서 객체(Object)는 call by reference로 전달된다는 걸 기억하자.
 
-- 변수(variable)에 `non-primitive value`, 즉 `Object`를 할당하면 해당 Object의 `주소값(address)`을 복사한다.
-- 변수에 값이 아닌 `주소값`을 복사한다
-- `arr = []` 라고 선언하면 `메모리`에 array `객체(object)를 저장`하고 `변수`에는 그 `객체의 주소값(address)`이 저장된다.
-- 주소값(address)은 `<>` 형태로 저장된다. (string이 `''` or `"'` 형태로 저장되는 것처럼)
+- 변수(variable)에 `non-primitive value`, 즉 `Object`를 할당하면 해당 Object의 **주소값(address)** 을 복사한다.
+- 변수에 값이 아닌 **주소값**을 복사한다
+- `arr = []` 라고 선언하면 **메모리**에 array **객체(object)를 저장**하고 **변수**에는 그 **객체의 주소값(address)** 이 저장된다.
+- 주소값(address)은 `<>` 형태로 저장된다. (string이 `''` or `"""` 형태로 저장되는 것처럼)
 
 - 다음을 실행했을 때 메모리에 저장되는 과정을 살펴보자.
 
@@ -103,7 +102,7 @@ arr    | <#001>   | #001  | [1]
 
 ### Assigning by Reference
 
-- 객체(Object: `non-primitive value` or `reference type value`)를 다른 변수에 할당할 때, 해당 객체의 `주소값(address)`을 할당한다.
+- 객체(Object: `non-primitive value` or `reference type value`)를 다른 변수에 할당할 때, 해당 객체의 **주소값(address)** 을 할당한다.
 
 ```javascript
 var arr = [1];
@@ -129,11 +128,11 @@ Variables | Values | Address | Objects
 arr    | <#001>   | #001  | [1,2]
 arr2    | <#001>
 
-- 같은 배열의 주소값을 참조하고 있기 때문에 배열의 변경 사항은 두 변수 모두에 적용된다.
+- 같은 배열의 **주소값을 참조**하고 있기 때문에 배열의 **변경 사항**은 두 변수 **모두**에 **적용**된다.
 
 ### Reassigning a Reference
 
-- 참조 변수(reference variable)에 새로운 객체(object)를 재할당하면 이전의 객체를 대체한다.
+- 참조 변수(reference variable)에 새로운 객체(object)를 **재할당**하면 이전의 객체를 **대체**한다.
 
 - 아래와 같이 객체를 참조 변수에 할당 하면
 
@@ -160,10 +159,10 @@ obj = { second: 'ref2' }
 Variables | Values | Address | Objects 
 :--------: | :---------: | :--------: | :---------:
 obj    | <#678>   | #234  | { first: 'reference' }
-       |          |       | #678  | { second: 'ref2' }
+       |           | #678  | { second: 'ref2' }
 
 - `#234` 주소값을 갖는 객체(first object)를 참조하는 변수가 없다.
-- 이러한 객체는 메모리 상에 존재하다가 `Javascript engine`의 `가비지 컬렉터(garbage collector)`에 의해 메모리에서 삭제된다.
+- 이러한 객체는 메모리 상에 존재하다가 `Javascript engine`의 **가비지 컬렉터(garbage collector)** 에 의해 메모리에서 **삭제**된다.
 
 
 #### `===` : 참조값 비교
@@ -184,7 +183,7 @@ var arr2 = ['Hi!'];
 console.log(arr1 === arr2); // -> false
 ``` 
 
-- 만약 서로 다른 객체의 속성값을 비교하고 싶다면 두 객체를 `string`으로 변환한 뒤 비교할 수 있다.
+- 만약 **서로 다른 객체의 속성값**을 **비교**하고 싶다면 두 객체를 **`string`으로 변환**한 뒤 **비교**할 수 있다.
 - 이 때 동등 연산자(`===`)는 primitives type 데이터를 비교하는 것처럼 단순히 `값(value)`이 같은지 비교한다.
 
 ```javascript
@@ -193,7 +192,7 @@ var arr2str = JSON.stringify(arr2);
 console.log(arr1str === arr2str); // true
 ```
 
-- `JSON.stringify`을 이용하여 객체(object)를 문자열(string)로 바꾼 뒤 비교한다.
+- `JSON.stringify`을 이용하여 **객체(object)** 를 **문자열(string)** 로 바꾼 뒤 비교한다.
 
 ## Passing Parameters through Functions
 
