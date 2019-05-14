@@ -1,14 +1,6 @@
 - :outbox_tray: Git
 
-  - [git pull/push 때 비밀번호 입력 안 뜨게 하는 법](./docs/git/credential-caching.md)
-  - [git 전역 설정, 확인, 삭제하기](./docs/git/git-config.md)
-
 - :globe_with_meridians: Web
-
-  - 부스트코스 : 웹 프로그래밍
-    - [HTTP 프로토콜이란?](./docs/web/boost-http-protocol.md)
-    - [브라우저의 동작](./docs/web/boost-browser.md)
-
 
 - :lemon: JavaScript
 
@@ -30,11 +22,10 @@
 
 - :snake: Python
 
-  - [파이썬 실수 비교](./docs/python/comparing-float.md)
-  - [파이썬 내장 함수](./docs/python/builtin-functions.md)
-  - [파이썬 모듈](./docs/python/modules.md)
-
 - :thought_balloon: etc.
-  - [[Node.js] Unhandled 'error' event 에러 해결방법](./docs/etc/node-listen-error.md)
-  - [[SQLite] 문법](./docs/etc/sqlite-syntax.md)
-  - [[GraphQL] How to GraphQL](./docs/etc/how-to-graphql.md)
+
+- :eyes: Algorithm_tips
+    - [유클리드 호제법](./docs/algorithm_tips/2019-01-30-AT-Euclidean%20algorithm.md)
+    - [피보나치 - DP](./docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md)
+    - [펠린드롬 - 여러가지 풀이](./docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md)
+    - [소인수분해](./docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md)
