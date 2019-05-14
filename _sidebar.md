@@ -20,8 +20,8 @@
 
 - :green_apple: Node.js
   
-  - [Node.js Module](2019-04-05-nodejs-NodejsModule)  
-
+  - [Node.js Module](./docs/nodejs/2019-04-05-nodejs-NodejsModule.md)
+  
 - :snake: Python
 
 - :thought_balloon: etc.
