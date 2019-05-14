@@ -31,6 +31,8 @@
 
 - :thought_balloon: etc.
 
+    - [VSCODE 디버깅 가이드](./docs/etc/2019-04-05-VSCode_Debugging_Guide.md)
+
 - :eyes: Algorithm_tips
     - [유클리드 호제법](./docs/algorithm_tips/2019-01-30-AT-Euclidean%20algorithm.md)
     - [피보나치 - DP](./docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md)
