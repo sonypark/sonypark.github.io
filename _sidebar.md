@@ -1,5 +1,10 @@
 - :outbox_tray: Git
 
+  - [Git 이란?](./docs/git/2019-04-04-AboutGit.md)
+  
+  - 코드스쿼드
+    - [Git Pull Request](./docs/git/2019-04-04-CodeSquad_GitPR_Guide.md)
+
 - :globe_with_meridians: Web
 
 - :lemon: JavaScript
