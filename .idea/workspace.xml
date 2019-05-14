@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +37,8 @@
         <entry file="file://$PROJECT_DIR$/_sidebar.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-53">
-                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <first_editor relative-caret-position="381">
+                <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -187,6 +185,12 @@
               <item name="docs" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm_tips" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="nodejs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -330,7 +334,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84916000" />
+    <option name="totallyTimeSpent" value="85558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -362,7 +366,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/about.md" />
     <entry file="file://$PROJECT_DIR$/_includes/head.html" />
     <entry file="file://$PROJECT_DIR$/_includes/sidebar.html" />
     <entry file="file://$PROJECT_DIR$/_layouts/default.html" />
@@ -488,11 +491,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_sidebar.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-53">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <first_editor relative-caret-position="381">
+            <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
