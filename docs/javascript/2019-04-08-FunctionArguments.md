@@ -107,7 +107,7 @@ console.log((function(a, b = 1, c) {}).length);
 ```
 
 
-## Reference
+### Reference
 
 - [MDN, The arguments object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments#Description)
 - [MDN, Function.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length)

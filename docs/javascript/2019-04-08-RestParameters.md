@@ -166,6 +166,6 @@ console.log(sortArguments(5, 3, 7, 1)); // 1, 3, 5, 7
 ```
 - `arguments`에서 Array methods를 쓰려면 배열로 변환해야한다.
 
-## Reference
+### Reference
 
 - [MDN, Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)

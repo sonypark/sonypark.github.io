@@ -238,6 +238,6 @@ const multiplyBy = (num1) => (num2) => num1 * num2;
 ```
 
    
-## Reference
+### Reference
 
 - [Udemy: Advanced JavaScript Concepts by Andrei Neagoie](https://www.udemy.com/advanced-javascript-concepts)

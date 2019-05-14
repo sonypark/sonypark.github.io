@@ -341,7 +341,7 @@ console.log(personObj2); // -> { name: 'John', age: '50' }
 - 함수를 이용하면 함수가 종료될 때 `person` 은 스코프(scope)에서 사라진다.
  
  
-## Reference
+### Reference
 
 - [[Javascript] Pass By Value And Pass By Reference In JavaScript](https://medium.com/nodesimplified/javascript-pass-by-value-and-pass-by-reference-in-javascript-fcf10305aa9c)
 - [Explaining Value vs. Reference in Javascript – codeburst](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0)

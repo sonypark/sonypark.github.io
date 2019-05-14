@@ -81,6 +81,6 @@ add(0, 10); // 55
 
 
 
-## Reference
+### Reference
 
 - [ZeroCho Blog: (JavaScript) 함수형 프로그래밍(Functional Programming)](https://www.zerocho.com/category/JavaScript/post/572c6f759a5f1c4db2481ee3)

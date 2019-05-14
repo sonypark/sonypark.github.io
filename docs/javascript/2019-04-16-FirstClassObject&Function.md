@@ -85,7 +85,7 @@ const inc_fn = cal(increase, 1); // 함수는 변수에 할당될 수 있다.
 const dec_fn = cal(decrease, 1);
 ```
 
-## Reference
+### Reference
 
 - [HANUMOKA 블로그](https://blog.hanumoka.net/2017/08/31/javascript-20170831-javascript-first-object/)
 - [생활코딩: javascript 값으로서의 함수와 콜백](https://opentutorials.org/course/743/6508)

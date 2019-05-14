@@ -342,7 +342,7 @@ console.log(x); // 10
 - 따라서 변수를 선언할 때는 **반드시 변수 키워드(var, let, const)를 사용하자.**
 
 
-## Reference
+### Reference
 
 - [생활코딩: javascript 유효범위](https://opentutorials.org/course/743/6495)
 - [poiemaweb.com/function-level-scope](https://poiemaweb.com/js-scope#3-function-level-scope)

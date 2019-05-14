@@ -276,3 +276,10 @@ console.log(user); // { name: 'Kim' }
 2. 재할당이 필요한 변수에는 let을 사용한다. (ex. for문 i 변수)
 
 3. var 키워드는 되도록이면 사용하지 않는다.
+
+
+### Reference
+
+- [ECMAScript 6](http://www.ecma-international.org/ecma-262/6.0/ECMA-262.pdf)
+- [let - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Temporal_dead_zone_and_errors_with_let)
+- [let, const | PoiemaWeb](https://poiemaweb.com/es6-block-scope)
