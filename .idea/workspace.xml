@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="571">
+              <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -33,12 +39,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sidebar.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="381">
-                <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+              <first_editor relative-caret-position="473">
+                <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -49,7 +55,33 @@
         <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="46">
+                <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="161">
+                <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="46">
+                <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -59,7 +91,21 @@
         <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="266">
+                <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="69">
+                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -88,6 +134,7 @@
     <findStrings>
       <find>numPY</find>
       <find>google</find>
+      <find>script</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,11 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-25-AT-min-max.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-22-AT-fibonacci-by-DP.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-21-AT-fibonacci.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-28-AT-is-pair.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-29-AT-count-prime-number.md" />
         <option value="$PROJECT_DIR$/_posts/etc/2019-04-01-etc-forEach.md" />
         <option value="$PROJECT_DIR$/_posts/TIL(Today I Learned)/1904/2019-04-07-TIL.md" />
         <option value="$PROJECT_DIR$/_posts/etc/2019-04-01-etc-VSCodeDebugging.md" />
@@ -142,11 +184,16 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-10-AT-word_change.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-10-AT-skill_trees.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-10-AT-words_end_to_end.md" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/docs/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_navbar.md" />
         <option value="$PROJECT_DIR$/_sidebar.md" />
+        <option value="$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -334,7 +381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85558000" />
+    <option name="totallyTimeSpent" value="86958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -432,13 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_navbar.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -459,26 +499,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md">
+    <entry file="file://$PROJECT_DIR$/_sidebar.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="473">
+            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -486,7 +512,29 @@
     <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="161">
+            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -494,18 +542,27 @@
     <entry file="file://$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="69">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sidebar.md">
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="381">
-            <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <first_editor relative-caret-position="266">
+            <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
         </state>
       </provider>
     </entry>
