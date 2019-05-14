@@ -1,11 +1,6 @@
----
-layout: post
-title: 팰린드롬(palindrome) - 여러가지 풀이
-category: Algorithm Tip
+2019년 5월 3일
 
-tags: [알고리즘, algorithm, python, 파이썬]
-comments: true
----
+# 펠린드롬(Palindrome)
 
 > 출처: [GreeksforGreeks](https://www.geeksforgeeks.org/python-program-check-string-palindrome-not/)
 

@@ -1,16 +1,10 @@
----
-layout: post
-title: Lv2 - 피보나치 수열 함수 구현(Dynamic programming)
-category: Algorithm Tip
-
-tags: [알고리즘, algorithm, python, 파이썬, 피보나치]
-comments: true
----
-> 출처: https://www.youtube.com/watch?v=vYquumk4nWw&list=PLBZBJbE_rGRU5PrgZ9NBHJwcaZsNpf8yD
-
-> 개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.
+2019년 3월 22일
 
 # 피보나치 수열 알고리즘
+
+> 출처: https://www.youtube.com/watch?v=vYquumk4nWw&list=PLBZBJbE_rGRU5PrgZ9NBHJwcaZsNpf8yD
+>
+> 개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.
 
 ## 1. Recursion
 

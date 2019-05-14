@@ -1,11 +1,6 @@
----
-layout: post
-title: 소인수분해 
-category: Algorithm Tip
+2019년 5월 8일
 
-tags: [알고리즘, algorithm, python, 파이썬]
-comments: true
----
+# 소인수분해
 
 > 출처: https://www.acmicpc.net/problem/status/11653
 
