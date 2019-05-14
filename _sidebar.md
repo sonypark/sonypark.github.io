@@ -12,7 +12,7 @@
 
 - :lemon: JavaScript
 
-  - [ES6 Module](/javascript/2019-04-05-ES6Module.md)
+  - [ES6 Module](./docs/javascript/2019-04-05-ES6Module.md)
   - [Call by value & Call by reference](/javascript/2019-04-08-CallByValue&CallByReference.md)
   - [Arguments Object](/javascript/2019-04-08-FunctionArguments.md)
   - [Rest Parameters](/javascript/2019-04-08-RestParameters.md)
