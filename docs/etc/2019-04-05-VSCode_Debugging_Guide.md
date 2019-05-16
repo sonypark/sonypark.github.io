@@ -129,13 +129,13 @@ printSquare(5);
 - 위의 코드를 실행하기 전에는 `call stack`은 비어있다.
 - 하지만 코드가 실행되면서 `call stack`은 다음과 같이 변한다.
 
-![img](../Javascript/img/call_stack_img1.png)
+![img](../javascript/img/call_stack_img1.png)
 
 - `call stack`의 `각 단계(step)`를 `stack frame`이라고 한다.
 
 > 특정 시점에 함수 호출 횟수가 `call stack`의 최대 허용치를 넘게 되면 `stackoverflow`가 발생한다.
 
-![img](../Javascript/img/call_stack_overflow_img.png)
+![img](../javascript/img/call_stack_overflow_img.png)
 
 - `call stack`에는 break 라인에 오기 전 까지 실행된 로직들이 표시된다.
 
