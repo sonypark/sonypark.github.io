@@ -3,7 +3,7 @@
 ![node-logo](https://user-images.githubusercontent.com/34808501/55972050-afd42100-5cbd-11e9-87a0-cdb791119fc6.png)
 
 # Node.js Module
-
+___
 ### Javascript의 약점
 
 - Module 기능이 없다.
@@ -223,8 +223,8 @@ const mongoose = require('mongoose');
 ```javascript
 const foo = require('./lib/foo');
 ```
-
-### 참고
+___
+### Reference
 
 - [Modules - Node.js v11.13.0 Documentation](https://nodejs.org/api/modules.html)
 - [Node.js의 module loading system](https://poiemaweb.com/nodejs-module)

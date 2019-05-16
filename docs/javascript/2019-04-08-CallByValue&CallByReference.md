@@ -1,7 +1,7 @@
 2019년 4월 8일
 
 # Call by value  VS Call by reference in javascript
-
+___
 ## **Call by Value**
 > 변수의 값(value)을 복사한다.
 
@@ -153,7 +153,7 @@ obj = { second: 'ref2' }
 Variables | Values | Address | Objects 
 :--------: | :---------: | :--------: | :---------:
 obj    | <#678>   | #234  | { first: 'reference' }
-\    |  \         | #678  | { second: 'ref2' }
+    |           | #678  | { second: 'ref2' }
 
 - `#234` 주소값을 갖는 객체(first object)를 참조하는 변수가 없다.
 - 이러한 객체는 메모리 상에 존재하다가 `Javascript engine`의 **가비지 컬렉터(garbage collector)** 에 의해 메모리에서 **삭제**된다.

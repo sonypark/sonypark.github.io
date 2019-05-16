@@ -1,8 +1,10 @@
 2019년 4월 10일
 
 # Scope in Javascript
-> 스코프는 참조 대상 식별자(identifier)를 찾아내기 위한 규칙이다.
--  `identifier`: 변수, 함수의 이름과 같이 **어떤 대상을 식별할 수 있는 유일한 이름**
+> **스코프**는 `참조 대상 식별자(identifier)`를 찾아내기 위한 규칙이다.
+>
+> `identifier`: 변수, 함수의 이름과 같이 **어떤 대상을 식별할 수 있는 유일한 이름**
+>
 > 자바스크립트는 이 규칙대로 식별자를 찾는다.
 
 - **전역 변수(Global Variable)**
@@ -341,7 +343,7 @@ console.log(x); // 10
 - 암묵적 전역 변수는 오류의 발생 원인이 될 가능성이 크다.
 - 따라서 변수를 선언할 때는 **반드시 변수 키워드(var, let, const)를 사용하자.**
 
-
+___
 ### Reference
 
 - [생활코딩: javascript 유효범위](https://opentutorials.org/course/743/6495)

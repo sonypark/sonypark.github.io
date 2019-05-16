@@ -5,14 +5,17 @@
 > 출처: [GreeksforGreeks](https://www.geeksforgeeks.org/python-program-check-string-palindrome-not/)
 
 ## 정의
-팰린드롬(palindrome)이란 앞으로 읽을 때와 거꾸로 읽을 때 똑같은 단어를 말한다.
+**팰린드롬(palindrome)**이란 **앞으로 읽을 때와 거꾸로 읽을 때 똑같은 단어**를 말한다.
 
 ### 다양한 풀이법
+
+---
 
 ## Method #1
 > list slice notation
 
 1) Find reverse of string
+
 2) Check if reverse and original are same or not.
 
 ```python
@@ -32,7 +35,7 @@ def isPalindrome(s):
 > Iterative Method
 
 - 문자열의 첫 부분부터 문자열 길이의 절반 까지만 루프를 돌며 체크한다.
-- 첫번째 문자와 마지막 문자, 두번째 문자와 마지막에서 두 번째 문자 ..
+- 첫번째 문자와 마지막 문자, 두번째 문자와 마지막에서 두 번째 문자 등..
 - 중간에 하나라도 같지 않으면 palindrome 이 아니다.
 
 ```python
@@ -45,8 +48,9 @@ def isPalindrome(str):
 ```
 
 ## Method #3
+> Method using inbuilt function to reverse a string
+>
 > ‘ ‘.join(reversed(string))
--  Method using inbuilt function to reverse a string
 
 ```python
 def isPalindrome(s):

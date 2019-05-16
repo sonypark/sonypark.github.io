@@ -1,5 +1,5 @@
 # VSCODE - Node.js Debugging
-
+____
 ## Break Point
 
 - Debug mode로 코드를 실행하면 `Break Point`가 지정된 라인에서 멈춘다.
@@ -146,7 +146,7 @@ printSquare(5);
 - 이동 후에  break 라인에서 했던 것처럼 `variables` 와 `watches`를 통해 원하는 값과 코드를 확인할 수 있다.
 
 - 프레임워크에서 어떻게 코드가 실행되고 값이 변경되는지 확인할 때 매우 유용하다.
-
+____
 ### Reference
 
 - [Chrome DevTools에서 자바스크립트 디버깅 시작하기](https://developers.google.com/web/tools/chrome-devtools/javascript/?hl=ko)

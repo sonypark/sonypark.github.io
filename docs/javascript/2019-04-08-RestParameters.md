@@ -36,8 +36,8 @@ myFun("one", "two", "three", "four", "five", "six");
 // b, two
 // manyMoreArgs, [three, four, five, six]
 ```
-
-### rest parameters 와 arguments object의 차이점!
+___
+## arguments object 와 차이점!
 
 - **입력받는 인자**: `arguments object`는 입력한 모든 인자값을 받지만 `rest parameter`는 정해진 파라미터 이외의 인자값만 받는다. 
 - **Array**: `rest parameter`는 Array이지만 `arguments object`는 Array가 아니다(Array의 속성인 `length`와 `index`만 갖고 있는 유사 배열이다.)
@@ -63,8 +63,9 @@ function f(...args) {
   var first = normalArray.shift(); // normalArray[0]값 삭제 후 리턴
 }
 ```
+___
 
-### Destructuring rest parameters
+## Destructuring rest parameters
 
 ```javascript
 function f(...[a, b, c]) {
@@ -75,7 +76,7 @@ f(1)          // NaN (b and c are undefined)
 f(1, 2, 3)    // 6
 f(1, 2, 3, 4) // 6 (the fourth parameter is not destructured)
 ```
-
+___
 ## Example
 
 ```javascript
@@ -91,7 +92,7 @@ myFun("one", "two", "three", "four", "five", "six");
 // b, two
 // manyMoreArgs, [three, four, five, six]
 ```
-- 첫번째 인자값은 a로 두번째 인자값은 b로 나머지는 rest parameters로 들어간다.
+- 첫번째 인자값은 a로 두번째 인자값은 b로 나머지는 `rest parameters`로 들어간다.
 
 
 ```javascript
@@ -102,7 +103,7 @@ myFun("one", "two", "three");
 // b, two
 // manyMoreArgs, [three]
 ```
-- rest parameter가 하나뿐이라도 배열에 담긴다.
+- `rest parameter`가 하나뿐이라도 배열에 담긴다.
 
 ```javascript
 // 위와 같은 함수
@@ -112,7 +113,7 @@ myFun("one", "two");
 // b, two
 // manyMoreArgs, []
 ```
-- rest parameter가 없으면 rest parameter는 빈 배열이 된다.
+- `rest parameter`가 없으면 `rest parameter`는 빈 배열이 된다.
 
 ```javascript
 function fun1(...theArgs) {
@@ -136,7 +137,7 @@ function multiply(multiplier, ...theArgs) {
 var arr = multiply(2, 1, 2, 3); 
 console.log(arr); // [2, 4, 6]
 ```
-- 첫번째 인자값을 배수로 하여 rest parameters의 각 요소에 곱한 배열을 리턴하는 함수
+- 첫번째 인자값을 배수로 하여 `rest parameters`의 각 요소에 곱한 배열을 리턴하는 함수
 
 
 ```javascript
@@ -165,7 +166,7 @@ function sortArguments() {
 console.log(sortArguments(5, 3, 7, 1)); // 1, 3, 5, 7
 ```
 - `arguments`에서 Array methods를 쓰려면 배열로 변환해야한다.
-
+___
 ### Reference
 
 - [MDN, Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)

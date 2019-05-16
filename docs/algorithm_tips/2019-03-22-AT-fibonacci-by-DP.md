@@ -3,14 +3,13 @@
 # 피보나치 수열 알고리즘
 
 > 출처: https://www.youtube.com/watch?v=vYquumk4nWw&list=PLBZBJbE_rGRU5PrgZ9NBHJwcaZsNpf8yD
->
-> 개인적으로 공부한 내용을 정리한 문서이므로 내용 상 오류가 있을 수 있습니다.
 
 ## 1. Recursion
 
+- 재귀
+- 시간복잡도: O(2**n)
+
 ```python
-# 재귀
-# 시간복잡도 O(2**n)
 def fibo_1(n):
     if n ==1 or n == 2:
         return 1
@@ -18,13 +17,14 @@ def fibo_1(n):
         return fibo_1(n-1) + fibo_1(n-2)
 ```
 
-## Memorized solution 
+## 2. Memorized solution 
+
+- memo[] 이용
+- 시간복잡도: O(2N+1) = O(N)
+- But 위에서부터 거꾸로 올라가서 값을 찾기 때문에 bottom_up 보다 시간이 오래 걸린다
+- N이 커지면 **recursion depth error**가 발생한다. `maximum recursion depth exceeded in comparison`
 
 ```python
-# memo[] 이용
-# 시간복잡 O(2N+1) = O(N)
-# But 위에서부터 거꾸로 올라가서 값을 찾기 때문에 bottom_up보다 시간이 오래걸림
-# recursion error가 발생함. `maximum recursion depth exceeded in comparison`
 def fibo_2(n, memo):
     if memo[n] is not None:
         return memo[n]
@@ -40,11 +40,12 @@ def fibo_memo(n):
 ```
 
 
-## Bottom-up approach
+## 3. Bottom-up approach
+
+- bottom_up
+- 시간복잡도: O(N)
 
 ```python
-# bottom_up
-# 시간복잡도 O(N)
 def fibo_3(n):
     if n == 1 or n == 2:
         return 1
