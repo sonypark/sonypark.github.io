@@ -10,7 +10,7 @@ ___
 - function 키워드로 생성한 **일반 함수**의 경우 **호출 방식**에 의해 **this**에 **바인딩** 될 **객체**가 **동적**으로 **결정**된다.
 
 - **this** 키워드는 **자신을 호출한 객체**를 가리킨다.
-> 참고: [this keyword](http://localhost:3000/#/./docs/javascript/2019-04-28-JS_OOP?id=this-keyword)
+> 참고: [this keyword](https://sonypark.github.io/#/./docs/javascript/2019-04-28-JS_OOP?id=this-keyword)
 
 
  1. **일반 함수**에서 **`this`**는 **`window`**를 가리킨다.

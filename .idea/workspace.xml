@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/etc/2019-04-05-VSCode_Debugging_Guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/etc/2019-04-05-VSCode_Debugging_Guide.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javascript/2019-04-08-FunctionArguments.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/2019-04-08-FunctionArguments.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javascript/2019-04-12-Array.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/2019-04-12-Array.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javascript/2019-04-12-Object.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/2019-04-12-Object.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javascript/2019-04-15-FunctionalProgramming.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/2019-04-15-FunctionalProgramming.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javascript/2019-04-17-Closure.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/2019-04-17-Closure.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javascript/2019-04-28-JS_OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/2019-04-28-JS_OOP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/javascript/2019-04-29-OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/2019-04-29-OOP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,12 +48,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="456">
-                <caret line="280" column="35" lean-forward="true" selection-start-line="280" selection-start-column="35" selection-end-line="280" selection-end-column="35" />
+              <first_editor relative-caret-position="276">
+                <caret line="12" selection-start-line="12" selection-end-line="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -80,12 +69,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/javascript/2019-05-18-apply_call_bind.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1127">
-                <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+              <first_editor relative-caret-position="369">
+                <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               </first_editor>
               <second_editor />
             </state>
@@ -216,8 +205,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_sidebar.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-28-JS_OOP.md" />
-        <option value="$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-05-18-apply_call_bind.md" />
+        <option value="$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md" />
       </list>
     </option>
   </component>
@@ -415,12 +404,12 @@
       <workItem from="1557644722373" duration="14000" />
       <workItem from="1557973523829" duration="1058000" />
       <workItem from="1557990489413" duration="4511000" />
-      <workItem from="1558070171899" duration="9072000" />
+      <workItem from="1558070171899" duration="9265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106226000" />
+    <option name="totallyTimeSpent" value="106419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -739,16 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="456">
-            <caret line="280" column="35" lean-forward="true" selection-start-line="280" selection-start-column="35" selection-end-line="280" selection-end-column="35" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -769,8 +748,18 @@
     <entry file="file://$PROJECT_DIR$/docs/javascript/2019-05-18-apply_call_bind.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1127">
-            <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <first_editor relative-caret-position="369">
+            <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="276">
+            <caret line="12" selection-start-line="12" selection-end-line="12" />
           </first_editor>
           <second_editor />
         </state>
