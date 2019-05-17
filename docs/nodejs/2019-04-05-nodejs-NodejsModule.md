@@ -21,7 +21,7 @@ ___
  
  - 모듈은 독립적인 파일 스코프를 갖기 때문에 모듈 안에 선언한 모든 것들은 기본적으로 해당 모듈 내부에서만 참조 가능하다.
  - 모듈 안에 선언한 항목을 외부에 공개하여 다른 모듈들이 사용할 수 있게 하고 싶다면 exports 객체를 사용해야 한다.
- - 외부에 공개할 대상을 exports 객체의 프로퍼티 또는 메소드로 정의한다.
+ - 외부에 공개할 대상을 exports 객체의 프로퍼티 또는 메서드로 정의한다.
 
 ```javascript
 // circle.js
@@ -33,7 +33,7 @@ exports.circumference = (r) => 2 * PI * r;
 ``` 
 
 - circle.js는 독립적인 파일 스코프를 갖는 모듈이다. 
-- circle 모듈에서 area와 circumference를 exports 객체의 메소드로 정의하였다. 
+- circle 모듈에서 area와 circumference를 exports 객체의 메서드로 정의하였다. 
 - 변수 PI는 circle 모듈에서만 유효한 private 변수가 되고, area와 circumference는 외부에 공개된다.
 
 ```javascript
@@ -56,7 +56,7 @@ $ node app
 
 ## `module.exports`
 
-- exports 객체는 프로퍼티 또는 메소드를 여러 개 정의할 수 있다. 
+- exports 객체는 프로퍼티 또는 메서드를 여러 개 정의할 수 있다. 
 - 하지만 module.exports 에는 하나의 값(원시 타입, 함수, 객체)만 할당할 수 있다.
 
 ```javascript
@@ -98,7 +98,7 @@ console.log(value); // => 'primitive value'
 
 구분 | 모듈 정의 방식 | require 함수의 호출 결과
 :---------:  | :---------------: | :-------------------:
-export	| exports 객체에는 값을 할당할 수 없고 공개할 대상을 exports 객체에 프로퍼티 또는 메소드로 추가한다. | exports 객체에 추가한 프로퍼티와 메소드가 담긴 객체가 전달된다.
+export	| exports 객체에는 값을 할당할 수 없고 공개할 대상을 exports 객체에 프로퍼티 또는 메서드로 추가한다. | exports 객체에 추가한 프로퍼티와 메서드가 담긴 객체가 전달된다.
 module.exports	| module.exports 객체에 하나의 값(원시 타입, 함수, 객체)만을 할당한다. | module.exports 객체에 할당한 값이 전달된다.
 
 ## `module.exports` 에 `함수` 할당하기

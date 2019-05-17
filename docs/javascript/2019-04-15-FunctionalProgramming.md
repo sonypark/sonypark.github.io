@@ -23,7 +23,7 @@ const map = arr.map(function(x) {
 ```
 
 - 배열 `arr`을 변경하지 않고 새로운 결과(`map`)를 얻었다.
-- 즉, 배열의 메소드인 `map()`은 순수함수이다. 
+- 즉, 배열의 메서드인 `map()`은 순수함수이다. 
 
 
 ```javascript
