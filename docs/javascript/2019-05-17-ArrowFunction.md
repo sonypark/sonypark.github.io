@@ -54,7 +54,7 @@ console.log(greet.greetArray(['Sony', 'Park'])); // ['Hello Sony', 'Hello Park']
 const person = {
   name: 'Sony',
   sayHi: () => console.log(`Hi ${this.name}`),
-	printThis: () => console.log(`${this}`)
+  printThis: () => console.log(`${this}`)
 };
 
 person.sayHi(); // Hi undefined
@@ -69,7 +69,7 @@ person.printThis(); // window
 const person = {
   name: 'Sony',
   sayHi: function(){console.log(`Hi ${this.name}`)},
-	printThis: function(){ console.log(`${this}`)}
+  printThis: function(){ console.log(`${this}`)}
 };
 
 person.sayHi(); // Hi Sony
