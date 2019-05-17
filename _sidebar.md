@@ -22,6 +22,8 @@
   - [클로저(Closures)](./docs/javascript/2019-04-17-Closure.md)
   - [Higher Order Function](./docs/javascript/2019-04-28-HigherOrderFunction.md)
   - [객체지향 프로그래밍(OOP)](./docs/javascript/2019-04-28-JS_OOP.md)
+  - [Arrow Function](./docs/javascript/2019-05-17-ArrowFunction.md)
+  - [apply,call,bind](./docs/javascript/2019-05-18-apply_call_bind.md)
 
 - :green_apple: Node.js
   
