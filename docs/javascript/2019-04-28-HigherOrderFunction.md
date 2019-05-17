@@ -78,7 +78,7 @@ console.log(letUserLogin('Sony')); // Access Granted to Sony
 
  - 이전보다 flexiblity가 높아졌다.
 
- ```javascript
+```javascript
 const giveAccessTo =(name) =>
     'Access Granted to ' + name;
  
@@ -90,8 +90,7 @@ function letUserLogin(user) { // ++ We now tell WHAT DATA TO USE
      return giveAccessTo(user);
  }
 console.log(letUserLogin('Sony')); // Access Granted to Sony
- 
- ```
+```
 
 - `giveAccessTo`라는 함수를 이용해 좀 더 깔끔해졌다.
 - 그런데 만약 로그인하는 유저의 종류에 따라 다른 처리를 해야한다면 어떻게 할까?
@@ -236,7 +235,7 @@ multiplyByFive(6); // 30
 ```javascript
 const multiplyBy = (num1) => (num2) => num1 * num2;
 ```
-
+____
    
 ### Reference
 
