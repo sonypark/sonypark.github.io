@@ -5,7 +5,7 @@
 > 출처: https://www.acmicpc.net/problem/status/11653
 
 ## 정의
-합성수를 소수의 곱으로 나타내는 방법을 말한다.
+**합성수를 소수의 곱으로 나타내는 방법**을 말한다.
 
 ### 다양한 풀이법
 ___
@@ -13,7 +13,7 @@ ___
 ## Method #1
 
 ```python
-def getprime(n):
+def decompose_fractions(n):
     for x in range(2, n + 1):
         count = 0    # 인수가 곱해진 횟수
         while n % x == 0:
