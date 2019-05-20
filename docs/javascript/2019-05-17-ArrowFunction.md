@@ -12,18 +12,16 @@ ___
 - **this** 키워드는 **자신을 호출한 객체**를 가리킨다.
 > 참고: [this keyword](https://sonypark.github.io/#/./docs/javascript/2019-04-28-JS_OOP?id=this-keyword)
 
-
  1. **일반 함수**에서 **`this`**는 **`window`**를 가리킨다.
     - **생성자 함수**와 **객체의 메서드**를 **제외**한 **모든 함수**(내부 함수, 콜백 함수 포함) **내부**의 **this**는 **전역 객체**를 가리킨다.
  2. **객체의 메서드**에서 **`this`**는 **`해당 객체`**를 가리킨다.
  3. **생성자 함수**에서 **`this`**는 **`생성자를 통해 생성된 객체`**를 가리킨다. 
 
 
-
 ## 화살표 함수(Arrow function)의 this
 
 - **Arrow function**의 **`this`**는 항상 **`상위 스코프의 this`**를 가리킨다. - **`Lexical this`**
--  **Arrow function**은 **`Lexical this`**를 지원하므로 **콜백 함수**로 사용하기 편리하다.
+- **Arrow function**은 **`Lexical this`**를 지원하므로 **콜백 함수**로 사용하기 편리하다.
 
 ```javascript
 function Greet(greeting) {
@@ -39,13 +37,7 @@ const greet = new Greet('Hello');
 console.log(greet.greetArray(['Sony', 'Park'])); // ['Hello Sony', 'Hello Park']
 ```
 
-
-
-
-
 ## Arrow function을 사용하면 안 되는 경우
-
-
 
 ### 1. 객체의 메서드
 
@@ -78,8 +70,6 @@ person.printThis(); // Object
 
 - **객체의 메서드** 를 **일반함수**로 선언하면  `this`는 `해당 객체`를 가리킨다. 
 
-
-
 ### 2. prototype
 
 ```javascript
@@ -95,7 +85,7 @@ person.sayHi(); // Hi undefined
 person.printThis(); // window
 ```
 
--  **Arrow function**으로 정의한 메서드를 `prototype`에 할당하면 `this`는 `window`를 가리킨다.
+- **Arrow function**으로 정의한 메서드를 `prototype`에 할당하면 `this`는 `window`를 가리킨다.
 - 따라서 `prototype`에 할당하는 메서드는 **일반함수**를 사용한다.
 
 ```javascript
@@ -110,8 +100,6 @@ Object.prototype.printThis = function(){console.log(`${this}`)};
 person.sayHi(); // Hi Sony
 person.printThis(); // Object
 ```
-
-
 
 ### 3. 생성자 함수
 
@@ -139,8 +127,6 @@ console.log(Foo.hasOwnProperty('prototype')); // true
 const foo = new Foo();
 ```
 
-
-
 ### 4. addEventListener 함수의 콜백 함수
 
 - **addEventListener** 함수의 콜백 함수를 화살표 함수로 정의하면 `this`가 상위 컨택스트인 전역 객체 `window`를 가리킨다.
@@ -155,8 +141,6 @@ button.addEventListener('click', () => {
 });
 ```
 
-
-
 - **addEventListener** 함수의 콜백 함수 내에서 `this`를 사용하는 경우, function 키워드로 정의한 **일반 함수**를 사용해야 한다.
 - 일반 함수로 정의된 **addEventListener** 함수의 콜백 함수 내부의 `this`는 이벤트 리스너에 바인딩된 요소(`currentTarget`)를 가리킨다.
 
@@ -170,13 +154,27 @@ button.addEventListener('click', function() {
 });
 ```
 
+## 언제 Arrow function을 써야 할까?
 
+- 가능한 function 키워드의 **일반 함수**보다 `Arrow function` 을 쓰도록 하자.
+- [Google’s JavaScript Style Guide](https://medium.freecodecamp.org/google-publishes-a-javascript-style-guide-here-are-some-key-lessons-1810b8ad050b) 에도 `Arrow function` 을 사용할 것을 권하고 있다.
+
+  - 그 이유는 다음과 같이 설명한다.
+    1. 문법이 간단하다
+    2. 가독성이 높다
+    3. this 바인딩으로 인한 문제를 상당 부분 해결해준다.
+
+- 따라서 아래의 경우를 제외하고는 `Arrow function` 을 쓰도록 하자.
+  
+  - **Arrow function 을 사용하면 안 되는 경우**
+    1. 객체의 메서드
+    2. prototype에 할당하는 메서드
+    3. 생성자 함수
+    4. addEventListener 함수의 콜백 함수
 
 ## Exercise
 
 > 출처: [인사이드 자바스크립트](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788968480652)
-
-
 
 ### 내부 함수의 this 바인딩 동작을 보여주는 예제 코드
 
@@ -199,7 +197,7 @@ var myObject = {
             this.value += 1;
             console.log('func2() called. this : ' + this);
             console.log('func2() called. this.value : ' + this.value);
-            
+
             //func3 내부 함수
             func3 = function () {
                 this.value += 1;
@@ -220,7 +218,6 @@ myObject.func1(); // func1() 메서드 호출
 // func3() called. this : [object window]
 // func3() called. this.value : 102
 ```
-
 
 - **Arrow function**을 이용하면 내부함수의 `this`가 `myObject`를 가리키게 할 수 있다.
 
@@ -261,26 +258,8 @@ myObject.func1(); // func1() 메서드 호출
 // func3() called. this.value : 4
 ```
 
-## 언제 Arrow function을 써야 할까?
-
-- 가능한 function 키워드의 **일반 함수**보다 `Arrow function` 을 쓰도록 하자.
-- [Google’s JavaScript Style Guide](https://medium.freecodecamp.org/google-publishes-a-javascript-style-guide-here-are-some-key-lessons-1810b8ad050b) 에도 `Arrow function` 을 사용할 것을 권하고 있다.
-    
-    - 그 이유는 다음과 같이 설명한다.
-    
-      1. 문법이 간단하다
-      2. 가독성이 높다
-      3. this 바인딩으로 인한 문제를 상당 부분 해결해준다. 
-    
-- 따라서 아래의 경우를 제외하고는 `Arrow function` 을 쓰도록 하자.
-  
-    - **Arrow function 을 사용하면 안 되는 경우**
-      1. 객체의 메서드
-      2. prototype에 할당하는 메서드
-      3. 생성자 함수
-      4. addEventListener 함수의 콜백 함수
-
 ___
+
 ### Reference
 
 - [Arrow function | PoiemaWeb](https://poiemaweb.com/es6-arrow-function)

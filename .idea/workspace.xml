@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827916a4-e4d0-449d-a35a-9576f3b9340d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/git/2019-04-04-CodeSquad_GitPR_Guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/git/2019-04-04-CodeSquad_GitPR_Guide.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +15,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1104">
-                <caret line="48" selection-start-line="48" selection-end-line="48" />
+              <first_editor relative-caret-position="644">
+                <caret line="28" selection-start-line="28" selection-end-line="28" />
               </first_editor>
               <second_editor />
             </state>
@@ -25,11 +27,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/javascript/2019-04-28-HigherOrderFunction.md">
+        <entry file="file://$PROJECT_DIR$/docs/git/2019-04-04-CodeSquad_GitPR_Guide.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="476">
-                <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
+              <first_editor relative-caret-position="368">
+                <caret line="16" selection-start-line="16" selection-end-line="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -37,23 +39,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-01-24-AT-list_comparison.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <first_editor relative-caret-position="506">
+                <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -61,20 +51,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="47" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/javascript/2019-05-18-apply_call_bind.md">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="874">
-                <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <first_editor relative-caret-position="1219">
+                <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -82,11 +63,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/javascript/2019-04-17-Closure.md">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="4738">
-                <caret line="206" selection-start-line="206" selection-end-line="206" />
+              <first_editor relative-caret-position="437">
+                <caret line="19" selection-start-line="19" selection-end-line="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -94,11 +75,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/javascript/2019-04-08-FunctionArguments.md">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-04-AT-rotate_string.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="460">
-                <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <first_editor relative-caret-position="598">
+                <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-14-AT-sum_divisor.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="138">
+                <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -109,8 +102,20 @@
         <entry file="file://$PROJECT_DIR$/_sidebar.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="575">
-                <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+              <first_editor relative-caret-position="1173">
+                <caret line="51" column="4" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-05-19-AT-set_seat.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="391">
+                <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               </first_editor>
               <second_editor />
             </state>
@@ -145,6 +150,8 @@
       <find>script</find>
       <find>메소드</find>
       <find>메서드</find>
+      <find>브랜치</find>
+      <find>pl</find>
     </findStrings>
     <replaceStrings>
       <replace>메서드</replace>
@@ -156,13 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome_summary.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-02-AT-diceGame.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-07-AT-chealsea.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-05-AT-microwave.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-04-AT-sumDivisor.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-voteAB.md" />
-        <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-03-AT-palindrome.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-01-AT-lastPointofRectangle.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-27-AT-sortNum3.md" />
         <option value="$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-17-AT-sortWords.md" />
@@ -184,11 +184,9 @@
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-17-Closure.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-28-Closure2.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-29-OOP.md" />
-        <option value="$PROJECT_DIR$/docs/git/2019-04-04-CodeSquad_GitPR_Guide.md" />
         <option value="$PROJECT_DIR$/docs/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md" />
-        <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-10-ES6-var-let-const.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-08-RestParameters.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-05-ES6Module.md" />
@@ -200,13 +198,22 @@
         <option value="$PROJECT_DIR$/docs/nodejs/2019-04-05-nodejs-NodejsModule.md" />
         <option value="$PROJECT_DIR$/docs/etc/2019-04-05-VSCode_Debugging_Guide.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/_sidebar.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-28-JS_OOP.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-05-18-apply_call_bind.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-05-17-ArrowFunction.md" />
         <option value="$PROJECT_DIR$/docs/javascript/2019-04-28-HigherOrderFunction.md" />
         <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md" />
         <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md" />
+        <option value="$PROJECT_DIR$/docs/git/2019-04-04-CodeSquad_GitPR_Guide.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_problem_solving/2019-01-24-AT-list comparison.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm2.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-04-AT-str_compression.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-04-AT-rotate_string.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-14-AT-sum_divisor.md" />
+        <option value="$PROJECT_DIR$/_sidebar.md" />
+        <option value="$PROJECT_DIR$/docs/algorithm_problem_solving/2019-05-19-AT-set_seat.md" />
       </list>
     </option>
   </component>
@@ -237,6 +244,12 @@
               <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sonypark.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm_problem_solving" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sonypark.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -278,15 +291,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts/NodeJS" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/algorithm_problem_solving" />
       <recent name="$PROJECT_DIR$/docs/javascript" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/_posts/Algorithm_Test" />
       <recent name="$PROJECT_DIR$/_posts/Algorithm_Tip" />
-      <recent name="$PROJECT_DIR$/_posts/Javascript" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts/NodeJS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -406,18 +419,19 @@
       <workItem from="1557990489413" duration="4511000" />
       <workItem from="1558070171899" duration="9637000" />
       <workItem from="1558102611245" duration="174000" />
-      <workItem from="1558180576052" duration="839000" />
+      <workItem from="1558180576052" duration="1699000" />
+      <workItem from="1558255246695" duration="2876000" />
+      <workItem from="1558321165284" duration="241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107804000" />
+    <option name="totallyTimeSpent" value="111781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2786533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2872493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -443,12 +457,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-07-AT-chealsea.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-01-24-AT-list comparison.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Tip/2019-05-03-AT-palindrome_summary.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Tip/2019-01-30-AT-Euclidean algorithm.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-10-AT-word_change.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-05-09-AT-birthday.md" />
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-27-AT-sortNum3.md" />
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-04-03-AT-sugar-pack.md" />
     <entry file="file://$PROJECT_DIR$/_posts/Algorithm_Test/2019-03-26-AT-getMinSum.md" />
@@ -520,16 +528,6 @@
     <entry file="file://$PROJECT_DIR$/redirects">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/git/2019-04-04-CodeSquad_GitPR_Guide.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -545,16 +543,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="115">
             <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="637">
-            <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
@@ -687,6 +675,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/javascript/2019-04-28-HigherOrderFunction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="5451">
+            <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1656">
+            <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="575">
+            <caret line="25" selection-start-line="25" selection-end-line="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/javascript/2019-05-18-apply_call_bind.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -717,11 +735,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-01-30-AT-Euclidean algorithm.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="644">
+            <caret line="28" selection-start-line="28" selection-end-line="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/git/2019-04-04-CodeSquad_GitPR_Guide.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="368">
+            <caret line="16" selection-start-line="16" selection-end-line="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-01-24-AT-list_comparison.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="506">
+            <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1219">
+            <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="437">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-04-AT-rotate_string.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="598">
+            <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-02-14-AT-sum_divisor.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="138">
+            <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_sidebar.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="575">
-            <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+          <first_editor relative-caret-position="1173">
+            <caret line="51" column="4" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
@@ -737,31 +825,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/javascript/2019-04-28-HigherOrderFunction.md">
+    <entry file="file://$PROJECT_DIR$/docs/algorithm_problem_solving/2019-05-19-AT-set_seat.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="476">
-            <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <first_editor relative-caret-position="391">
+            <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           </first_editor>
           <second_editor />
         </state>
