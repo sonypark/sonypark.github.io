@@ -3,7 +3,7 @@
   - [Git 이란?](./docs/git/2019-04-04-AboutGit.md)
   
   - 코드스쿼드
-    - [Git Pull Request](./docs/git/2019-04-04-CodeSquad_GitPR_Guide.md)
+    - [Git Pull Request](./docs/git/2019-04-04-CodeSquad_GitPR_Guide.md "Git PR")
 
 - :globe_with_meridians: Web
 
@@ -28,15 +28,27 @@
 - :green_apple: Node.js
   
   - [Node.js Module](./docs/nodejs/2019-04-05-nodejs-NodejsModule.md)
-  
-- :snake: Python
 
 - :thought_balloon: etc.
 
-    - [VSCODE 디버깅 가이드](./docs/etc/2019-04-05-VSCode_Debugging_Guide.md)
+  - [VSCODE 디버깅 가이드](./docs/etc/2019-04-05-VSCode_Debugging_Guide.md)
 
-- :eyes: Algorithm_tips
+- :eyes: Algorithm tips
+  
     - [유클리드 호제법](./docs/algorithm_tips/2019-01-30-AT-Euclidean%20algorithm.md)
     - [피보나치 - DP](./docs/algorithm_tips/2019-03-22-AT-fibonacci-by-DP.md)
     - [펠린드롬 - 여러가지 풀이](./docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md)
     - [소인수분해](./docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md)
+  
+- :hourglass: Algorithm problem solving
+    
+    - 프로그래머스
+        - [Lv1 완주하지못한선수](./docs/algorithm_problem_solving/2019-01-24-AT-list_comparison.md)
+        - [Lv1 최대공약수 최소공배수](./docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm.md)
+        - [Lv1 약수의 합](./docs/algorithm_problem_solving/2019-02-14-AT-sum_divisor.md)
+    - 백준
+        - [[5176] 대회 자리](./docs/algorithm_problem_solving/2019-05-19-AT-set_seat.md)
+    
+    - 코딩인터뷰 완전분석
+        - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
+        - [문자열 회전](docs/algorithm_problem_solving/2019-02-04-AT-rotate_string.md)

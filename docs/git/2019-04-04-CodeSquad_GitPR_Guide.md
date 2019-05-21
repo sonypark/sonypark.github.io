@@ -51,8 +51,8 @@ ex) git push origin step1 # 원격저장소(origin)에 step1 브랜치를 올린
 ### 10. merge한 codesquad 저장소와 동기화하기 위해 codesquad 저장소 추가한다.(최초 한번만)
 
 - 동기화를 하는 이유는 로컬 저장소 브랜치와 원격 저장소 브랜치의 버전이 다르기 때문이다.
-- 이전에 로컬 저장소(sonypark 브랜치)에서는 step1 브런치를 만들어 작업하고 push 하고 삭제했다.
-- 따라서 로컬의 sonypark 브랜치에는 step1 브런치에서 작업한 내용이 없는 상태이다.
+- 이전에 로컬 저장소(sonypark 브랜치)에서는 step1 브랜치를 만들어 작업하고 push 하고 삭제했다.
+- 따라서 로컬의 sonypark 브랜치에는 step1 브랜치에서 작업한 내용이 없는 상태이다.
 
 ```bash    
 git remote add {저장소_별칭} base_저장소_url
