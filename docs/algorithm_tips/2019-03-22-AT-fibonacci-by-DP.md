@@ -56,3 +56,12 @@ def fibo_3(n):
         bottom_up[i] = bottom_up[i-1] + bottom_up[i-2]
     return bottom_up[n]
 ```
+
+```python
+def fibo_3(n):
+    a = 0
+    b = 1
+    for i in range(n):
+    a, b = a+b, a
+    return a
+```
