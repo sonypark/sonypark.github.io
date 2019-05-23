@@ -1,6 +1,6 @@
 2019년 2월 4일
 
-# Lv1 - 문자열 압축
+# Lv1 - 문자열 압축 {docsify-ignore-all}
 
 > 출처: [코딩인터뷰완전분석](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966263080&orderClick=JAj)
 

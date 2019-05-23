@@ -1,6 +1,6 @@
 2019년 5월 22일
 
-# Lv2 - 가장 큰 수
+# Lv2 - 가장 큰 수 {docsify-ignore-all}
 
 > 출처: https://programmers.co.kr/learn/courses/30/lessons/42746
 

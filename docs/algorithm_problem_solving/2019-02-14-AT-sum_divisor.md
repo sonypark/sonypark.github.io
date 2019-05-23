@@ -1,6 +1,6 @@
 2019년 2월 14일
 
-# Lv1 - 약수의 합
+# Lv1 - 약수의 합 {docsify-ignore-all}
 
 > 출처: https://programmers.co.kr/learn/courses/30/lessons/12928?language=python3#
 
