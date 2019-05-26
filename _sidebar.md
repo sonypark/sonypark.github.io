@@ -28,6 +28,8 @@
 - :green_apple: Node.js
   
   - [Node.js Module](./docs/nodejs/2019-04-05-nodejs-NodejsModule.md)
+  - [url](./docs/nodejs/2019-05-22-nodejs-url.md)
+  - [crypto](./docs/nodejs/2019-05-23-nodejs-crypto.md)
 
 - :thought_balloon: etc.
 
@@ -49,6 +51,8 @@
         - [Lv2 가장 큰 수](./docs/algorithm_problem_solving/2019-05-20-AT-the_biggest_number.md)
     - 백준
         - [[5176] 대회 자리](./docs/algorithm_problem_solving/2019-05-19-AT-set_seat.md)
+        - [[1357] 뒤집힌 덧셈](./docs/algorithm_problem_solving/2019-05-24-AT-sum_reversedNum.md)
+        - [[11170] 0의 개수](./docs/algorithm_problem_solving/2019-05-26-AT-count_zero.md)
     
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
