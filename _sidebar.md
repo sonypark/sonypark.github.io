@@ -49,6 +49,7 @@
         - [Lv1 최대공약수 최소공배수](./docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm.md)
         - [Lv1 약수의 합](./docs/algorithm_problem_solving/2019-02-14-AT-sum_divisor.md)
         - [Lv2 가장 큰 수](./docs/algorithm_problem_solving/2019-05-20-AT-the_biggest_number.md)
+        - [Lv2 전화번호 목록](./docs/algorithm_problem_solving/2019-05-31-AT-phone_book.md)
     - 백준
         - [[5176] 대회 자리](./docs/algorithm_problem_solving/2019-05-19-AT-set_seat.md)
         - [[1357] 뒤집힌 덧셈](./docs/algorithm_problem_solving/2019-05-24-AT-sum_reversedNum.md)
