@@ -42,6 +42,7 @@
     - [펠린드롬 - 여러가지 풀이](./docs/algorithm_tips/2019-05-03-AT-palindrome_summary.md)
     - [소인수분해](./docs/algorithm_tips/2019-05-08-AT-fractional_decomposition.md)
     - [팩토리얼](./docs/algorithm_tips/2019-05-26-AT-factorial.md)
+    - [하노이의 탑](./docs/algorithm_tips/2019-06-01-AT-hanoi.md)
   
 - :hourglass: Algorithm problem solving
     
