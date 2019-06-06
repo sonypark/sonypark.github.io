@@ -1,8 +1,10 @@
 2019년 1월 30일
 
-# 유클리드 호제법
+# 유클리드 호제법 {docsify-ignore-all}
 
-> 출처: [위키피디아](https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%81%B4%EB%A6%AC%EB%93%9C_%ED%98%B8%EC%A0%9C%EB%B2%95#%EC%A0%95%EC%88%98%EC%9D%98_%EA%B2%BD%EC%9A%B0)
+> 개인적으로 공부한 과정을 정리해 놓은 글입니다. 내용 상 오류가 있을 수 있습니다. 잘못된 부분이 있을 경우 댓글에 남겨주시면 감사하겠습니다 :)
+>
+> 참고: [위키피디아](https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%81%B4%EB%A6%AC%EB%93%9C_%ED%98%B8%EC%A0%9C%EB%B2%95#%EC%A0%95%EC%88%98%EC%9D%98_%EA%B2%BD%EC%9A%B0)
 
 ## 정의
 - 2개의 `자연수 a, b`에 대해서 `a를 b로 나눈 나머지`를 `r` 이라 하자 (단, a>b) 

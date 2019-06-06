@@ -1,8 +1,10 @@
 2019년 5월 8일
 
-# 소인수분해
+# 소인수분해 {docsify-ignore-all}
 
-> 출처: https://www.acmicpc.net/problem/status/11653
+> 개인적으로 공부한 과정을 정리해 놓은 글입니다. 내용 상 오류가 있을 수 있습니다. 잘못된 부분이 있을 경우 댓글에 남겨주시면 감사하겠습니다 :)
+>
+> 참고: https://www.acmicpc.net/problem/status/11653
 
 ## 정의
 **합성수를 소수의 곱으로 나타내는 방법**을 말한다.

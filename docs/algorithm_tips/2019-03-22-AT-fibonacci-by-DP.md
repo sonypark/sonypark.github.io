@@ -1,8 +1,10 @@
 2019년 3월 22일
 
-# 피보나치 수열 알고리즘
+# 피보나치 수열 알고리즘 {docsify-ignore-all}
 
-> 출처: https://www.youtube.com/watch?v=vYquumk4nWw&list=PLBZBJbE_rGRU5PrgZ9NBHJwcaZsNpf8yD
+> 개인적으로 공부한 과정을 정리해 놓은 글입니다. 내용 상 오류가 있을 수 있습니다. 잘못된 부분이 있을 경우 댓글에 남겨주시면 감사하겠습니다 :)
+>
+> 참고: https://www.youtube.com/watch?v=vYquumk4nWw&list=PLBZBJbE_rGRU5PrgZ9NBHJwcaZsNpf8yD
 
 ## 1. Recursion
 

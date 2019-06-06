@@ -228,8 +228,3 @@ ___
 
 - [Modules - Node.js v11.13.0 Documentation](https://nodejs.org/api/modules.html)
 - [Node.js의 module loading system](https://poiemaweb.com/nodejs-module)
-
-
-
-<div id="commento"></div>
-<script src="https://cdn.commento.io/js/commento.js"></script>

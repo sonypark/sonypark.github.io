@@ -1,8 +1,10 @@
 2019년 5월 3일
 
-# 펠린드롬(Palindrome)
+# 펠린드롬(Palindrome) {docsify-ignore-all}
 
-> 출처: [GreeksforGreeks](https://www.geeksforgeeks.org/python-program-check-string-palindrome-not/)
+> 개인적으로 공부한 과정을 정리해 놓은 글입니다. 내용 상 오류가 있을 수 있습니다. 잘못된 부분이 있을 경우 댓글에 남겨주시면 감사하겠습니다 :)
+>
+> 참고: [GreeksforGreeks](https://www.geeksforgeeks.org/python-program-check-string-palindrome-not/)
 
 ## 정의
 **팰린드롬(palindrome)**이란 **앞으로 읽을 때와 거꾸로 읽을 때 똑같은 단어**를 말한다.
