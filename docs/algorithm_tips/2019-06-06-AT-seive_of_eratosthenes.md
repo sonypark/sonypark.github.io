@@ -30,7 +30,7 @@
 - 입력값을 받았을 때 소수인지 아닌지 판별하는 함수
 
 ```python
-def primeNum(n):
+def isPrimeNum(n):
     if n == 1:
         return False
     if n == 2:
@@ -44,11 +44,25 @@ def primeNum(n):
     return True
 
 # 입력값이 소수인지 아닌지 판별한다.
-primeNum(1) # False
-primeNum(2) # True
-primeNum(6) # False
-primeNum(13) # True
+isPrimeNum(1) # False
+isPrimeNum(2) # True
+isPrimeNum(6) # False
+isPrimeNum(13) # True
 ```
+
+- 더 단순화 한 함수
+
+```python
+def isPrimeNumber(number):
+    if number <= 1:
+        return False
+    else:
+        for i in range(2, number // 2 + 1):
+            if number % i == 0:
+                return False
+        return True
+```
+
 
 ## Method 2
 
