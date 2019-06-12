@@ -2,6 +2,8 @@
 
 # Higher Order Function
 
+---
+
 > 아래 내용은 대부분 [Udemy: Advanced JavaScript Concepts by Andrei Neagoie](<https://www.udemy.com/advanced-javascript-concepts/>)을 참고해서 정리했습니다.
 
 - HOF(Higher Order Function)은 **함수를 인자값으로 받을 수 있는 함수**를 말한다.

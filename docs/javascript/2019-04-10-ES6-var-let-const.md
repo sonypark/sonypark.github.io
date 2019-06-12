@@ -2,6 +2,8 @@
 
 # var, let, const 와 Hoisting
 
+---
+
 ![img](./img/var-let-const.png)
 
 ## **var**

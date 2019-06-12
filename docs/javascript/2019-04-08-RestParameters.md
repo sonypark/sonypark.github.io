@@ -1,6 +1,9 @@
 2019년 4월 8일
 
 # Rest Parameters
+
+---
+
 > rest parameter를 이용하면 무한개의 인자를 배열로 받을 수 있다.
 
 - ex) 1부터 n까지의 합을 구하는 함수
