@@ -34,6 +34,10 @@
   - [Promise](./docs/nodejs/2019-06-05-nodejs-Promise.md)
   - [Async & Await](./docs/nodejs/2019-06-07-nodejs-Async-Await.md)
 
+- :paw_prints: Troubleshooting
+
+  - [Promise로 readline 제어 하기](./docs/trouble_shooting/2019-06-01-TS-promise_readline.md)
+
 - :thought_balloon: etc.
 
   - [VSCODE 디버깅 가이드](./docs/etc/2019-04-05-VSCode_Debugging_Guide.md)
