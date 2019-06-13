@@ -219,3 +219,9 @@ myURL.search = myURL.searchParams.toString();
 
 - WHATWG 형식의 `searchParams`가 기존 노드 url 형식의 `query` 보다 유용한 이유
   - `query` 는 `querystring` 모듈을 한 번 더 사용해야 하는 번거로움이 있다.
+
+----
+
+### Reference
+
+- ![Node.js교과서](http://www.yes24.com/Product/goods/62597864)
