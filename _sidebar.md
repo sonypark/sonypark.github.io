@@ -5,6 +5,8 @@
   - 코드스쿼드
     - [Git Pull Request](./docs/git/2019-04-04-CodeSquad_GitPR_Guide.md "Git PR")
 
+    - [Git Test](./docs/git/2019-05-24-GitTest.md "Git Test")
+
 - :globe_with_meridians: Web
 
 - :lemon: JavaScript
@@ -68,6 +70,7 @@
         - [[9095] 1,2,3 더하기](./docs/algorithm_problem_solving/2019-06-01-AT-plus_one_two_three.md)
         - [[9012] 괄호](./docs/algorithm_problem_solving/2019-06-04-AT-vps.md)
         - [[1929] 소수 구하기](./docs/algorithm_problem_solving/2019-06-06-AT-primeNum_seive.md)
+        - [[10989] 수 정렬하기 3](./docs/algorithm_problem_solving/2019-06-14-AT-countingSort.md)
     
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
