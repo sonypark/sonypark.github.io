@@ -77,7 +77,7 @@ function getUser(id, callback){
 
 - 위 코드를 보면 콜백 함수를 이용해서 비동기 처리를 했다.
 - `getUser()`의 callback 함수는 `setTimeout()`의 콜백 함수 안에 들어있다.
-- `setTimeout()`의 콜백 함수는 2초 뒤에 실행 되고 그 안에 있는 `getUser`의 callback 함수도 2초 뒤에 실행된다.
+- `setTimeout()`의 콜백 함수는 2초 뒤에 실행 되고 그 안에 있는 `getUser()`의 callback 함수도 2초 뒤에 실행된다.
 - 따라서 2초 뒤에 `user object`인 `{id: id, gitHubUserName: 'Sony'}` 값이 `user`에 할당된다.
 - 위 코드를 실행한 결과는 다음과 같다.
 
@@ -133,7 +133,7 @@ function getCommits(repos, callback) {
 
 1. `getUser()` : 특정 **유저 객체**(`user object`)를 가져온다.
 2. `getRepositories()` : 해당 유저의 깃허브 **레퍼지토리**를 가져온다.
-3. `getCommits()` : 특정 깃허브 레퍼지토리의 **커밋**을 가져온다.
+3. `getCommits()` : 해당 레퍼지토리의 **커밋**을 가져온다.
 
 - 위의 코드를 단순화시켜서 보자
 

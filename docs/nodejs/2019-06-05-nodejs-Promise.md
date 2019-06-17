@@ -28,7 +28,7 @@
 
 - Promise를 사용하기 위해 `Promise` **객체**를 생성한다.
 
-- Promise 객체는 `new Promise((res,rej)={})` 명령어로 생성한다.
+- Promise 객체는 `new Promise((resolve,reject)={})` 명령어로 생성한다.
 
 - Promise 객체는 두 개의 파라미터(`resolve`, `reject`)를 갖는 함수를 인자값으로 받는다.
 
