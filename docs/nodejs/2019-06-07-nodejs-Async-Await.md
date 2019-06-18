@@ -121,7 +121,7 @@ function getCustomer(id, callback) {
   setTimeout(() => {
     callback({
       id: 1,
-      name: 'Mosh Hamedani',
+      name: 'sony',
       isGold: true,
       email: 'email'
     });
@@ -165,7 +165,7 @@ function getCustomer(id) {
         setTimeout(() => {
             resolve({
                 id    : 1,
-                name  : 'Mosh Hamedani',
+                name  : 'sony',
                 isGold: true,
                 email : 'email'
             });
