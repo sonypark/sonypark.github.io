@@ -64,7 +64,7 @@ p.then(result => console.log('Result: ', result));
 
 - 위 코드를 실행한 결과는 다음과 같다.
 
-```bash
+```javascript
 Result:  1
 ```
 
@@ -83,7 +83,7 @@ p.then(result => console.log('Result: ', result));
 
 - 위 코드를 실행하면 2초 뒤에 동일한 결과값을 얻는다.
 
-```bash
+```javascript
 Result:  1
 ```
 
@@ -104,10 +104,20 @@ p
 ```
 
 - `catch` 메서드 또한  인자로 함수를 받는다. 함수의 인자값에는 `reject` 에서 보낸 `error` 객체 가 들어온다. 
+
 - `reject`에서 보낸 에러 메시지는 `error` 객체 안의 `message` 속성에 들어있다.
+
 - 따라서 에러 메시지를 출력하려면 `err.message` 형태로 접근하면 된다.
+
+> `reject` 할 때는 단순히 에러 메시지를 반환하기보다는 `Error 객체`를 반환하는 것이 좋다.
+>
+> 에러 메시지만 반환할 경우 `Error 객체의 stack 정보`를 얻을 수 없어 디버깅이 어려워질 수 있기 때문이다.
+>
+> 따라서 `reject`할 떄는 `new Error('error message')`와 같이 `Error 객체`를 담아 전달하고 `Error 객체`의 `message` 속성을 이용해 에러 메시지를 출력하는 것이 좋다.
+
 - 위 코드를 실행한 결과는 다음과 같다.
-```bash
+
+```javascript
 Error: ERROR!!!
 ```
 
