@@ -62,6 +62,8 @@ async function displayCommits() {
 displayCommits();
 ```
 
+![](./img/async_await_error.png)
+
 ## Syntactic sugar
 
 ### Async & Await are built on top of Promises
