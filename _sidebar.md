@@ -74,6 +74,7 @@
         - [[10989] 수 정렬하기 3](./docs/algorithm_problem_solving/2019-06-14-AT-countingSort.md)
         - [[1260] DFS 와 BFS](./docs/algorithm_problem_solving/2019-06-20-AT-DFS_BFS.md)
         - [[2178] 미로 탐색](./docs/algorithm_problem_solving/2019-06-21-AT-maze.md)
+        - [[1915] 가장 큰 정사각형](./docs/algorithm_problem_solving/2019-06-23-AT-theBiggestSquare.md)
     
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
