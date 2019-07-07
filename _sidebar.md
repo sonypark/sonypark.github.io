@@ -28,6 +28,8 @@
   - [apply,call,bind](./docs/javascript/2019-05-18-apply_call_bind.md)
   - [자바스크립트 비동기](./docs/javascript/2019-05-25-Asyncronous.md)
 
+  - [자바스크립트 클로저](./docs/javascript/2019-07-01-Udemy_JS_Closures.md)
+
 - :green_apple: Node.js
   
   - [Node.js Module](./docs/nodejs/2019-04-05-nodejs-NodejsModule.md)
