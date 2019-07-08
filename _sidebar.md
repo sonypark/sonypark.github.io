@@ -21,14 +21,13 @@
   - [Object](./docs/javascript/2019-04-12-Object.md)
   - [함수형 프로그래밍(FP)](./docs/javascript/2019-04-15-FunctionalProgramming.md)
   - [1급 객체](./docs/javascript/2019-04-16-FirstClassObject&Function.md)
-  - [클로저(Closures)](./docs/javascript/2019-04-17-Closure.md)
+  - [클로저(Closures) 1](./docs/javascript/2019-04-17-Closure.md)
+  - [클로저(Closures) 2](./docs/javascript/2019-07-01-Udemy_JS_Closures.md)
   - [Higher Order Function](./docs/javascript/2019-04-28-HigherOrderFunction.md)
   - [객체지향 프로그래밍(OOP)](./docs/javascript/2019-04-28-JS_OOP.md)
   - [Arrow Function](./docs/javascript/2019-05-17-ArrowFunction.md)
   - [apply,call,bind](./docs/javascript/2019-05-18-apply_call_bind.md)
   - [자바스크립트 비동기](./docs/javascript/2019-05-25-Asyncronous.md)
-
-  - [자바스크립트 클로저](./docs/javascript/2019-07-01-Udemy_JS_Closures.md)
 
 - :green_apple: Node.js
   
