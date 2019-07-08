@@ -333,7 +333,7 @@ run()
 
 ### 2. Update First
 
-> document를 가져올 필요 없이 바로 값을 수정해야 할 때 쓰인다. 
+> document를 가져올 필요 없이 바로 값을 수정해야 할 때 쓰인다.
 >
 > ex) 좋아요 수 업데이트
 
@@ -365,7 +365,7 @@ run()
 { n: 1, nModified: 1, ok: 1 }
 ```
 
-- 수정 할 `document`를 리턴하고 싶으면 `findByIdAndUpdate` 메서드를 사용한다.
+- 수정할 `document`를 리턴하고 싶으면 `findByIdAndUpdate` 메서드를 사용한다.
 
 ```js
 const Courses = mongoose.model('Course', courseSchema);
@@ -399,9 +399,7 @@ run()
   isPubliched: false }
 ```
 
-- it returns the original document.
-
-- `findByIdAndUpdate` 메서드는 디폴트로 `수정 되기 전의 document`를 리턴한다.
+- `findByIdAndUpdate` 메서드는 디폴트로 `수정ㅍ되기 전의 document`를 리턴한다.
 
 - `수정 사항이 반영된 document`를 리턴하고 싶으면  `{new: true}` option을 추가해준다.
 
