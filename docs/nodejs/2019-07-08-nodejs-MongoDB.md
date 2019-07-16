@@ -1,3 +1,5 @@
+2019년 7월 8일
+
 # MongoDB
 
 ---
@@ -40,6 +42,8 @@
 - `schema`는 `collection`안에 있는 `documents`의 구조를 정의할 때 사용된다.
 
 ![](https://user-images.githubusercontent.com/34808501/60753298-1641b480-a00b-11e9-9e4e-d2dd4fd24063.png)
+
+이미지 출처: https://www.udemy.com/nodejs-master-class
 
 - 예를 들어, 온라인 강의 데이터를 관리하는 MongoDB가 있다고 할 때 강의 스키마(`schema for course`)를 다음과 같이 만들 수 있다.
 
