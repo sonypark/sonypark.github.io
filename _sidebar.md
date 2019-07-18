@@ -82,6 +82,7 @@
         - [[2667] 단지번호붙이기](./docs/algorithm_problem_solving/2019-06-29-AT-apartment.md)
         - [[1012] 유기농 배추](./docs/algorithm_problem_solving/2019-06-30-AT-cabbage-farm.md)
         - [[11724] 연결 요소의 개수](./docs/algorithm_problem_solving/2019-07-01-AT-connected-components.md)
+        - [[10814] 나이순 정렬](./docs/algorithm_problem_solving/2019-07-18-AT-sortByAge.md)
     
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
