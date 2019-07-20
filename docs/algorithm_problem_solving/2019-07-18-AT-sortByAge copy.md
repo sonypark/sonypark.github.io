@@ -1,6 +1,6 @@
 2019년 7월 18일
 
-# 백준 10814 - 나이순 정렬 {docsify-ignore-all}
+# 백준 10814 - 나이순 정렬 (정렬) {docsify-ignore-all}
 
 > 출처: https://www.acmicpc.net/problem/10814
 
