@@ -89,6 +89,7 @@
         - [[2875] 대회 or 인턴](./docs/algorithm_problem_solving/2019-07-24-AT-devide-team.md)
         - [[1213] 팰린드롬 만들기](./docs/algorithm_problem_solving/2019-07-26-AT-make-palindrome.md)
         - [[5585] 거스름돈](./docs/algorithm_problem_solving/2019-07-26-AT-change.md)
+        - [[1431] 시리얼 번호](./docs/algorithm_problem_solving/2019-07-31-AT-serialNumber.md)
     
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
