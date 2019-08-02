@@ -91,6 +91,9 @@
         - [[5585] 거스름돈](./docs/algorithm_problem_solving/2019-07-26-AT-change.md)
         - [[1431] 시리얼 번호](./docs/algorithm_problem_solving/2019-07-31-AT-serialNumber.md)
     
+    - 코드시그널
+        - [[almostIncreasingSequence]](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
+
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
         - [문자열 회전](docs/algorithm_problem_solving/2019-02-04-AT-rotate_string.md)
