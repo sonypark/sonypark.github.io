@@ -97,6 +97,10 @@
     - 코딜리티
         - [BinaryGap](./docs/algorithm_problem_solving/2019-08-02-AT-BinaryGap.md)
         - [CyclicRotation](./docs/algorithm_problem_solving/2019-08-05-AT-CyclicRotation.md)
+        - [PermMissionElem](./docs/algorithm_problem_solving/2019-08-06-AT-PermMissionElem.md)
+        - [TapeEquilibrium](./docs/algorithm_problem_solving/2019-08-06-AT-TapeEquilibrium.md)
+        - [PermCheck](./docs/algorithm_problem_solving/2019-08-07-AT-PermCheck.md)
+        - [FrogRiverOne](./docs/algorithm_problem_solving/2019-08-07-AT-FrogRiverOne.md)
         
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
