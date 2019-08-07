@@ -1,6 +1,6 @@
 2019년 8월 7일
 
-# Codility  -  FrogRiverOne (Time Complexity) {docsify-ignore-all}
+# Codility  -  FrogRiverOne (Counting Elements) {docsify-ignore-all}
 
 > 출처: https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
 

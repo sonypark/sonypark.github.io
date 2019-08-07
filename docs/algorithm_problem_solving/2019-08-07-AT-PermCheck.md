@@ -1,6 +1,6 @@
 2019년 8월 7일
 
-# Codility  -  PermCheck (Time Complexity) {docsify-ignore-all}
+# Codility  -  PermCheck (Counting Elements) {docsify-ignore-all}
 
 > 출처: https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 
