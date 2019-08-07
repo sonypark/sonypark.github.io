@@ -1,6 +1,6 @@
 2019년 8월 6일
 
-# Codility  -  PermMissionElem (Time Complexity) {docsify-ignore-all}
+# Codility  -  PermMissingElem (Time Complexity) {docsify-ignore-all}
 
 > 출처: https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
 
