@@ -101,6 +101,7 @@
         - [TapeEquilibrium](./docs/algorithm_problem_solving/2019-08-06-AT-TapeEquilibrium.md)
         - [PermCheck](./docs/algorithm_problem_solving/2019-08-07-AT-PermCheck.md)
         - [FrogRiverOne](./docs/algorithm_problem_solving/2019-08-07-AT-FrogRiverOne.md)
+        - [MaxCounters](./docs/algorithm_problem_solving/2019-08-08-AT-MaxCounters.md)
         
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
