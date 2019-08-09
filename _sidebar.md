@@ -9,7 +9,7 @@
 
 - :globe_with_meridians: Web
 
-- :oil_drum: Database
+- 🛢 Database
 
     - [Relationships & JOIN](./docs/database/2019-08-09-DB-JOIN.md)
 
