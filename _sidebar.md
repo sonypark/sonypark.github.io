@@ -104,7 +104,7 @@
     - 코딜리티
         - [BinaryGap](./docs/algorithm_problem_solving/2019-08-02-AT-BinaryGap.md)
         - [CyclicRotation](./docs/algorithm_problem_solving/2019-08-05-AT-CyclicRotation.md)
-        - [PermMissionElem](./docs/algorithm_problem_solving/2019-08-06-AT-PermMissionElem.md)
+        - [PermMissiongElem](./docs/algorithm_problem_solving/2019-08-06-AT-PermMissingElem.md)
         - [TapeEquilibrium](./docs/algorithm_problem_solving/2019-08-06-AT-TapeEquilibrium.md)
         - [PermCheck](./docs/algorithm_problem_solving/2019-08-07-AT-PermCheck.md)
         - [FrogRiverOne](./docs/algorithm_problem_solving/2019-08-07-AT-FrogRiverOne.md)
