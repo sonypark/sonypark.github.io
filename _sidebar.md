@@ -42,6 +42,7 @@
   - [Promise](./docs/nodejs/2019-06-05-nodejs-Promise.md)
   - [Async & Await](./docs/nodejs/2019-06-07-nodejs-Async-Await.md)
   - [MongoDB](./docs/nodejs/2019-07-08-nodejs-MongoDB.md)
+  - [Passport 로그인](./docs/nodejs/2019-08-09-nodejs-passport.md)
 
 - :paw_prints: Troubleshooting
 
