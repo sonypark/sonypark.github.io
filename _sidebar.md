@@ -9,6 +9,8 @@
 
 - :globe_with_meridians: Web
 
+    - [OAuth 2.0](./docs/web/2019-08-10-WEB-OAuthLogin.md)
+
 - 🛢 Database
 
     - [Relationships & JOIN](./docs/database/2019-08-09-DB-JOIN.md)

@@ -6,6 +6,8 @@
 
 ![](https://user-images.githubusercontent.com/34808501/62819063-ca92a580-bb8a-11e9-8fd8-cf91419a3a01.png)
 
+## OAuth가 나오게 된 배경
+
 My service에서 다른 서비스(Google,Facebook 등)을 사용하고 싶을 때가 있다. 다른 서비스를 사용하기 가장 간단한 방법은 사용자로부터 해당 서비스의 id, password를 입력받아 기억하고  있다가 사용하는 것이다. 하지만 이건 너무 위험하다. 다른 서비스의 아이디, 비밀번호를 전혀 다른 서비스에 공개한다는 건 매우 위험한 선택이다.
 
 이러한 시나리오는 모두에게 있어 불만족스럽다.
@@ -90,7 +92,7 @@ OAuth 인증을 하고자 하는 서비스에서 아래 세 가지 요소를 등
 
 ![](https://user-images.githubusercontent.com/34808501/62819119-a97e8480-bb8b-11e9-8f2a-39b8c9385a3b.png)
 
-source: [https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749)
+> img source: [https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749)
 
 ---
 
