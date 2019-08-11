@@ -99,7 +99,7 @@
         - [[1431] 시리얼 번호](./docs/algorithm_problem_solving/2019-07-31-AT-serialNumber.md)
     
     - 코드시그널
-        - [[almostIncreasingSequence]](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
+        - [almostIncreasingSequence](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
 
     - 코딜리티
         - [BinaryGap](./docs/algorithm_problem_solving/2019-08-02-AT-BinaryGap.md)
@@ -109,6 +109,7 @@
         - [PermCheck](./docs/algorithm_problem_solving/2019-08-07-AT-PermCheck.md)
         - [FrogRiverOne](./docs/algorithm_problem_solving/2019-08-07-AT-FrogRiverOne.md)
         - [MaxCounters](./docs/algorithm_problem_solving/2019-08-08-AT-MaxCounters.md)
+        - [MissingInteger](./docs/algorithm_problem_solving/2019-08-10-AT-MissingInteger.md)
         
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
