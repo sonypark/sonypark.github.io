@@ -82,4 +82,4 @@ console.log('복호화:', result2);
 
 ### Reference
 
-- ![Node.js교과서](http://www.yes24.com/Product/goods/62597864)
+- [Node.js교과서](http://www.yes24.com/Product/goods/62597864)
