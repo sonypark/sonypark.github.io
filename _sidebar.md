@@ -112,6 +112,7 @@
         - [MissingInteger](./docs/algorithm_problem_solving/2019-08-10-AT-MissingInteger.md)
         - [PassingCars](./docs/algorithm_problem_solving/2019-08-11-AT-PassingCars.md)
         - [GenomicRangeQuery](./docs/algorithm_problem_solving/2019-08-13-AT-GenomicRangeQuery.md)
+        - [MaxProductOfThree](./docs/algorithm_problem_solving/2019-08-16-AT-MaxProductOfThree.md)
         
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
