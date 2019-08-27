@@ -63,6 +63,8 @@
     - [팩토리얼](./docs/algorithm_tips/2019-05-26-AT-factorial.md)
     - [하노이의 탑](./docs/algorithm_tips/2019-06-01-AT-hanoi.md)
     - [에라소트테네스의 체](./docs/algorithm_tips/2019-06-06-AT-seive_of_eratosthenes.md)
+    - [병합 정렬(Merge Sort)](./docs/algorithm_tips/2019-08-27-AT-merge_sort.md)
+    - [퀵 정렬(Quick Sort)](./docs/algorithm_tips/2019-08-27-AT-quick_sort.md)
   
 - :hourglass: Algorithm problem solving
     
