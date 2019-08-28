@@ -39,7 +39,7 @@
 
 ## 파이썬 코드
 
-```pyhton
+```python
 def gcd(m, n):
     if m < n:
         m, n = n, m
