@@ -68,7 +68,7 @@
     - [계수 정렬(Counting Sort)](./docs/algorithm_tips/2019-08-28-AT-counting_sort.md)
   
 - :hourglass: Algorithm problem solving
-    ㅍ
+    
     - 프로그래머스
         - [Lv1 완주하지못한선수](./docs/algorithm_problem_solving/2019-01-24-AT-list_comparison.md)
         - [Lv1 최대공약수 최소공배수](./docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm.md)
@@ -116,6 +116,7 @@
         - [PassingCars](./docs/algorithm_problem_solving/2019-08-11-AT-PassingCars.md)
         - [GenomicRangeQuery](./docs/algorithm_problem_solving/2019-08-13-AT-GenomicRangeQuery.md)
         - [MaxProductOfThree](./docs/algorithm_problem_solving/2019-08-16-AT-MaxProductOfThree.md)
+        - [Triangles](./docs/algorithm_problem_solving/2019-08-28-AT-Triangle.md)
         
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
