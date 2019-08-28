@@ -65,9 +65,10 @@
     - [에라소트테네스의 체](./docs/algorithm_tips/2019-06-06-AT-seive_of_eratosthenes.md)
     - [병합 정렬(Merge Sort)](./docs/algorithm_tips/2019-08-27-AT-merge_sort.md)
     - [퀵 정렬(Quick Sort)](./docs/algorithm_tips/2019-08-27-AT-quick_sort.md)
+    - [계수 정렬(Counting Sort)](./docs/algorithm_tips/2019-08-28-AT-counting_sort.md)
   
 - :hourglass: Algorithm problem solving
-    
+    ㅍ
     - 프로그래머스
         - [Lv1 완주하지못한선수](./docs/algorithm_problem_solving/2019-01-24-AT-list_comparison.md)
         - [Lv1 최대공약수 최소공배수](./docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm.md)
