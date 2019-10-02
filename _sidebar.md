@@ -25,6 +25,8 @@
   - [Scope in javascript](./docs/javascript/2019-04-10-JavascriptScope.md)
   - [Array](./docs/javascript/2019-04-12-Array.md)
   - [Object](./docs/javascript/2019-04-12-Object.md)
+  - [Destructuring](./docs/javascript/2019-04-11-Destructuring.md)
+
   - [함수형 프로그래밍(FP)](./docs/javascript/2019-04-15-FunctionalProgramming.md)
   - [1급 객체](./docs/javascript/2019-04-16-FirstClassObject&Function.md)
   - [클로저(Closures) 1](./docs/javascript/2019-04-17-Closure.md)
@@ -53,6 +55,7 @@
 - :thought_balloon: etc.
 
   - [VSCODE 디버깅 가이드](./docs/etc/2019-04-05-VSCode_Debugging_Guide.md)
+  - [정규표현식](./docs/etc/2019-04-27-RexExp.md)
 
 - :eyes: Algorithm tips
   
@@ -68,7 +71,7 @@
     - [계수 정렬(Counting Sort)](./docs/algorithm_tips/2019-08-28-AT-counting_sort.md)
   
 - :hourglass: Algorithm problem solving
-    
+
     - 프로그래머스
         - [Lv1 완주하지못한선수](./docs/algorithm_problem_solving/2019-01-24-AT-list_comparison.md)
         - [Lv1 최대공약수 최소공배수](./docs/algorithm_problem_solving/2019-01-30-AT-gcdlcm.md)
@@ -100,6 +103,8 @@
         - [[1213] 팰린드롬 만들기](./docs/algorithm_problem_solving/2019-07-26-AT-make-palindrome.md)
         - [[5585] 거스름돈](./docs/algorithm_problem_solving/2019-07-26-AT-change.md)
         - [[1431] 시리얼 번호](./docs/algorithm_problem_solving/2019-07-31-AT-serialNumber.md)
+        - [[2406] 점수 계산](./docs/algorithm_problem_solving/2019-10-02-AT-calculateScore.md)
+        - [[2490] 윷놀이](./docs/algorithm_problem_solving/2019-10-02-AT-playYut.md)
     
     - 코드시그널
         - [almostIncreasingSequence](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
