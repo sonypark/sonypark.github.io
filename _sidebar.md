@@ -106,6 +106,7 @@
         - [[2406] 점수 계산](./docs/algorithm_problem_solving/2019-10-02-AT-calculateScore.md)
         - [[2490] 윷놀이](./docs/algorithm_problem_solving/2019-10-02-AT-playYut.md)
         - [[1003] 피보나치](./docs/algorithm_problem_solving/2019-10-05-AT-fibonacci.md)
+        - [[11726] 2xn 타일링](./docs/algorithm_problem_solving/2019-10-09-AT-tiling.md)
     
     - 코드시그널
         - [almostIncreasingSequence](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
