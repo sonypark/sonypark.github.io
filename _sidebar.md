@@ -108,6 +108,7 @@
         - [[1003] 피보나치](./docs/algorithm_problem_solving/2019-10-05-AT-fibonacci.md)
         - [[11726] 2xn 타일링](./docs/algorithm_problem_solving/2019-10-09-AT-tiling.md)
         - [[2193] 이친수](./docs/algorithm_problem_solving/2019-10-10-AT-dinary.md)
+        - [[11727] 2xn 타일링2](./docs/algorithm_problem_solving/2019-10-11-AT-tiling2.md)
     
     - 코드시그널
         - [almostIncreasingSequence](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
