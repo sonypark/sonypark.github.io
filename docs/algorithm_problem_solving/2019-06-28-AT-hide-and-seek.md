@@ -38,9 +38,11 @@
 
 - 이동 중에 범위(`0<=x<=100000`)를 벗어난 경우는 제외한다.
 
-- 이동하면서 걸린 시간을 `dict`에 저장한다.
+- 이동하면서 걸린 시간을 `dp`에 저장한다.
 
 - `x`의 좌표가 `K` 의 위치와 같아지면 종료한다.
+
+    - `dp[x]` 담긴 숫자가 K에 오기까지 걸린 최단 시간이다.
 
 ## 내 풀이
 
@@ -48,25 +50,25 @@
 import sys
 from collections import deque
 
-q = deque()
-dist = dict()
-
 N, K = map(int, sys.stdin.readline().split())
 
+dp = [0] * 100001
+
 def bfs():
+    q = deque()
     q.append(N)
-    dist[N] = 0
 
     while q:
         x = q.popleft()
-        if x == K:
-            return dist[x]
-        for nx in (x-1), (x+1), (2*x):
-            if nx < 0 or nx > 100000: continue
-            if dist.get(nx) is None:
-                dist[nx] = dist[x]+1
-                q.append(nx)
 
+        if x == K:
+            return dp[x]
+
+        for nx in (x-1, x+1, x*2):
+            if nx < 0 or nx > 100000: continue
+            if dp[nx] ==0:
+                dp[nx] = dp[x] + 1
+                q.append(nx)
 print(bfs())
 ```
 
