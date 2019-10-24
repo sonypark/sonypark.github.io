@@ -111,6 +111,7 @@
         - [[11727] 2xn 타일링2](./docs/algorithm_problem_solving/2019-10-11-AT-tiling2.md)
         - [[2156] 포도주 시식](./docs/algorithm_problem_solving/2019-10-14-AT-wine.md)
         - [[1912] 연속합](./docs/algorithm_problem_solving/2019-10-15-AT-countinuous-sum.md)
+        - [[7576] 토마토](./docs/algorithm_problem_solving/2019-10-24-AT-tomoto.md)
     
     - 코드시그널
         - [almostIncreasingSequence](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
