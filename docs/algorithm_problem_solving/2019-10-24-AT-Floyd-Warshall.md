@@ -69,17 +69,14 @@ https://ko.wikipedia.org/wiki/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%
 
 ```python
 import sys
-from collections import deque
-
 N = int(input())
 
-graph = [list(map(int,sys.stdin.readline().split())) for i in range(N)]
+graph = [list(map(int, sys.stdin.readline().split())) for i in range(N)]
 
-#플로이드 워셜 알고리즘(Floyd Warshall Algorithm) 이용
-for k in range(0, N) :
-    for i in range(0, N) :
+for k in range(0, N):
+    for i in range(0, N):
         for j in range(0, N):
-            if graph[i][k] and graph[k][j] :
+            if graph[i][k] and graph[k][j]:
                 graph[i][j] = 1
 
 for g in graph:

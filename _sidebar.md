@@ -90,6 +90,7 @@
           - [[11724] 연결 요소의 개수](./docs/algorithm_problem_solving/2019-07-01-AT-connected-components.md)
           - [[7576] 토마토](./docs/algorithm_problem_solving/2019-10-24-AT-tomoto.md)
           - [[11403] 경로 찾기](./docs/algorithm_problem_solving/2019-10-24-AT-Floyd-Warshall.md)
+          - [[14502] 연구소](./docs/algorithm_problem_solving/2019-10-25-AT-virus.md)
         - DP
           - [[1003] 피보나치](./docs/algorithm_problem_solving/2019-10-05-AT-fibonacci.md)
           - [[11726] 2xn 타일링](./docs/algorithm_problem_solving/2019-10-09-AT-tiling.md)
