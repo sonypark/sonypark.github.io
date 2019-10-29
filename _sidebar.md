@@ -123,6 +123,8 @@
 
     - 코드워
         - [Basic Math (Add or Subtract)](./docs/algorithm_problem_solving/2019-10-11-AT-add_subtract.md)
+        - [Generic numeric template formatter](./docs/algorithm_problem_solving/2019-10-27-AT-numeric_formatter.md)
+        - [Is Divisible By 6](./docs/algorithm_problem_solving/2019-10-29-AT-is_divisible_by_6.md)
 
     - 코딜리티
         - [BinaryGap](./docs/algorithm_problem_solving/2019-08-02-AT-BinaryGap.md)
