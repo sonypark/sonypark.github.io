@@ -78,6 +78,7 @@
         - [Lv1 약수의 합](./docs/algorithm_problem_solving/2019-02-14-AT-sum_divisor.md)
         - [Lv2 가장 큰 수](./docs/algorithm_problem_solving/2019-05-20-AT-the_biggest_number.md)
         - [Lv2 전화번호 목록](./docs/algorithm_problem_solving/2019-05-31-AT-phone_book.md)
+        - [Lv2 위장](./docs/algorithm_problem_solving/2019-10-30-AT-spy.md)
     - 백준
         - DFS/BFS
           - [[1260] DFS 와 BFS](./docs/algorithm_problem_solving/2019-06-20-AT-DFS_BFS.md)

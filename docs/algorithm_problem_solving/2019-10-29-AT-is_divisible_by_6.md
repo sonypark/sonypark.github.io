@@ -48,8 +48,6 @@ As you can see, the masked number may be very large
 ## 내 풀이
 
 ```python
-import unittest
-
 def is_divisible_by_6(s):
     answer = []
     for i in range(0, 10):
@@ -57,5 +55,4 @@ def is_divisible_by_6(s):
         if a % 6 == 0:
             answer.append(str(a))
     return answer
-
 ```
