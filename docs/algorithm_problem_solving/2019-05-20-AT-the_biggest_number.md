@@ -36,6 +36,8 @@ def maxNum(numbers):
 
 ## 풀이 2 : 성공
 
+- `numbers=[0,0,0,0]` 마지막 테스트 케이스. 이거 때문에 마지막에 int로 변환한뒤 다시 str로 변환해야한다.
+
 ```python
 import functools
 
@@ -43,17 +45,10 @@ def cmp(a,b):
     return int(a+b) - int(b+a)
 
 def solution(numbers):
-    numbers = list(map(str,numbers))
-    tmp_arr = []
-
-    for i in numbers:
-        tmp_arr.append(i)
-    tmp_arr.sort(key=functools.cmp_to_key(cmp), reverse=True)
-    answer = ''.join(tmp_arr)
-
-    if int(answer) == 0:
-        return '0'
-    return answer
+    sn = list(map(str, numbers))
+    sn.sort(key=functools.cmp_to_key(cmp), reverse=True)
+    answer = ''.join(sn)
+    return str(int(answer))
 ```
 
 ## 배운점
@@ -62,20 +57,15 @@ def solution(numbers):
 
 > 출처: https://docs.python.org/3/howto/sorting.html
 
-```python
-def numeric_compare(x, y):
-    return x - y
-sorted([5, 2, 4, 1, 3], cmp=numeric_compare)
-
-# [1, 2, 3, 4, 5]
-```
+- 파이썬 3.2에서, `functools.cmp_to_key()` 함수가 표준 라이브러리의 `functools 모듈`에 추가되었다.
+- 두 개 이상의 원소를 비교할 때에는 `functools`의 `cmp_to_key`를 이용한다.
 
 ```python
 def reverse_numeric(x, y):
     return y - x
-sorted([5, 2, 4, 1, 3], cmp=reverse_numeric)
 
-# [5, 4, 3, 2, 1]
+sorted([5, 2, 4, 1, 3], key=cmp_to_key(reverse_numeric))
+[5, 4, 3, 2, 1]
 ```
 
 ## 느낀점
