@@ -80,6 +80,7 @@
         - [Lv2 전화번호 목록](./docs/algorithm_problem_solving/2019-05-31-AT-phone_book.md)
         - [Lv2 위장](./docs/algorithm_problem_solving/2019-10-30-AT-spy.md)
         - [Lv3 베스트앨범](./docs/algorithm_problem_solving/2019-10-31-AT-best_album.md)
+        - [Lv2 카펫](./docs/algorithm_problem_solving/2019-11-01-AT-capet.md)
     - 백준
         - DFS/BFS
           - [[1260] DFS 와 BFS](./docs/algorithm_problem_solving/2019-06-20-AT-DFS_BFS.md)
