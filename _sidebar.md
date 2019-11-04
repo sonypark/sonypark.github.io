@@ -82,6 +82,7 @@
         - [Lv3 베스트앨범](./docs/algorithm_problem_solving/2019-10-31-AT-best_album.md)
         - [Lv2 카펫](./docs/algorithm_problem_solving/2019-11-01-AT-capet.md)
         - [Lv2 기능개발](./docs/algorithm_problem_solving/2019-11-03-AT-feature_deploy.md)
+        - [Lv2 프린터](./docs/algorithm_problem_solving/2019-11-04-AT-printer.md)
     - 백준
         - DFS/BFS
           - [[1260] DFS 와 BFS](./docs/algorithm_problem_solving/2019-06-20-AT-DFS_BFS.md)
@@ -129,6 +130,7 @@
         - [Basic Math (Add or Subtract)](./docs/algorithm_problem_solving/2019-10-11-AT-add_subtract.md)
         - [Generic numeric template formatter](./docs/algorithm_problem_solving/2019-10-27-AT-numeric_formatter.md)
         - [Is Divisible By 6](./docs/algorithm_problem_solving/2019-10-29-AT-is_divisible_by_6.md)
+        - [Persistent Bugger](./docs/algorithm_problem_solving/2019-11-03-AT-persistence.md)
 
     - 코딜리티
         - [BinaryGap](./docs/algorithm_problem_solving/2019-08-02-AT-BinaryGap.md)
