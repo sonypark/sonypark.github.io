@@ -84,6 +84,6 @@ def solution(priorities, location):
 ```
 
 ## 배운점
-
-- `any`를 알게되었다. 조건 중 하나라도 참이면 True를 리터한다.
+턴
+- `any`를 알게되었다. 조건 중 하나라도 참이면 True를 리턴한다.
 
