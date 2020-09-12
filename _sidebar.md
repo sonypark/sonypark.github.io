@@ -69,7 +69,14 @@
     - [병합 정렬(Merge Sort)](./docs/algorithm_tips/2019-08-27-AT-merge_sort.md)
     - [퀵 정렬(Quick Sort)](./docs/algorithm_tips/2019-08-27-AT-quick_sort.md)
     - [계수 정렬(Counting Sort)](./docs/algorithm_tips/2019-08-28-AT-counting_sort.md)
-  
+
+- Essesntial Coding Interview Questions
+    - Arrays
+      - [Most Frequent Item](./docs/algorithm_problem_solving/2019-11-05-AT-most-frequent.md)
+    - Strings
+    - Two-Dimensional Arrays
+    - Linked List
+
 - :hourglass: Algorithm problem solving
 
     - 프로그래머스
@@ -123,6 +130,17 @@
         - [[2406] 점수 계산](./docs/algorithm_problem_solving/2019-10-02-AT-calculateScore.md)
         - [[2490] 윷놀이](./docs/algorithm_problem_solving/2019-10-02-AT-playYut.md)
 
+    - Udemy
+        - [MostFrequentlyOccuringItem(Array)](./docs/algorithm_problem_solving/2019-11-05-AT-most-frequent.md)
+        - [CommonElementsinTwoSortedArrays(Array)](./docs/algorithm_problem_solving/2019-11-06-AT-common-element-two-sorted-array.md)
+        - [RotationofAnother(Array)](./docs/algorithm_problem_solving/2019-11-07-AT-rotation-of-another.md)
+        - [NonRepeating(String)](./docs/algorithm_problem_solving/2019-11-08-AT-non-repeating.md)
+        - [OneAwayString(String)](./docs/algorithm_problem_solving/2019-11-09-AT-one-away-string.md)
+        - [MineSweeper(2dArray)](./docs/algorithm_problem_solving/2019-11-10-AT-minesweeper.md)
+        - [ClickMineSweeper(2dArray)](./docs/algorithm_problem_solving/2019-11-11-AT-click-minesweeper.md)
+        - [Rotate2dArray(2dArray)](./docs/algorithm_problem_solving/2019-11-12-AT-rotate-2d-array.md)
+
+    
     - 코드시그널
         - [almostIncreasingSequence](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
 
