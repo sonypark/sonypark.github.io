@@ -118,18 +118,17 @@
           - [[11652] 카드](./docs/algorithm_problem_solving/2019-07-21-AT-sortCard.md)
           - [[5052] 전화번호 목록](./docs/algorithm_problem_solving/2019-07-23-AT-sort-phone-number.md)
           - [[1431] 시리얼 번호](./docs/algorithm_problem_solving/2019-07-31-AT-serialNumber.md)
-        - [[5176] 대회 자리](./docs/algorithm_problem_solving/2019-05-19-AT-set_seat.md)
-        - [[1357] 뒤집힌 덧셈](./docs/algorithm_problem_solving/2019-05-24-AT-sum_reversedNum.md)
-        - [[11170] 0의 개수](./docs/algorithm_problem_solving/2019-05-26-AT-count_zero.md)
-        - [[1110] 더하기 사이클](./docs/algorithm_problem_solving/2019-05-28-AT-plus_cycle.md)
-        - [[9012] 괄호](./docs/algorithm_problem_solving/2019-06-04-AT-vps.md)
-        - [[1929] 소수 구하기](./docs/algorithm_problem_solving/2019-06-06-AT-primeNum_seive.md)
-        - [[2875] 대회 or 인턴](./docs/algorithm_problem_solving/2019-07-24-AT-devide-team.md)
-        - [[1213] 팰린드롬 만들기](./docs/algorithm_problem_solving/2019-07-26-AT-make-palindrome.md)
-        - [[5585] 거스름돈](./docs/algorithm_problem_solving/2019-07-26-AT-change.md)
-        - [[2406] 점수 계산](./docs/algorithm_problem_solving/2019-10-02-AT-calculateScore.md)
-        - [[2490] 윷놀이](./docs/algorithm_problem_solving/2019-10-02-AT-playYut.md)
-
+          - [[5176] 대회 자리](./docs/algorithm_problem_solving/2019-05-19-AT-set_seat.md)
+          - [[1357] 뒤집힌 덧셈](./docs/algorithm_problem_solving/2019-05-24-AT-sum_reversedNum.md)
+          - [[11170] 0의 개수](./docs/algorithm_problem_solving/2019-05-26-AT-count_zero.md)
+          - [[1110] 더하기 사이클](./docs/algorithm_problem_solving/2019-05-28-AT-plus_cycle.md)
+          - [[9012] 괄호](./docs/algorithm_problem_solving/2019-06-04-AT-vps.md)
+          - [[1929] 소수 구하기](./docs/algorithm_problem_solving/2019-06-06-AT-primeNum_seive.md)
+          - [[2875] 대회 or 인턴](./docs/algorithm_problem_solving/2019-07-24-AT-devide-team.md)
+          - [[1213] 팰린드롬 만들기](./docs/algorithm_problem_solving/2019-07-26-AT-make-palindrome.md)
+          - [[5585] 거스름돈](./docs/algorithm_problem_solving/2019-07-26-AT-change.md)
+          - [[2406] 점수 계산](./docs/algorithm_problem_solving/2019-10-02-AT-calculateScore.md)
+          - [[2490] 윷놀이](./docs/algorithm_problem_solving/2019-10-02-AT-playYut.md)
     - Udemy
         - [MostFrequentlyOccuringItem(Array)](./docs/algorithm_problem_solving/2019-11-05-AT-most-frequent.md)
         - [CommonElementsinTwoSortedArrays(Array)](./docs/algorithm_problem_solving/2019-11-06-AT-common-element-two-sorted-array.md)
@@ -138,18 +137,14 @@
         - [OneAwayString(String)](./docs/algorithm_problem_solving/2019-11-09-AT-one-away-string.md)
         - [MineSweeper(2dArray)](./docs/algorithm_problem_solving/2019-11-10-AT-minesweeper.md)
         - [ClickMineSweeper(2dArray)](./docs/algorithm_problem_solving/2019-11-11-AT-click-minesweeper.md)
-        - [Rotate2dArray(2dArray)](./docs/algorithm_problem_solving/2019-11-12-AT-rotate-2d-array.md)
-
-    
+        - [Rotate2dArray(2dArray)](./docs/algorithm_problem_solving/2019-11-12-AT-rotate-2d-array.md)    
     - 코드시그널
         - [almostIncreasingSequence](./docs/algorithm_problem_solving/2019-08-02-AT-almostIncreasingSequence.md)
-
     - 코드워
         - [Basic Math (Add or Subtract)](./docs/algorithm_problem_solving/2019-10-11-AT-add_subtract.md)
         - [Generic numeric template formatter](./docs/algorithm_problem_solving/2019-10-27-AT-numeric_formatter.md)
         - [Is Divisible By 6](./docs/algorithm_problem_solving/2019-10-29-AT-is_divisible_by_6.md)
         - [Persistent Bugger](./docs/algorithm_problem_solving/2019-11-03-AT-persistence.md)
-
     - 코딜리티
         - [BinaryGap](./docs/algorithm_problem_solving/2019-08-02-AT-BinaryGap.md)
         - [CyclicRotation](./docs/algorithm_problem_solving/2019-08-05-AT-CyclicRotation.md)
@@ -162,8 +157,7 @@
         - [PassingCars](./docs/algorithm_problem_solving/2019-08-11-AT-PassingCars.md)
         - [GenomicRangeQuery](./docs/algorithm_problem_solving/2019-08-13-AT-GenomicRangeQuery.md)
         - [MaxProductOfThree](./docs/algorithm_problem_solving/2019-08-16-AT-MaxProductOfThree.md)
-        - [Triangles](./docs/algorithm_problem_solving/2019-08-28-AT-Triangle.md)
-        
+        - [Triangles](./docs/algorithm_problem_solving/2019-08-28-AT-Triangle.md)        
     - 코딩인터뷰 완전분석
         - [문자열 압축](docs/algorithm_problem_solving/2019-02-05-AT-str_compression.md)
         - [문자열 회전](docs/algorithm_problem_solving/2019-02-04-AT-rotate_string.md)
