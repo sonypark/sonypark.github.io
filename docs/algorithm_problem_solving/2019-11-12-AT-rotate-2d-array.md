@@ -27,7 +27,7 @@ Resulting field:
 
 ```
 [
- [7, 4, 2],
+ [7, 4, 1],
  [8, 5, 2],
  [9, 6, 3],
 ]
@@ -39,7 +39,7 @@ When you are done, try implementing this function so that you can solve this pro
 
 - 주어진 배열을 그대로 copy 하여 새로운 배열을 만든다.
 
-- 
+- copy한 배열에 90도로 회전한 원소를 넣어준다.
 
 ## 내 풀이
 
